@@ -22,7 +22,7 @@
 .special__copy{display:grid;gap:var(--sp-4);align-content:center}
 .special__items{display:flex;flex-wrap:wrap;gap:.5rem}
 .special__price{display:flex;align-items:baseline;gap:var(--sp-4)}
-.special__price .price{font-size:clamp(3.4rem,8vw,6rem);line-height:1.1}
+.special__price .price{font-size:clamp(3rem,6vw,4.5rem);line-height:1.1}
 .special__price s{color:var(--text-faint);font-size:var(--fs-md)}
 @media (min-width:900px){.special{grid-template-columns:1.05fr 1fr}.special__media{min-height:520px}.special__copy{max-width:640px;padding:0}}
 /* ---- offers strip ---- */
@@ -35,7 +35,7 @@
 .offer img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.3;z-index:0;transition:transform 1.2s var(--ease)}
 .offer:hover img{transform:scale(1.08)}
 .offer > *:not(img){position:relative;z-index:1}
-.offer__big{font-family:var(--font-display);font-weight:700;font-size:clamp(4.5rem,12vw,7.5rem);line-height:1.1;color:var(--red-text);}
+.offer__big{font-family:var(--font-display);font-weight:700;font-size:clamp(3.5rem,8vw,5.5rem);line-height:1.1;color:var(--red-text);}
 .offer__big small{font-size:.38em;color:#fff;margin-left:.2em}
 .offer h3{font-size:var(--fs-lg)}
 .offer__until{font-size:var(--fs-xs);letter-spacing:.14em;text-transform:uppercase;color:var(--text-muted)}
@@ -66,7 +66,7 @@
 .values{padding-block:var(--section-y);background:var(--red);color:#fff;position:relative;overflow:hidden}
 .values h2{margin-bottom:var(--sp-6)}
 .values__list{counter-reset:v}
-.values__list li{counter-increment:v;display:flex;align-items:center;gap:var(--sp-5);padding-block:var(--sp-4);border-top:2px solid rgba(255,255,255,.35);font-family:var(--font-display);font-weight:700;text-transform:uppercase;font-size:clamp(1.8rem,5vw,4rem);line-height:1;transition:padding-left .5s var(--ease),background .3s}
+.values__list li{counter-increment:v;display:flex;align-items:center;gap:var(--sp-5);padding-block:var(--sp-4);border-top:2px solid rgba(255,255,255,.35);font-family:var(--font-display);font-weight:700;text-transform:uppercase;font-size:clamp(1.4rem,3vw,2.4rem);line-height:1;transition:padding-left .5s var(--ease),background .3s}
 .values__list li::before{content:counter(v,decimal-leading-zero);font-family:var(--font-accent);font-style:normal;font-weight:400;font-size:.45em;opacity:.8;min-width:2.2em}
 .values__list li:hover{padding-left:var(--sp-5);background:rgba(0,0,0,.18)}
 .values__list li svg{margin-left:auto;width:1em;height:1em;opacity:.6}

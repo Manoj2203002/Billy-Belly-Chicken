@@ -32,19 +32,19 @@
   --font-body:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   --font-accent:"Outfit","Inter",system-ui,sans-serif;
   --fs-xs:clamp(.72rem,.7rem + .1vw,.8rem);
-  --fs-sm:clamp(.84rem,.82rem + .12vw,.92rem);
-  --fs-base:clamp(.96rem,.93rem + .18vw,1.06rem);
-  --fs-md:clamp(1.1rem,1.04rem + .3vw,1.3rem);
-  --fs-lg:clamp(1.35rem,1.15rem + .9vw,1.9rem);
-  --fs-xl:clamp(1.8rem,1.3rem + 2.4vw,3.1rem);
-  --fs-2xl:clamp(2.1rem,1.4rem + 3.6vw,4.4rem);
-  --fs-hero:clamp(2.5rem,1.2rem + 6.4vw,6.4rem);
+  --fs-sm:clamp(.84rem,.82rem + .12vw,.9rem);
+  --fs-base:clamp(.96rem,.93rem + .18vw,1.04rem);
+  --fs-md:clamp(1.1rem,1.04rem + .25vw,1.2rem);
+  --fs-lg:clamp(1.35rem,1.15rem + .6vw,1.7rem);
+  --fs-xl:clamp(1.7rem,1.3rem + 1.8vw,2.6rem);
+  --fs-2xl:clamp(2rem,1.4rem + 2.5vw,3.6rem);
+  --fs-hero:clamp(2.5rem,1.2rem + 4.5vw,5.2rem);
 
   /* spacing scale */
   --sp-1:.25rem;--sp-2:.5rem;--sp-3:.75rem;--sp-4:1rem;--sp-5:1.5rem;--sp-6:2rem;--sp-7:3rem;--sp-8:4.5rem;--sp-9:7rem;
   --gutter:clamp(1rem,4vw,3rem);
   --section-y:clamp(4rem,9vw,9rem);
-  --maxw:1440px;
+  --maxw:1200px;
 
   /* radius + shadow scales */
   --r-xs:6px;--r-sm:10px;--r-md:16px;--r-lg:26px;--r-xl:38px;--r-pill:999px;
