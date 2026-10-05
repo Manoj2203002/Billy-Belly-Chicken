@@ -1,0 +1,13 @@
+{
+  "name": "Billy Belly Chicken",
+  "short_name": "BBC",
+  "description": "Billy Belly Chicken: menu, QR table ordering and parcel orders",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0a0909",
+  "theme_color": "#0a0909",
+  "icons": [
+    { "src": "assets/logo/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/logo/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

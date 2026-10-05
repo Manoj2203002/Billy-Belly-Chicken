@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" data-title-key="review.meta.title">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Write a review | Billy Belly Chicken</title>
+  <meta name="description" content="Tell us how your meal at Billy Belly Chicken was.">
+  <meta name="theme-color" content="#0a0909">
+  
+  <meta property="og:title" content="Write a review | Billy Belly Chicken"><meta property="og:description" content="Tell us how your meal at Billy Belly Chicken was."><meta property="og:type" content="website"><meta property="og:image" content="assets/images/misc/og.svg">
+  <link rel="icon" href="assets/logo/favicon.ico"><link rel="apple-touch-icon" href="assets/logo/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages/review.css">
+  
+</head>
+<body data-root="" data-page="review">
+  <main id="main" class="review">
+    <section class="container review__wrap">
+      <div class="review__intro">
+        <span class="eyebrow" data-i18n="review.eyebrow"></span>
+        <h1 class="display display--xl" data-i18n="review.title"></h1>
+        <p class="lead" data-i18n="review.lead"></p>
+        <div class="review__avg card card--glass" id="avg" hidden></div>
+      </div>
+      <form class="review__form card" id="form" novalidate>
+        <div class="field" id="f-rating"><span class="field__label" id="lbl-r"><span data-i18n="review.overall"></span><span class="req">*</span></span><div class="star-input" id="stars" role="radiogroup" aria-labelledby="lbl-r"></div><div class="field__error" data-i18n="review.ratingErr"></div></div>
+        <fieldset class="review__cats"><legend class="field__label" data-i18n="review.cats"></legend><div id="cats"></div></fieldset>
+        <div class="field"><label class="field__label" for="comment" data-i18n="review.comment"></label><textarea class="textarea" id="comment" maxlength="500" rows="4" data-i18n-placeholder="review.commentPh"></textarea></div>
+        <div class="form-grid"><div class="field"><label class="field__label" for="name"><span data-i18n="review.name"></span></label><input class="input" id="name" maxlength="40" autocomplete="name"></div>
+        <div class="field"><label class="field__label" for="table" data-i18n="review.tableNo"></label><input class="input" id="table" type="number" min="1" max="99" inputmode="numeric"></div></div>
+        <button class="btn btn--primary btn--lg btn--block" type="submit" data-magnetic><i data-icon="check"></i><span data-i18n="review.submit"></span></button>
+        <p class="text-faint review__note" data-i18n="review.note"></p>
+      </form>
+      <div class="review__thanks card" id="thanks" hidden></div>
+    </section>
+  </main>
+  <script>window.addEventListener("error",function(e){if(document.getElementById("bbc-err"))return;var d=document.createElement("div");d.id="bbc-err";d.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#b00020;color:#fff;font:14px/1.4 sans-serif;padding:10px 14px";d.textContent="Something failed to load: "+(e.message||(e.target&&(e.target.src||e.target.href))||"unknown")+" - open the site through a web address (see README) or tell the developer this message.";document.body.appendChild(d)},true)</script><script>(function(){var p="",f=location.protocol==="file:";function a(s,m){var e=document.createElement("script");e.src=p+s;if(m)e.type="module";e.async=false;document.body.appendChild(e)}if(f){a("js/bundles/data.js");a("js/bundles/review.js")}else a("js/pages/review.js",true)})()</script>
+  <noscript><p style="padding:2rem;font-family:sans-serif">Please turn on JavaScript to use this site.</p></noscript>
+</body>
+</html>

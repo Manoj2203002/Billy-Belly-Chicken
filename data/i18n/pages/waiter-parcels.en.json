@@ -1,0 +1,16 @@
+{
+ "waiter-parcels": {
+  "title": "Parcels | Waiter",
+  "pageTitle": "Parcel queue",
+  "f": {
+   "active": "Active",
+   "placed": "To confirm",
+   "served": "Ready",
+   "done": "Handed over",
+   "cancelled": "Cancelled",
+   "all": "All"
+  },
+  "search": "Search token, name or phone...",
+  "empty": "No parcels here."
+ }
+}

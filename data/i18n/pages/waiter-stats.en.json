@@ -1,0 +1,14 @@
+{
+ "waiter-stats": {
+  "title": "My stats | Waiter",
+  "pageTitle": "My stats",
+  "orders": "Orders handled today",
+  "served": "Served",
+  "revenue": "Sales on my tables",
+  "avg": "Avg. order",
+  "hourly": "Orders by hour",
+  "top": "Top dishes today",
+  "status": "Order status",
+  "none": "No data yet today."
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "admin-common": {
+  "name": "Name",
+  "description": "Description",
+  "image": "Image",
+  "order": "Order",
+  "active": "Active",
+  "price": "Price",
+  "category": "Category",
+  "status": "Status",
+  "actions": "Actions",
+  "yes": "Yes",
+  "no": "No",
+  "tags": "Tags",
+  "date": "Date",
+  "from": "From",
+  "to": "To",
+  "hidden": "Hidden",
+  "save": "Save changes",
+  "open": "Open",
+  "all": "All"
+ }
+}

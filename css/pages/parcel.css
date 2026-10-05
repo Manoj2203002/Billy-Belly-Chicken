@@ -1,0 +1,11 @@
+/* parcel.html */
+.parcel{padding-bottom:calc(110px + var(--safe-b))}
+.parcel-live{padding-block:var(--sp-6)}
+.token-card{position:relative;display:grid;gap:var(--sp-4);padding:var(--sp-6) var(--sp-5);border-radius:var(--r-xl);text-align:center;overflow:hidden;background:radial-gradient(100% 90% at 50% 0%,var(--red-deep),var(--surface) 70%);border:1px solid rgba(225,32,26,.5)}
+.token-card__label{font-size:var(--fs-xs);letter-spacing:.3em;text-transform:uppercase;color:var(--red-text);font-weight:700}
+.token-card__no{font-family:var(--font-display);font-weight:700;line-height:.85;font-size:clamp(5.5rem,30vw,14rem);letter-spacing:.02em;text-shadow:0 0 60px var(--red-glow)}
+.token-card .tracker{text-align:center;margin-top:var(--sp-4)}
+.token-card__items{text-align:left;max-width:520px;margin-inline:auto;width:100%}
+.token-card__items li{display:flex;justify-content:space-between;gap:1rem;padding-block:.35rem;border-bottom:1px dashed var(--border)}
+.token-card__cta{display:flex;gap:var(--sp-3);justify-content:center;flex-wrap:wrap}
+.cart-form--parcel{grid-template-columns:1fr}

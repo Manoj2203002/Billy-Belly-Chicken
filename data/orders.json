@@ -1,0 +1,701 @@
+[
+  {
+    "id": "O-1001",
+    "type": "dine-in",
+    "tableNo": 1,
+    "sessionId": "ts_seed1",
+    "parcelToken": null,
+    "customer": {
+      "name": "Arun",
+      "guests": 3,
+      "phone": ""
+    },
+    "items": [
+      {
+        "itemId": "m001",
+        "name": {
+          "en": "Grilled Chicken (Half)",
+          "ta": "கிரில் சிக்கன் (அரை)"
+        },
+        "price": 280,
+        "qty": 1,
+        "note": "",
+        "isVeg": false
+      },
+      {
+        "itemId": "m006",
+        "name": {
+          "en": "Chicken Dum Biryani",
+          "ta": "சிக்கன் தம் பிரியாணி"
+        },
+        "price": 190,
+        "qty": 2,
+        "note": "",
+        "isVeg": false
+      },
+      {
+        "itemId": "m036",
+        "name": {
+          "en": "Virgin Mojito",
+          "ta": "விர்ஜின் மோஹிட்டோ"
+        },
+        "price": 90,
+        "qty": 3,
+        "note": "",
+        "isVeg": true
+      }
+    ],
+    "status": "completed",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "{{now-230}}",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "{{now-227}}",
+        "by": "Ravi Kumar"
+      },
+      {
+        "status": "served",
+        "at": "{{now-208}}",
+        "by": "Ravi Kumar"
+      },
+      {
+        "status": "completed",
+        "at": "{{now-170}}",
+        "by": "Ravi Kumar"
+      }
+    ],
+    "waiterId": "w01",
+    "subtotal": 930,
+    "discount": 117.0,
+    "tax": 40.65,
+    "total": 853.65,
+    "createdAt": "{{now-230}}",
+    "payment": null
+  },
+  {
+    "id": "O-1002",
+    "type": "dine-in",
+    "tableNo": 4,
+    "sessionId": "ts_seed4",
+    "parcelToken": null,
+    "customer": {
+      "name": "Meena",
+      "guests": 2,
+      "phone": ""
+    },
+    "items": [
+      {
+        "itemId": "m010",
+        "name": {
+          "en": "Butter Chicken",
+          "ta": "பட்டர் சிக்கன்"
+        },
+        "price": 240,
+        "qty": 1,
+        "note": "",
+        "isVeg": false
+      },
+      {
+        "itemId": "m015",
+        "name": {
+          "en": "Crispy Fried Chicken (2 pc)",
+          "ta": "கிரிஸ்பி பிரைடு சிக்கன் (2 துண்டு)"
+        },
+        "price": 169,
+        "qty": 1,
+        "note": "",
+        "isVeg": false
+      },
+      {
+        "itemId": "m021",
+        "name": {
+          "en": "Zinger Burger",
+          "ta": "ஜிங்கர் பர்கர்"
+        },
+        "price": 159,
+        "qty": 1,
+        "note": "",
+        "isVeg": false
+      }
+    ],
+    "status": "completed",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "{{now-190}}",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "{{now-188}}",
+        "by": "Priya Lakshmi"
+      },
+      {
+        "status": "served",
+        "at": "{{now-170}}",
+        "by": "Priya Lakshmi"
+      },
+      {
+        "status": "completed",
+        "at": "{{now-140}}",
+        "by": "Priya Lakshmi"
+      }
+    ],
+    "waiterId": "w02",
+    "subtotal": 568,
+    "discount": 30,
+    "tax": 26.9,
+    "total": 564.9,
+    "createdAt": "{{now-190}}",
+    "payment": null
+  },
+  {
+    "id": "O-1003",
+    "type": "parcel",
+    "tableNo": null,
+    "sessionId": null,
+    "parcelToken": "P-011",
+    "customer": {
+      "name": "Suresh",
+      "phone": "9843012345",
+      "guests": 0
+    },
+    "items": [
+      {
+        "itemId": "m006",
+        "name": {
+          "en": "Chicken Dum Biryani",
+          "ta": "சிக்கன் தம் பிரியாணி"
+        },
+        "price": 190,
+        "qty": 3,
+        "note": "",
+        "isVeg": false
+      },
+      {
+        "itemId": "m018",
+        "name": {
+          "en": "Chicken 65",
+          "ta": "சிக்கன் 65"
+        },
+        "price": 180,
+        "qty": 1,
+        "note": "",
+        "isVeg": false
+      }
+    ],
+    "status": "handed",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "{{now-150}}",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "{{now-147}}",
+        "by": "Karthik S"
+      },
+      {
+        "status": "ready",
+        "at": "{{now-135}}",
+        "by": "Karthik S"
+      },
+      {
+        "status": "handed",
+        "at": "{{now-128}}",
+        "by": "Karthik S"
+      }
+    ],
+    "waiterId": null,
+    "subtotal": 750,
+    "discount": 85.5,
+    "tax": 33.23,
+    "total": 697.73,
+    "createdAt": "{{now-150}}",
+    "payment": null
+  },
+  {
+    "id": "O-1004",
+    "type": "dine-in",
+    "tableNo": 7,
+    "sessionId": "ts_seed7",
+    "parcelToken": null,
+    "customer": {
+      "name": "",
+      "guests": 2,
+      "phone": ""
+    },
+    "items": [
+      {
+        "itemId": "m003",
+        "name": {
+          "en": "Chicken Tikka",
+          "ta": "சிக்கன் டிக்கா"
+        },
+        "price": 220,
+        "qty": 1,
+        "note": "",
+        "isVeg": false
+      },
+      {
+        "itemId": "m024",
+        "name": {
+          "en": "Chicken Tikka Wrap",
+          "ta": "சிக்கன் டிக்கா ராப்"
+        },
+        "price": 140,
+        "qty": 2,
+        "note": "",
+        "isVeg": false
+      },
+      {
+        "itemId": "m038",
+        "name": {
+          "en": "Chocolate Milkshake",
+          "ta": "சாக்லேட் மில்க்ஷேக்"
+        },
+        "price": 120,
+        "qty": 2,
+        "note": "",
+        "isVeg": true
+      }
+    ],
+    "status": "completed",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "{{now-120}}",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "{{now-118}}",
+        "by": "Karthik S"
+      },
+      {
+        "status": "served",
+        "at": "{{now-100}}",
+        "by": "Karthik S"
+      },
+      {
+        "status": "completed",
+        "at": "{{now-70}}",
+        "by": "Karthik S"
+      }
+    ],
+    "waiterId": "w03",
+    "subtotal": 740,
+    "discount": 40,
+    "tax": 35.0,
+    "total": 735.0,
+    "createdAt": "{{now-120}}",
+    "payment": null
+  },
+  {
+    "id": "O-1005",
+    "type": "parcel",
+    "tableNo": null,
+    "sessionId": null,
+    "parcelToken": "P-012",
+    "customer": {
+      "name": "Lavanya",
+      "phone": "9790011223",
+      "guests": 0
+    },
+    "items": [
+      {
+        "itemId": "m022",
+        "name": {
+          "en": "Double Patty Belly Burger",
+          "ta": "டபுள் பேட்டி பெல்லி பர்கர்"
+        },
+        "price": 219,
+        "qty": 2,
+        "note": "",
+        "isVeg": false
+      },
+      {
+        "itemId": "m039",
+        "name": {
+          "en": "Oreo Milkshake",
+          "ta": "ஓரியோ மில்க்ஷேக்"
+        },
+        "price": 130,
+        "qty": 2,
+        "note": "",
+        "isVeg": true
+      }
+    ],
+    "status": "handed",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "{{now-95}}",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "{{now-93}}",
+        "by": "Divya Bharathi"
+      },
+      {
+        "status": "ready",
+        "at": "{{now-82}}",
+        "by": "Divya Bharathi"
+      },
+      {
+        "status": "handed",
+        "at": "{{now-75}}",
+        "by": "Divya Bharathi"
+      }
+    ],
+    "waiterId": null,
+    "subtotal": 698,
+    "discount": 100,
+    "tax": 29.9,
+    "total": 627.9,
+    "createdAt": "{{now-95}}",
+    "payment": null
+  },
+  {
+    "id": "O-1006",
+    "type": "dine-in",
+    "tableNo": 2,
+    "sessionId": "ts_seed2",
+    "parcelToken": null,
+    "customer": {
+      "name": "Prakash",
+      "guests": 4,
+      "phone": ""
+    },
+    "items": [
+      {
+        "itemId": "m002",
+        "name": {
+          "en": "Tandoori Chicken (Half)",
+          "ta": "தந்தூரி சிக்கன் (அரை)"
+        },
+        "price": 260,
+        "qty": 1,
+        "note": "",
+        "isVeg": false
+      },
+      {
+        "itemId": "m008",
+        "name": {
+          "en": "Tandoori Chicken Biryani",
+          "ta": "தந்தூரி சிக்கன் பிரியாணி"
+        },
+        "price": 260,
+        "qty": 2,
+        "note": "",
+        "isVeg": false
+      },
+      {
+        "itemId": "m030",
+        "name": {
+          "en": "Chicken Fried Rice",
+          "ta": "சிக்கன் பிரைடு ரைஸ்"
+        },
+        "price": 150,
+        "qty": 1,
+        "note": "",
+        "isVeg": false
+      },
+      {
+        "itemId": "m037",
+        "name": {
+          "en": "Blue Lagoon Mojito",
+          "ta": "புளூ லகூன் மோஹிட்டோ"
+        },
+        "price": 100,
+        "qty": 2,
+        "note": "",
+        "isVeg": true
+      }
+    ],
+    "status": "served",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "{{now-50}}",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "{{now-47}}",
+        "by": "Ravi Kumar"
+      },
+      {
+        "status": "served",
+        "at": "{{now-28}}",
+        "by": "Ravi Kumar"
+      }
+    ],
+    "waiterId": "w01",
+    "subtotal": 1130,
+    "discount": 118.0,
+    "tax": 50.6,
+    "total": 1062.6,
+    "createdAt": "{{now-50}}",
+    "payment": null
+  },
+  {
+    "id": "O-1007",
+    "type": "dine-in",
+    "tableNo": 5,
+    "sessionId": "ts_seed5",
+    "parcelToken": null,
+    "customer": {
+      "name": "Nithya",
+      "guests": 5,
+      "phone": ""
+    },
+    "items": [
+      {
+        "itemId": "m011",
+        "name": {
+          "en": "Chicken Chettinad",
+          "ta": "சிக்கன் செட்டிநாடு"
+        },
+        "price": 230,
+        "qty": 2,
+        "note": "",
+        "isVeg": false
+      },
+      {
+        "itemId": "m007",
+        "name": {
+          "en": "Chicken 65 Biryani",
+          "ta": "சிக்கன் 65 பிரியாணி"
+        },
+        "price": 220,
+        "qty": 2,
+        "note": "",
+        "isVeg": false
+      },
+      {
+        "itemId": "m033",
+        "name": {
+          "en": "Chicken Noodles",
+          "ta": "சிக்கன் நூடுல்ஸ்"
+        },
+        "price": 150,
+        "qty": 1,
+        "note": "",
+        "isVeg": false
+      },
+      {
+        "itemId": "m036",
+        "name": {
+          "en": "Virgin Mojito",
+          "ta": "விர்ஜின் மோஹிட்டோ"
+        },
+        "price": 90,
+        "qty": 4,
+        "note": "",
+        "isVeg": true
+      }
+    ],
+    "status": "confirmed",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "{{now-18}}",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "{{now-15}}",
+        "by": "Priya Lakshmi"
+      }
+    ],
+    "waiterId": "w02",
+    "subtotal": 1410,
+    "discount": 146.0,
+    "tax": 63.2,
+    "total": 1327.2,
+    "createdAt": "{{now-18}}",
+    "payment": null
+  },
+  {
+    "id": "O-1008",
+    "type": "parcel",
+    "tableNo": null,
+    "sessionId": null,
+    "parcelToken": "P-013",
+    "customer": {
+      "name": "Vignesh",
+      "phone": "9500122334",
+      "guests": 0
+    },
+    "items": [
+      {
+        "itemId": "m017",
+        "name": {
+          "en": "Chicken Lollipop (6 pc)",
+          "ta": "சிக்கன் லாலிபாப் (6)"
+        },
+        "price": 199,
+        "qty": 1,
+        "note": "",
+        "isVeg": false
+      },
+      {
+        "itemId": "m015",
+        "name": {
+          "en": "Crispy Fried Chicken (2 pc)",
+          "ta": "கிரிஸ்பி பிரைடு சிக்கன் (2 துண்டு)"
+        },
+        "price": 169,
+        "qty": 2,
+        "note": "",
+        "isVeg": false
+      }
+    ],
+    "status": "confirmed",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "{{now-12}}",
+        "by": "customer"
+      },
+      {
+        "status": "confirmed",
+        "at": "{{now-9}}",
+        "by": "Ravi Kumar"
+      }
+    ],
+    "waiterId": null,
+    "subtotal": 537,
+    "discount": 0,
+    "tax": 26.85,
+    "total": 563.85,
+    "createdAt": "{{now-12}}",
+    "payment": null
+  },
+  {
+    "id": "O-1009",
+    "type": "dine-in",
+    "tableNo": 9,
+    "sessionId": "ts_seed9",
+    "parcelToken": null,
+    "customer": {
+      "name": "Gokul",
+      "guests": 3,
+      "phone": ""
+    },
+    "items": [
+      {
+        "itemId": "m013",
+        "name": {
+          "en": "Kadai Chicken",
+          "ta": "கடாய் சிக்கன்"
+        },
+        "price": 235,
+        "qty": 1,
+        "note": "",
+        "isVeg": false
+      },
+      {
+        "itemId": "m020",
+        "name": {
+          "en": "Classic Chicken Burger",
+          "ta": "கிளாசிக் சிக்கன் பர்கர்"
+        },
+        "price": 129,
+        "qty": 2,
+        "note": "",
+        "isVeg": false
+      }
+    ],
+    "status": "placed",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "{{now-3}}",
+        "by": "customer"
+      }
+    ],
+    "waiterId": "w04",
+    "subtotal": 493,
+    "discount": 60,
+    "tax": 21.65,
+    "total": 454.65,
+    "createdAt": "{{now-3}}",
+    "payment": null
+  },
+  {
+    "id": "O-1010",
+    "type": "dine-in",
+    "tableNo": 3,
+    "sessionId": "ts_seed3",
+    "parcelToken": null,
+    "customer": {
+      "name": "Sangeetha",
+      "guests": 2,
+      "phone": ""
+    },
+    "items": [
+      {
+        "itemId": "m027",
+        "name": {
+          "en": "BBQ Chicken Pizza (8\")",
+          "ta": "பிபிக்யூ சிக்கன் பீட்சா (8\")"
+        },
+        "price": 249,
+        "qty": 1,
+        "note": "",
+        "isVeg": false
+      },
+      {
+        "itemId": "m029",
+        "name": {
+          "en": "Margherita Pizza (8\")",
+          "ta": "மார்கரீட்டா பீட்சா (8\")"
+        },
+        "price": 199,
+        "qty": 1,
+        "note": "",
+        "isVeg": true
+      },
+      {
+        "itemId": "m039",
+        "name": {
+          "en": "Oreo Milkshake",
+          "ta": "ஓரியோ மில்க்ஷேக்"
+        },
+        "price": 130,
+        "qty": 2,
+        "note": "",
+        "isVeg": true
+      }
+    ],
+    "status": "cancelled",
+    "statusHistory": [
+      {
+        "status": "placed",
+        "at": "{{now-260}}",
+        "by": "customer"
+      },
+      {
+        "status": "cancelled",
+        "at": "{{now-258}}",
+        "by": "customer"
+      }
+    ],
+    "waiterId": "w01",
+    "subtotal": 708,
+    "discount": 40,
+    "tax": 33.4,
+    "total": 701.4,
+    "createdAt": "{{now-260}}",
+    "payment": null,
+    "cancelReason": "Cancelled by customer"
+  }
+]

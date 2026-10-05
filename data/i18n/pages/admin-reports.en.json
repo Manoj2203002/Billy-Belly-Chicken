@@ -1,0 +1,30 @@
+{
+ "admin-reports": {
+  "title": "Reports",
+  "h1": "Reports",
+  "lead": "Sales and popular dishes for any period. Export to CSV.",
+  "range": "Period",
+  "d7": "7 days",
+  "d30": "30 days",
+  "all": "All time",
+  "custom": "Custom",
+  "orders": "Orders",
+  "sales": "Sales",
+  "avg": "Avg. order",
+  "cancel": "Cancelled",
+  "daily": "Daily sales",
+  "cat": "Sales by category",
+  "top": "Best sellers",
+  "qty": "Qty",
+  "rev": "Revenue",
+  "dish": "Dish",
+  "export": "Export CSV",
+  "exportItems": "Export dishes CSV",
+  "none": "No orders in this period.",
+  "type": "Type",
+  "dine": "Dine-in",
+  "parcel": "Parcel",
+  "pay": "Payment",
+  "tax": "GST"
+ }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "billy-belly-chicken-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Billy Belly Chicken: restaurant portfolio site + QR ordering prototype (static HTML/CSS/JS)",
+  "scripts": {
+    "start": "npx --yes serve . -l 3000",
+    "dev": "python3 -m http.server 3000",
+    "bundle": "node tools/build-bundles.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}

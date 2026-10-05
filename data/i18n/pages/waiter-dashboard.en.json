@@ -1,0 +1,42 @@
+{
+ "waiter-dashboard": {
+  "title": "My tables | Waiter",
+  "pageTitle": "My tables",
+  "mine": "My tables",
+  "all": "All tables",
+  "summary": {
+   "new": "New orders",
+   "bill": "Bill requests",
+   "call": "Waiter calls",
+   "busy": "Occupied"
+  },
+  "free": "Free",
+  "state": {
+   "free": "Free",
+   "occupied": "Occupied",
+   "new": "New order",
+   "bill": "Wants bill",
+   "called": "Calling"
+  },
+  "seats": "{n} seats",
+  "since": "{n} min",
+  "orders": "{n} to confirm",
+  "none": "No tables assigned yet. Ask the admin.",
+  "drawerEmpty": "No orders at this table yet.",
+  "clearCall": "Clear call",
+  "callAt": "Called waiter {n} min ago",
+  "billAt": "Asked for the bill {n} min ago",
+  "showBill": "Show bill",
+  "soldOut": "Sold-out switch",
+  "soldOutHelp": "Switch off a dish when the kitchen runs out. Customers see it as sold out at once.",
+  "soldOutOff": "Not allowed. Ask the admin.",
+  "running": "Running bill",
+  "sound": "Alert sound",
+  "alertCall": "Table {n} is calling",
+  "alertBill": "Table {n} wants the bill",
+  "alertNew": "New order at table {n}",
+  "alertParcel": "New parcel {t}",
+  "assigned": "Assigned to {name}",
+  "newParcels": "parcels waiting"
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "admin-dashboard": {
+  "title": "Dashboard",
+  "h1": "Dashboard",
+  "lead": "Today at a glance. Updates live.",
+  "orders": "Orders today",
+  "revenue": "Sales today",
+  "parcels": "Parcels today",
+  "pending": "Reviews to approve",
+  "open": "Open tables",
+  "rating": "Average rating",
+  "week": "Sales, last 7 days",
+  "mix": "Dine-in vs parcel",
+  "top": "Top dishes (7 days)",
+  "recent": "Recent orders",
+  "dine": "Dine-in",
+  "parcel": "Parcel",
+  "id": "Order",
+  "where": "Where",
+  "total": "Total",
+  "time": "Time",
+  "none": "No orders yet.",
+  "off": "Ordering is switched off",
+  "on": "Ordering is on",
+  "manage": "Change"
+ }
+}

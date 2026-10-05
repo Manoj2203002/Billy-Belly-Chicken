@@ -1,0 +1,914 @@
+[
+  {
+    "id": "m001",
+    "categoryId": "c01",
+    "name": {
+      "en": "Grilled Chicken (Half)",
+      "ta": "கிரில் சிக்கன் (அரை)"
+    },
+    "description": {
+      "en": "Charcoal-kissed half chicken, marinated overnight in house spice rub.",
+      "ta": "ஒரே இரவு மசாலாவில் ஊறவைத்து, கரியில் வாட்டிய அரை சிக்கன்."
+    },
+    "price": 280,
+    "image": "assets/images/menu/m001.svg",
+    "isVeg": false,
+    "spiceLevel": 2,
+    "tags": [
+      "bestseller"
+    ],
+    "allergens": [],
+    "available": true,
+    "featured": true,
+    "order": 1
+  },
+  {
+    "id": "m002",
+    "categoryId": "c01",
+    "name": {
+      "en": "Tandoori Chicken (Half)",
+      "ta": "தந்தூரி சிக்கன் (அரை)"
+    },
+    "description": {
+      "en": "Classic clay-oven tandoori with smoky char and mint chutney.",
+      "ta": "புதினா சட்னியுடன் களிமண் அடுப்பில் சுட்ட கிளாசிக் தந்தூரி."
+    },
+    "price": 260,
+    "image": "assets/images/menu/m002.svg",
+    "isVeg": false,
+    "spiceLevel": 3,
+    "tags": [
+      "chefs-pick"
+    ],
+    "allergens": [],
+    "available": true,
+    "featured": true,
+    "order": 2
+  },
+  {
+    "id": "m003",
+    "categoryId": "c01",
+    "name": {
+      "en": "Chicken Tikka",
+      "ta": "சிக்கன் டிக்கா"
+    },
+    "description": {
+      "en": "Boneless chicken cubes, yoghurt-marinated and tandoor-roasted.",
+      "ta": "தயிர் மசாலாவில் ஊறிய எலும்பில்லா சிக்கன், தந்தூரில் வறுத்தது."
+    },
+    "price": 220,
+    "image": "assets/images/menu/m003.svg",
+    "isVeg": false,
+    "spiceLevel": 2,
+    "tags": [
+      "chefs-pick"
+    ],
+    "allergens": [],
+    "available": true,
+    "featured": true,
+    "order": 3
+  },
+  {
+    "id": "m004",
+    "categoryId": "c01",
+    "name": {
+      "en": "Malai Tikka",
+      "ta": "மலாய் டிக்கா"
+    },
+    "description": {
+      "en": "Creamy, mild and melt-in-the-mouth chicken tikka.",
+      "ta": "கிரீமி, மிதமான, வாயில் கரையும் சிக்கன் டிக்கா."
+    },
+    "price": 240,
+    "image": "assets/images/menu/m004.svg",
+    "isVeg": false,
+    "spiceLevel": 1,
+    "tags": [],
+    "allergens": [
+      "dairy"
+    ],
+    "available": true,
+    "featured": false,
+    "order": 4
+  },
+  {
+    "id": "m005",
+    "categoryId": "c01",
+    "name": {
+      "en": "BBQ Chicken Wings",
+      "ta": "பிபிக்யூ சிக்கன் விங்ஸ்"
+    },
+    "description": {
+      "en": "Sticky, smoky BBQ glazed wings finished on the grill.",
+      "ta": "கிரில்லில் முடிக்கப்பட்ட பிபிக்யூ சாஸ் பூசிய விங்ஸ்."
+    },
+    "price": 210,
+    "image": "assets/images/menu/m005.svg",
+    "isVeg": false,
+    "spiceLevel": 2,
+    "tags": [],
+    "allergens": [],
+    "available": true,
+    "featured": false,
+    "order": 5
+  },
+  {
+    "id": "m006",
+    "categoryId": "c02",
+    "name": {
+      "en": "Chicken Dum Biryani",
+      "ta": "சிக்கன் தம் பிரியாணி"
+    },
+    "description": {
+      "en": "Seeraga samba rice slow-cooked on dum with tender chicken.",
+      "ta": "சீரகசம்பா அரிசி மற்றும் மென்மையான சிக்கன் தம்மில் மெதுவாக வெந்தது."
+    },
+    "price": 190,
+    "image": "assets/images/menu/m006.svg",
+    "isVeg": false,
+    "spiceLevel": 2,
+    "tags": [
+      "bestseller"
+    ],
+    "allergens": [],
+    "available": true,
+    "featured": true,
+    "order": 6
+  },
+  {
+    "id": "m007",
+    "categoryId": "c02",
+    "name": {
+      "en": "Chicken 65 Biryani",
+      "ta": "சிக்கன் 65 பிரியாணி"
+    },
+    "description": {
+      "en": "Dum biryani topped with fiery crisp Chicken 65.",
+      "ta": "காரசாரமான மொறுமொறு சிக்கன் 65 உடன் தம் பிரியாணி."
+    },
+    "price": 220,
+    "image": "assets/images/menu/m007.svg",
+    "isVeg": false,
+    "spiceLevel": 3,
+    "tags": [],
+    "allergens": [],
+    "available": true,
+    "featured": false,
+    "order": 7
+  },
+  {
+    "id": "m008",
+    "categoryId": "c02",
+    "name": {
+      "en": "Tandoori Chicken Biryani",
+      "ta": "தந்தூரி சிக்கன் பிரியாணி"
+    },
+    "description": {
+      "en": "Smoky tandoori leg piece buried in fragrant biryani.",
+      "ta": "மணமான பிரியாணியில் புதைந்த புகை மணக்கும் தந்தூரி சிக்கன்."
+    },
+    "price": 260,
+    "image": "assets/images/menu/m008.svg",
+    "isVeg": false,
+    "spiceLevel": 2,
+    "tags": [
+      "chefs-pick"
+    ],
+    "allergens": [],
+    "available": true,
+    "featured": true,
+    "order": 8
+  },
+  {
+    "id": "m009",
+    "categoryId": "c02",
+    "name": {
+      "en": "Biryani Family Pack",
+      "ta": "பிரியாணி பேமிலி பேக்"
+    },
+    "description": {
+      "en": "Generous pack for 4 with raita, brinjal curry and boiled eggs.",
+      "ta": "ரைத்தா, கத்திரிக்காய் கிரேவி, முட்டையுடன் 4 பேருக்கான பேக்."
+    },
+    "price": 720,
+    "image": "assets/images/menu/m009.svg",
+    "isVeg": false,
+    "spiceLevel": 2,
+    "tags": [
+      "new"
+    ],
+    "allergens": [],
+    "available": false,
+    "featured": false,
+    "order": 9
+  },
+  {
+    "id": "m010",
+    "categoryId": "c03",
+    "name": {
+      "en": "Butter Chicken",
+      "ta": "பட்டர் சிக்கன்"
+    },
+    "description": {
+      "en": "Silky tomato-butter gravy with charred chicken.",
+      "ta": "வெண்ணெய் தக்காளி கிரேவியில் வாட்டிய சிக்கன்."
+    },
+    "price": 240,
+    "image": "assets/images/menu/m010.svg",
+    "isVeg": false,
+    "spiceLevel": 1,
+    "tags": [
+      "bestseller"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "available": true,
+    "featured": true,
+    "order": 10
+  },
+  {
+    "id": "m011",
+    "categoryId": "c03",
+    "name": {
+      "en": "Chicken Chettinad",
+      "ta": "சிக்கன் செட்டிநாடு"
+    },
+    "description": {
+      "en": "Stone-ground Chettinad masala, bold and peppery.",
+      "ta": "கல்லில் அரைத்த செட்டிநாடு மசாலா, மிளகு காரம்."
+    },
+    "price": 230,
+    "image": "assets/images/menu/m011.svg",
+    "isVeg": false,
+    "spiceLevel": 3,
+    "tags": [
+      "chefs-pick"
+    ],
+    "allergens": [],
+    "available": true,
+    "featured": true,
+    "order": 11
+  },
+  {
+    "id": "m012",
+    "categoryId": "c03",
+    "name": {
+      "en": "Pepper Chicken Masala",
+      "ta": "பெப்பர் சிக்கன் மசாலா"
+    },
+    "description": {
+      "en": "Crushed black pepper, curry leaf and slow-cooked onions.",
+      "ta": "நசுக்கிய மிளகு, கறிவேப்பிலை மற்றும் மெதுவாக வதக்கிய வெங்காயம்."
+    },
+    "price": 230,
+    "image": "assets/images/menu/m012.svg",
+    "isVeg": false,
+    "spiceLevel": 3,
+    "tags": [],
+    "allergens": [],
+    "available": true,
+    "featured": false,
+    "order": 12
+  },
+  {
+    "id": "m013",
+    "categoryId": "c03",
+    "name": {
+      "en": "Kadai Chicken",
+      "ta": "கடாய் சிக்கன்"
+    },
+    "description": {
+      "en": "Capsicum, tomato and freshly ground kadai spices.",
+      "ta": "குடைமிளகாய், தக்காளி, புதிதாக அரைத்த கடாய் மசாலா."
+    },
+    "price": 235,
+    "image": "assets/images/menu/m013.svg",
+    "isVeg": false,
+    "spiceLevel": 2,
+    "tags": [],
+    "allergens": [],
+    "available": true,
+    "featured": false,
+    "order": 13
+  },
+  {
+    "id": "m014",
+    "categoryId": "c03",
+    "name": {
+      "en": "Paneer Butter Masala",
+      "ta": "பன்னீர் பட்டர் மசாலா"
+    },
+    "description": {
+      "en": "Soft paneer in rich, creamy tomato gravy.",
+      "ta": "செழுமையான கிரீமி தக்காளி கிரேவியில் மென்மையான பன்னீர்."
+    },
+    "price": 210,
+    "image": "assets/images/menu/m014.svg",
+    "isVeg": true,
+    "spiceLevel": 1,
+    "tags": [],
+    "allergens": [
+      "dairy"
+    ],
+    "available": true,
+    "featured": false,
+    "order": 14
+  },
+  {
+    "id": "m015",
+    "categoryId": "c04",
+    "name": {
+      "en": "Crispy Fried Chicken (2 pc)",
+      "ta": "கிரிஸ்பி பிரைடு சிக்கன் (2 துண்டு)"
+    },
+    "description": {
+      "en": "Golden, shatter-crisp and juicy inside. The house signature.",
+      "ta": "தங்க நிறம், மொறுமொறு, உள்ளே ஜூசி. எங்கள் அடையாளம்."
+    },
+    "price": 169,
+    "image": "assets/images/menu/m015.svg",
+    "isVeg": false,
+    "spiceLevel": 1,
+    "tags": [
+      "bestseller"
+    ],
+    "allergens": [],
+    "available": true,
+    "featured": true,
+    "order": 15
+  },
+  {
+    "id": "m016",
+    "categoryId": "c04",
+    "name": {
+      "en": "Chicken Popcorn",
+      "ta": "சிக்கன் பாப்கார்ன்"
+    },
+    "description": {
+      "en": "Bite-size crunchy chicken with peri-peri dust.",
+      "ta": "பெரி-பெரி மசாலா தூவிய சிறிய மொறுமொறு சிக்கன் துண்டுகள்."
+    },
+    "price": 149,
+    "image": "assets/images/menu/m016.svg",
+    "isVeg": false,
+    "spiceLevel": 1,
+    "tags": [],
+    "allergens": [],
+    "available": true,
+    "featured": false,
+    "order": 16
+  },
+  {
+    "id": "m017",
+    "categoryId": "c04",
+    "name": {
+      "en": "Chicken Lollipop (6 pc)",
+      "ta": "சிக்கன் லாலிபாப் (6)"
+    },
+    "description": {
+      "en": "Frenched wings tossed in a tangy red chilli glaze.",
+      "ta": "புளிப்பு காரமான சிவப்பு மிளகாய் சாஸில் புரட்டிய லாலிபாப்."
+    },
+    "price": 199,
+    "image": "assets/images/menu/m017.svg",
+    "isVeg": false,
+    "spiceLevel": 2,
+    "tags": [],
+    "allergens": [],
+    "available": true,
+    "featured": false,
+    "order": 17
+  },
+  {
+    "id": "m018",
+    "categoryId": "c04",
+    "name": {
+      "en": "Chicken 65",
+      "ta": "சிக்கன் 65"
+    },
+    "description": {
+      "en": "The South Indian street classic, curry leaf and green chilli.",
+      "ta": "கறிவேப்பிலை, பச்சை மிளகாய் சேர்ந்த தென்னிந்திய தெரு உணவு."
+    },
+    "price": 180,
+    "image": "assets/images/menu/m018.svg",
+    "isVeg": false,
+    "spiceLevel": 3,
+    "tags": [
+      "bestseller"
+    ],
+    "allergens": [],
+    "available": true,
+    "featured": true,
+    "order": 18
+  },
+  {
+    "id": "m019",
+    "categoryId": "c04",
+    "name": {
+      "en": "Hot Wings (6 pc)",
+      "ta": "ஹாட் விங்ஸ் (6)"
+    },
+    "description": {
+      "en": "Extra-hot buffalo wings with cooling dip.",
+      "ta": "குளிர்ச்சியான டிப் உடன் அதிக காரமான பஃபலோ விங்ஸ்."
+    },
+    "price": 180,
+    "image": "assets/images/menu/m019.svg",
+    "isVeg": false,
+    "spiceLevel": 3,
+    "tags": [],
+    "allergens": [],
+    "available": true,
+    "featured": false,
+    "order": 19
+  },
+  {
+    "id": "m020",
+    "categoryId": "c05",
+    "name": {
+      "en": "Classic Chicken Burger",
+      "ta": "கிளாசிக் சிக்கன் பர்கர்"
+    },
+    "description": {
+      "en": "Crisp chicken fillet, lettuce and house mayo in a toasted bun.",
+      "ta": "மொறுமொறு சிக்கன் ஃபில்லெட், லெட்டூஸ், மயோனைஸ் டோஸ்ட் பன்னில்."
+    },
+    "price": 129,
+    "image": "assets/images/menu/m020.svg",
+    "isVeg": false,
+    "spiceLevel": 1,
+    "tags": [],
+    "allergens": [
+      "gluten"
+    ],
+    "available": true,
+    "featured": false,
+    "order": 20
+  },
+  {
+    "id": "m021",
+    "categoryId": "c05",
+    "name": {
+      "en": "Zinger Burger",
+      "ta": "ஜிங்கர் பர்கர்"
+    },
+    "description": {
+      "en": "Spicy crunchy zinger fillet with cheese slice.",
+      "ta": "சீஸ் துண்டுடன் காரமான மொறுமொறு ஜிங்கர் ஃபில்லெட்."
+    },
+    "price": 159,
+    "image": "assets/images/menu/m021.svg",
+    "isVeg": false,
+    "spiceLevel": 2,
+    "tags": [
+      "bestseller"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "available": true,
+    "featured": true,
+    "order": 21
+  },
+  {
+    "id": "m022",
+    "categoryId": "c05",
+    "name": {
+      "en": "Double Patty Belly Burger",
+      "ta": "டபுள் பேட்டி பெல்லி பர்கர்"
+    },
+    "description": {
+      "en": "Two patties, double cheese. Built for a big belly.",
+      "ta": "இரண்டு பேட்டி, இரட்டை சீஸ். பெரிய பசிக்கு."
+    },
+    "price": 219,
+    "image": "assets/images/menu/m022.svg",
+    "isVeg": false,
+    "spiceLevel": 1,
+    "tags": [
+      "chefs-pick"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "available": true,
+    "featured": true,
+    "order": 22
+  },
+  {
+    "id": "m023",
+    "categoryId": "c05",
+    "name": {
+      "en": "Veg Burger",
+      "ta": "வெஜ் பர்கர்"
+    },
+    "description": {
+      "en": "Crisp veggie patty, fresh salad and chipotle mayo.",
+      "ta": "மொறுமொறு காய்கறி பேட்டி, புதிய சாலட், சிபோட்டில் மயோ."
+    },
+    "price": 99,
+    "image": "assets/images/menu/m023.svg",
+    "isVeg": true,
+    "spiceLevel": 1,
+    "tags": [],
+    "allergens": [
+      "gluten"
+    ],
+    "available": true,
+    "featured": false,
+    "order": 23
+  },
+  {
+    "id": "m024",
+    "categoryId": "c06",
+    "name": {
+      "en": "Chicken Tikka Wrap",
+      "ta": "சிக்கன் டிக்கா ராப்"
+    },
+    "description": {
+      "en": "Tandoori tikka, onion and mint sauce in a soft roomali wrap.",
+      "ta": "தந்தூரி டிக்கா, வெங்காயம், புதினா சாஸ் மென்மையான ரொட்டியில்."
+    },
+    "price": 140,
+    "image": "assets/images/menu/m024.svg",
+    "isVeg": false,
+    "spiceLevel": 2,
+    "tags": [],
+    "allergens": [
+      "gluten"
+    ],
+    "available": true,
+    "featured": false,
+    "order": 24
+  },
+  {
+    "id": "m025",
+    "categoryId": "c06",
+    "name": {
+      "en": "Crispy Chicken Wrap",
+      "ta": "கிரிஸ்பி சிக்கன் ராப்"
+    },
+    "description": {
+      "en": "Crispy chicken strips, slaw and garlic mayo.",
+      "ta": "மொறுமொறு சிக்கன் துண்டுகள், ஸ்லா, பூண்டு மயோ."
+    },
+    "price": 130,
+    "image": "assets/images/menu/m025.svg",
+    "isVeg": false,
+    "spiceLevel": 1,
+    "tags": [],
+    "allergens": [
+      "gluten"
+    ],
+    "available": true,
+    "featured": false,
+    "order": 25
+  },
+  {
+    "id": "m026",
+    "categoryId": "c06",
+    "name": {
+      "en": "Paneer Wrap",
+      "ta": "பன்னீர் ராப்"
+    },
+    "description": {
+      "en": "Spiced paneer, crunchy veg and tangy sauce.",
+      "ta": "மசாலா பன்னீர், மொறுமொறு காய்கறி, புளிப்பு சாஸ்."
+    },
+    "price": 120,
+    "image": "assets/images/menu/m026.svg",
+    "isVeg": true,
+    "spiceLevel": 1,
+    "tags": [],
+    "allergens": [
+      "dairy",
+      "gluten"
+    ],
+    "available": true,
+    "featured": false,
+    "order": 26
+  },
+  {
+    "id": "m027",
+    "categoryId": "c07",
+    "name": {
+      "en": "BBQ Chicken Pizza (8\")",
+      "ta": "பிபிக்யூ சிக்கன் பீட்சா (8\")"
+    },
+    "description": {
+      "en": "Smoky BBQ chicken, onion and mozzarella on a hand-stretched base.",
+      "ta": "புகை மணக்கும் பிபிக்யூ சிக்கன், வெங்காயம், மொசரெல்லா."
+    },
+    "price": 249,
+    "image": "assets/images/menu/m027.svg",
+    "isVeg": false,
+    "spiceLevel": 1,
+    "tags": [],
+    "allergens": [
+      "dairy",
+      "gluten"
+    ],
+    "available": true,
+    "featured": false,
+    "order": 27
+  },
+  {
+    "id": "m028",
+    "categoryId": "c07",
+    "name": {
+      "en": "Chicken Tikka Pizza (8\")",
+      "ta": "சிக்கன் டிக்கா பீட்சா (8\")"
+    },
+    "description": {
+      "en": "Desi-style tikka chunks with capsicum and extra cheese.",
+      "ta": "குடைமிளகாய் மற்றும் கூடுதல் சீஸுடன் டிக்கா சிக்கன் பீட்சா."
+    },
+    "price": 269,
+    "image": "assets/images/menu/m028.svg",
+    "isVeg": false,
+    "spiceLevel": 2,
+    "tags": [
+      "new"
+    ],
+    "allergens": [
+      "dairy",
+      "gluten"
+    ],
+    "available": true,
+    "featured": true,
+    "order": 28
+  },
+  {
+    "id": "m029",
+    "categoryId": "c07",
+    "name": {
+      "en": "Margherita Pizza (8\")",
+      "ta": "மார்கரீட்டா பீட்சா (8\")"
+    },
+    "description": {
+      "en": "Tomato, basil and molten mozzarella.",
+      "ta": "தக்காளி, துளசி மற்றும் உருகிய மொசரெல்லா."
+    },
+    "price": 199,
+    "image": "assets/images/menu/m029.svg",
+    "isVeg": true,
+    "spiceLevel": 0,
+    "tags": [],
+    "allergens": [
+      "dairy",
+      "gluten"
+    ],
+    "available": true,
+    "featured": false,
+    "order": 29
+  },
+  {
+    "id": "m030",
+    "categoryId": "c08",
+    "name": {
+      "en": "Chicken Fried Rice",
+      "ta": "சிக்கன் பிரைடு ரைஸ்"
+    },
+    "description": {
+      "en": "Wok-tossed rice with egg, chicken and spring onion.",
+      "ta": "முட்டை, சிக்கன், வெங்காயத்தாள் சேர்த்து வோக்கில் வதக்கிய சாதம்."
+    },
+    "price": 150,
+    "image": "assets/images/menu/m030.svg",
+    "isVeg": false,
+    "spiceLevel": 1,
+    "tags": [],
+    "allergens": [],
+    "available": true,
+    "featured": false,
+    "order": 30
+  },
+  {
+    "id": "m031",
+    "categoryId": "c08",
+    "name": {
+      "en": "Schezwan Chicken Fried Rice",
+      "ta": "ஷெஸ்வான் சிக்கன் பிரைடு ரைஸ்"
+    },
+    "description": {
+      "en": "Fired up with Schezwan sauce and dried red chilli.",
+      "ta": "ஷெஸ்வான் சாஸ் மற்றும் காய்ந்த மிளகாயுடன் காரமான ரைஸ்."
+    },
+    "price": 170,
+    "image": "assets/images/menu/m031.svg",
+    "isVeg": false,
+    "spiceLevel": 3,
+    "tags": [],
+    "allergens": [],
+    "available": true,
+    "featured": false,
+    "order": 31
+  },
+  {
+    "id": "m032",
+    "categoryId": "c08",
+    "name": {
+      "en": "Veg Fried Rice",
+      "ta": "வெஜ் பிரைடு ரைஸ்"
+    },
+    "description": {
+      "en": "Crunchy vegetables, soy and pepper.",
+      "ta": "மொறுமொறு காய்கறி, சோயா மற்றும் மிளகு."
+    },
+    "price": 120,
+    "image": "assets/images/menu/m032.svg",
+    "isVeg": true,
+    "spiceLevel": 1,
+    "tags": [],
+    "allergens": [],
+    "available": true,
+    "featured": false,
+    "order": 32
+  },
+  {
+    "id": "m033",
+    "categoryId": "c09",
+    "name": {
+      "en": "Chicken Noodles",
+      "ta": "சிக்கன் நூடுல்ஸ்"
+    },
+    "description": {
+      "en": "Street-style hakka noodles with shredded chicken.",
+      "ta": "துண்டாக்கிய சிக்கனுடன் தெரு பாணி ஹக்கா நூடுல்ஸ்."
+    },
+    "price": 150,
+    "image": "assets/images/menu/m033.svg",
+    "isVeg": false,
+    "spiceLevel": 1,
+    "tags": [],
+    "allergens": [
+      "gluten"
+    ],
+    "available": true,
+    "featured": false,
+    "order": 33
+  },
+  {
+    "id": "m034",
+    "categoryId": "c09",
+    "name": {
+      "en": "Schezwan Chicken Noodles",
+      "ta": "ஷெஸ்வான் சிக்கன் நூடுல்ஸ்"
+    },
+    "description": {
+      "en": "Hot, garlicky Schezwan noodles with chicken.",
+      "ta": "காரசார பூண்டு ஷெஸ்வான் சாஸ் நூடுல்ஸ், சிக்கனுடன்."
+    },
+    "price": 170,
+    "image": "assets/images/menu/m034.svg",
+    "isVeg": false,
+    "spiceLevel": 3,
+    "tags": [],
+    "allergens": [
+      "gluten"
+    ],
+    "available": true,
+    "featured": false,
+    "order": 34
+  },
+  {
+    "id": "m035",
+    "categoryId": "c09",
+    "name": {
+      "en": "Veg Noodles",
+      "ta": "வெஜ் நூடுல்ஸ்"
+    },
+    "description": {
+      "en": "Wok-fired noodles with crisp seasonal vegetables.",
+      "ta": "மொறுமொறு காய்கறிகளுடன் வோக்கில் வதக்கிய நூடுல்ஸ்."
+    },
+    "price": 120,
+    "image": "assets/images/menu/m035.svg",
+    "isVeg": true,
+    "spiceLevel": 1,
+    "tags": [],
+    "allergens": [
+      "gluten"
+    ],
+    "available": true,
+    "featured": false,
+    "order": 35
+  },
+  {
+    "id": "m036",
+    "categoryId": "c10",
+    "name": {
+      "en": "Virgin Mojito",
+      "ta": "விர்ஜின் மோஹிட்டோ"
+    },
+    "description": {
+      "en": "Fresh mint, lime and sparkle. Cold and clean.",
+      "ta": "புதிய புதினா, எலுமிச்சை, சோடா. குளிர்ச்சியாக."
+    },
+    "price": 90,
+    "image": "assets/images/menu/m036.svg",
+    "isVeg": true,
+    "spiceLevel": 0,
+    "tags": [
+      "bestseller"
+    ],
+    "allergens": [],
+    "available": true,
+    "featured": true,
+    "order": 36
+  },
+  {
+    "id": "m037",
+    "categoryId": "c10",
+    "name": {
+      "en": "Blue Lagoon Mojito",
+      "ta": "புளூ லகூன் மோஹிட்டோ"
+    },
+    "description": {
+      "en": "Blue curacao syrup, lemon and soda over ice.",
+      "ta": "புளூ கியூராசாவ் சிரப், எலுமிச்சை, சோடா, ஐஸ்."
+    },
+    "price": 100,
+    "image": "assets/images/menu/m037.svg",
+    "isVeg": true,
+    "spiceLevel": 0,
+    "tags": [],
+    "allergens": [],
+    "available": true,
+    "featured": false,
+    "order": 37
+  },
+  {
+    "id": "m038",
+    "categoryId": "c10",
+    "name": {
+      "en": "Chocolate Milkshake",
+      "ta": "சாக்லேட் மில்க்ஷேக்"
+    },
+    "description": {
+      "en": "Thick, cold and chocolatey with a syrup swirl.",
+      "ta": "அடர்த்தியான, குளிர்ந்த சாக்லேட் மில்க்ஷேக்."
+    },
+    "price": 120,
+    "image": "assets/images/menu/m038.svg",
+    "isVeg": true,
+    "spiceLevel": 0,
+    "tags": [],
+    "allergens": [
+      "dairy"
+    ],
+    "available": true,
+    "featured": false,
+    "order": 38
+  },
+  {
+    "id": "m039",
+    "categoryId": "c10",
+    "name": {
+      "en": "Oreo Milkshake",
+      "ta": "ஓரியோ மில்க்ஷேக்"
+    },
+    "description": {
+      "en": "Crushed Oreo cookies blended into vanilla shake.",
+      "ta": "வெனிலா ஷேக்கில் கலந்த ஓரியோ பிஸ்கட் துண்டுகள்."
+    },
+    "price": 130,
+    "image": "assets/images/menu/m039.svg",
+    "isVeg": true,
+    "spiceLevel": 0,
+    "tags": [
+      "chefs-pick"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "available": true,
+    "featured": false,
+    "order": 39
+  },
+  {
+    "id": "m040",
+    "categoryId": "c10",
+    "name": {
+      "en": "Mango Milkshake",
+      "ta": "மாம்பழ மில்க்ஷேக்"
+    },
+    "description": {
+      "en": "Seasonal mango, milk and a little cardamom.",
+      "ta": "பருவகால மாம்பழம், பால் மற்றும் சிறிது ஏலக்காய்."
+    },
+    "price": 120,
+    "image": "assets/images/menu/m040.svg",
+    "isVeg": true,
+    "spiceLevel": 0,
+    "tags": [],
+    "allergens": [
+      "dairy"
+    ],
+    "available": false,
+    "featured": false,
+    "order": 40
+  }
+]

@@ -1,0 +1,16 @@
+{
+ "admin-login": {
+  "title": "Admin login",
+  "h": "Admin sign in",
+  "sub": "Manage the menu, offers, staff and tables.",
+  "user": "Username",
+  "pass": "Password",
+  "go": "Sign in",
+  "bad": "Wrong username or password.",
+  "off": "This account is switched off.",
+  "demo": "Demo: admin / Admin@123",
+  "req": "Enter username and password",
+  "show": "Show password",
+  "art": "Run the kitchen. Own the room."
+ }
+}

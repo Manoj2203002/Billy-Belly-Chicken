@@ -1,0 +1,82 @@
+[
+  {
+    "id": "t01",
+    "number": 1,
+    "seats": 2,
+    "area": "AC Hall",
+    "waiterId": "w01",
+    "active": true
+  },
+  {
+    "id": "t02",
+    "number": 2,
+    "seats": 4,
+    "area": "AC Hall",
+    "waiterId": "w01",
+    "active": true
+  },
+  {
+    "id": "t03",
+    "number": 3,
+    "seats": 4,
+    "area": "AC Hall",
+    "waiterId": "w01",
+    "active": true
+  },
+  {
+    "id": "t04",
+    "number": 4,
+    "seats": 4,
+    "area": "AC Hall",
+    "waiterId": "w02",
+    "active": true
+  },
+  {
+    "id": "t05",
+    "number": 5,
+    "seats": 6,
+    "area": "AC Hall",
+    "waiterId": "w02",
+    "active": true
+  },
+  {
+    "id": "t06",
+    "number": 6,
+    "seats": 6,
+    "area": "AC Hall",
+    "waiterId": "w02",
+    "active": true
+  },
+  {
+    "id": "t07",
+    "number": 7,
+    "seats": 2,
+    "area": "Family Zone",
+    "waiterId": "w03",
+    "active": true
+  },
+  {
+    "id": "t08",
+    "number": 8,
+    "seats": 4,
+    "area": "Family Zone",
+    "waiterId": "w03",
+    "active": true
+  },
+  {
+    "id": "t09",
+    "number": 9,
+    "seats": 8,
+    "area": "Family Zone",
+    "waiterId": "w04",
+    "active": true
+  },
+  {
+    "id": "t10",
+    "number": 10,
+    "seats": 4,
+    "area": "Family Zone",
+    "waiterId": "w04",
+    "active": true
+  }
+]

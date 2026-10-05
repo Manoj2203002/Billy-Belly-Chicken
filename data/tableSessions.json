@@ -1,0 +1,79 @@
+[
+  {
+    "id": "ts_seed1",
+    "tableNo": 1,
+    "token": "seed-1",
+    "openedAt": "{{now-60}}",
+    "closedAt": "{{now-30}}",
+    "guests": 3,
+    "callWaiter": null,
+    "billRequested": null,
+    "payment": null
+  },
+  {
+    "id": "ts_seed2",
+    "tableNo": 2,
+    "token": "seed-2",
+    "openedAt": "{{now-60}}",
+    "closedAt": null,
+    "guests": 3,
+    "callWaiter": null,
+    "billRequested": "{{now-2}}",
+    "payment": null
+  },
+  {
+    "id": "ts_seed3",
+    "tableNo": 3,
+    "token": "seed-3",
+    "openedAt": "{{now-60}}",
+    "closedAt": "{{now-30}}",
+    "guests": 3,
+    "callWaiter": null,
+    "billRequested": null,
+    "payment": null
+  },
+  {
+    "id": "ts_seed4",
+    "tableNo": 4,
+    "token": "seed-4",
+    "openedAt": "{{now-60}}",
+    "closedAt": "{{now-30}}",
+    "guests": 3,
+    "callWaiter": null,
+    "billRequested": null,
+    "payment": null
+  },
+  {
+    "id": "ts_seed5",
+    "tableNo": 5,
+    "token": "seed-5",
+    "openedAt": "{{now-60}}",
+    "closedAt": null,
+    "guests": 3,
+    "callWaiter": "{{now-4}}",
+    "billRequested": null,
+    "payment": null
+  },
+  {
+    "id": "ts_seed7",
+    "tableNo": 7,
+    "token": "seed-7",
+    "openedAt": "{{now-60}}",
+    "closedAt": "{{now-30}}",
+    "guests": 3,
+    "callWaiter": null,
+    "billRequested": null,
+    "payment": null
+  },
+  {
+    "id": "ts_seed9",
+    "tableNo": 9,
+    "token": "seed-9",
+    "openedAt": "{{now-60}}",
+    "closedAt": null,
+    "guests": 3,
+    "callWaiter": null,
+    "billRequested": null,
+    "payment": null
+  }
+]

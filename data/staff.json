@@ -1,0 +1,62 @@
+[
+  {
+    "id": "a01",
+    "role": "admin",
+    "name": "Owner (Admin)",
+    "employeeId": "BBC-A01",
+    "phone": "9952335513",
+    "photo": "assets/images/staff/a01.svg",
+    "username": "admin",
+    "password": "Admin@123",
+    "shift": "All day",
+    "active": true
+  },
+  {
+    "id": "w01",
+    "role": "waiter",
+    "name": "Ravi Kumar",
+    "employeeId": "BBC-W01",
+    "phone": "9876500011",
+    "photo": "assets/images/staff/w01.svg",
+    "username": "ravi",
+    "password": "Waiter@123",
+    "shift": "Morning 11:00-16:00",
+    "active": true
+  },
+  {
+    "id": "w02",
+    "role": "waiter",
+    "name": "Priya Lakshmi",
+    "employeeId": "BBC-W02",
+    "phone": "9876500022",
+    "photo": "assets/images/staff/w02.svg",
+    "username": "priya",
+    "password": "Waiter@123",
+    "shift": "Morning 11:00-16:00",
+    "active": true
+  },
+  {
+    "id": "w03",
+    "role": "waiter",
+    "name": "Karthik S",
+    "employeeId": "BBC-W03",
+    "phone": "9876500033",
+    "photo": "assets/images/staff/w03.svg",
+    "username": "karthik",
+    "password": "Waiter@123",
+    "shift": "Evening 16:00-22:00",
+    "active": true
+  },
+  {
+    "id": "w04",
+    "role": "waiter",
+    "name": "Divya Bharathi",
+    "employeeId": "BBC-W04",
+    "phone": "9876500044",
+    "photo": "assets/images/staff/w04.svg",
+    "username": "divya",
+    "password": "Waiter@123",
+    "shift": "Evening 16:00-22:00",
+    "active": true
+  }
+]

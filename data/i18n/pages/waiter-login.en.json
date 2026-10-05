@@ -1,0 +1,14 @@
+{
+ "waiter-login.title": "Waiter login",
+ "waiter-login.h": "Welcome back",
+ "waiter-login.sub": "Sign in to manage your tables.",
+ "waiter-login.user": "Username",
+ "waiter-login.pass": "Password",
+ "waiter-login.go": "Sign in",
+ "waiter-login.bad": "Wrong username or password.",
+ "waiter-login.off": "This account is switched off. Ask the admin.",
+ "waiter-login.demo": "Demo: ravi / Waiter@123",
+ "waiter-login.req": "Enter username and password",
+ "waiter-login.show": "Show password",
+ "waiter-login.art": "Serve fast. Smile more."
+}

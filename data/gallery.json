@@ -1,0 +1,122 @@
+[
+  {
+    "id": "g001",
+    "image": "assets/images/gallery/g001.svg",
+    "caption": {
+      "en": "Crispy fried chicken, fresh out of the fryer",
+      "ta": "பொரியலில் இருந்து நேராக கிரிஸ்பி சிக்கன்"
+    },
+    "category": "food",
+    "order": 1
+  },
+  {
+    "id": "g002",
+    "image": "assets/images/gallery/g002.svg",
+    "caption": {
+      "en": "Tandoori platter off the clay oven",
+      "ta": "களிமண் அடுப்பிலிருந்து தந்தூரி பிளாட்டர்"
+    },
+    "category": "food",
+    "order": 2
+  },
+  {
+    "id": "g003",
+    "image": "assets/images/gallery/g003.svg",
+    "caption": {
+      "en": "Dum biryani, seal broken",
+      "ta": "மூடி திறந்த தம் பிரியாணி"
+    },
+    "category": "food",
+    "order": 3
+  },
+  {
+    "id": "g004",
+    "image": "assets/images/gallery/g004.svg",
+    "caption": {
+      "en": "Zinger burger stack",
+      "ta": "ஜிங்கர் பர்கர்"
+    },
+    "category": "food",
+    "order": 4
+  },
+  {
+    "id": "g005",
+    "image": "assets/images/gallery/g005.svg",
+    "caption": {
+      "en": "Mojito bar",
+      "ta": "மோஹிட்டோ பார்"
+    },
+    "category": "food",
+    "order": 5
+  },
+  {
+    "id": "g006",
+    "image": "assets/images/gallery/g006.svg",
+    "caption": {
+      "en": "Schezwan noodles",
+      "ta": "ஷெஸ்வான் நூடுல்ஸ்"
+    },
+    "category": "food",
+    "order": 6
+  },
+  {
+    "id": "g007",
+    "image": "assets/images/gallery/g007.svg",
+    "caption": {
+      "en": "The air-conditioned dining hall",
+      "ta": "குளிரூட்டப்பட்ட உணவு அறை"
+    },
+    "category": "ambience",
+    "order": 7
+  },
+  {
+    "id": "g008",
+    "image": "assets/images/gallery/g008.svg",
+    "caption": {
+      "en": "Family corner",
+      "ta": "குடும்ப மூலை"
+    },
+    "category": "ambience",
+    "order": 8
+  },
+  {
+    "id": "g009",
+    "image": "assets/images/gallery/g009.svg",
+    "caption": {
+      "en": "Tandoor in full flame",
+      "ta": "தீயில் தந்தூர்"
+    },
+    "category": "kitchen",
+    "order": 9
+  },
+  {
+    "id": "g010",
+    "image": "assets/images/gallery/g010.svg",
+    "caption": {
+      "en": "Fresh prep, every morning",
+      "ta": "தினமும் காலை புதிய தயாரிப்பு"
+    },
+    "category": "kitchen",
+    "order": 10
+  },
+  {
+    "id": "g011",
+    "image": "assets/images/gallery/g011.svg",
+    "caption": {
+      "en": "Head caps on, always",
+      "ta": "எப்போதும் தலைக்கவசம்"
+    },
+    "category": "kitchen",
+    "order": 11
+  },
+  {
+    "id": "g012",
+    "image": "assets/images/gallery/g012.svg",
+    "caption": {
+      "en": "Weekend family evenings",
+      "ta": "வார இறுதி குடும்ப மாலைகள்"
+    },
+    "category": "events",
+    "order": 12
+  }
+]

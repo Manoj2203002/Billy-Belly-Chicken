@@ -1,0 +1,31 @@
+{
+ "admin-tables": {
+  "title": "Tables & QR",
+  "h1": "Tables and QR codes",
+  "lead": "Add tables, assign waiters, print QR codes for the tables, waiting area and reviews.",
+  "no": "Table no.",
+  "seats": "Seats",
+  "area": "Area",
+  "waiter": "Waiter",
+  "none": "Unassigned",
+  "entity": "table",
+  "dup": "This table number already exists.",
+  "qr": "QR codes",
+  "qrLead": "Customers scan these. Print them and place on the tables.",
+  "base": "Website address used in QR codes",
+  "baseHint": "Leave empty to use this site's own address. Set your live domain before printing.",
+  "saveBase": "Save address",
+  "baseSaved": "Address saved. QR codes updated.",
+  "print": "Print all QR codes",
+  "png": "Download PNG",
+  "copy": "Copy link",
+  "copied": "Link copied",
+  "parcelQr": "Parcel (waiting area)",
+  "reviewQr": "Leave a review",
+  "scan": "Scan to order",
+  "scanParcel": "Scan to order a parcel",
+  "scanReview": "Scan to review us",
+  "inUse": "This table has an open bill. Close it first.",
+  "invalidUrl": "Enter a full address like https://example.com"
+ }
+}

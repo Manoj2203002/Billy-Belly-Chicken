@@ -1,0 +1,26 @@
+{
+ "admin-staff": {
+  "title": "Staff",
+  "h1": "Staff",
+  "lead": "Waiters and the admin login. Assign tables to each waiter.",
+  "emp": "Employee ID",
+  "phone": "Phone",
+  "user": "Username",
+  "pass": "Password",
+  "shift": "Shift",
+  "role": "Role",
+  "waiter": "Waiter",
+  "admin": "Admin",
+  "tables": "Tables",
+  "assign": "Assign tables",
+  "assignTitle": "Tables for {name}",
+  "assignHint": "Tick the tables this waiter looks after. A table has one waiter.",
+  "none": "None",
+  "entity": "staff member",
+  "lastAdmin": "You cannot delete the only admin.",
+  "self": "You cannot delete the account you are signed in with.",
+  "dupUser": "This username is already taken.",
+  "passHint": "At least 6 characters. Prototype only: stored as plain text.",
+  "moved": "Tables updated"
+ }
+}

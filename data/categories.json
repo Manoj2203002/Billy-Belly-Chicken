@@ -1,0 +1,102 @@
+[
+  {
+    "id": "c01",
+    "name": {
+      "en": "Tandoori, Grill & BBQ",
+      "ta": "தந்தூரி, கிரில் & பிபிக்யூ"
+    },
+    "icon": "flame",
+    "order": 1,
+    "active": true
+  },
+  {
+    "id": "c02",
+    "name": {
+      "en": "Chicken Biryani",
+      "ta": "சிக்கன் பிரியாணி"
+    },
+    "icon": "bowl",
+    "order": 2,
+    "active": true
+  },
+  {
+    "id": "c03",
+    "name": {
+      "en": "Indian Gravy",
+      "ta": "இந்திய கிரேவி"
+    },
+    "icon": "curry",
+    "order": 3,
+    "active": true
+  },
+  {
+    "id": "c04",
+    "name": {
+      "en": "Fried Chicken",
+      "ta": "பிரைடு சிக்கன்"
+    },
+    "icon": "fried",
+    "order": 4,
+    "active": true
+  },
+  {
+    "id": "c05",
+    "name": {
+      "en": "Burgers",
+      "ta": "பர்கர்"
+    },
+    "icon": "burger",
+    "order": 5,
+    "active": true
+  },
+  {
+    "id": "c06",
+    "name": {
+      "en": "Wraps",
+      "ta": "ராப்ஸ்"
+    },
+    "icon": "wrap",
+    "order": 6,
+    "active": true
+  },
+  {
+    "id": "c07",
+    "name": {
+      "en": "Pizza",
+      "ta": "பீட்சா"
+    },
+    "icon": "pizza",
+    "order": 7,
+    "active": true
+  },
+  {
+    "id": "c08",
+    "name": {
+      "en": "Fried Rice",
+      "ta": "பிரைடு ரைஸ்"
+    },
+    "icon": "rice",
+    "order": 8,
+    "active": true
+  },
+  {
+    "id": "c09",
+    "name": {
+      "en": "Noodles",
+      "ta": "நூடுல்ஸ்"
+    },
+    "icon": "noodles",
+    "order": 9,
+    "active": true
+  },
+  {
+    "id": "c10",
+    "name": {
+      "en": "Mojitos & Milkshakes",
+      "ta": "மோஹிட்டோ & மில்க்ஷேக்"
+    },
+    "icon": "drink",
+    "order": 10,
+    "active": true
+  }
+]

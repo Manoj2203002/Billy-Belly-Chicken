@@ -1,0 +1,5 @@
+/* waiter/parcels.html */
+.wo-bar{display:grid;gap:var(--sp-3);margin-bottom:var(--sp-4)}
+@media (min-width:760px){.wo-bar{grid-template-columns:1fr minmax(220px,320px);align-items:center}}
+.wo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:var(--sp-4);align-items:start}
+.ocard__id{letter-spacing:.04em}

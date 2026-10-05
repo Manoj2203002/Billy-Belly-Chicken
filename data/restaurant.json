@@ -1,0 +1,229 @@
+{
+  "name": {
+    "en": "Billy Belly Chicken",
+    "ta": "பில்லி பெல்லி சிக்கன்"
+  },
+  "tagline": {
+    "en": "Serving great food with consistency, hygiene, and hospitality.",
+    "ta": "நிலையான சுவை, தூய்மை மற்றும் விருந்தோம்பலுடன் சிறந்த உணவு."
+  },
+  "heroLine": {
+    "en": "Fire. Flavour. Chicken.",
+    "ta": "நெருப்பு. சுவை. சிக்கன்."
+  },
+  "about": {
+    "en": "Billy Belly Chicken is a fast-growing multi-cuisine restaurant focused on delivering high-quality food, excellent customer service, and a clean dining experience. We specialize in chicken-based dishes along with Indian, Chinese, Tandoori, Biryani, and fast-food offerings.",
+    "ta": "பில்லி பெல்லி சிக்கன் என்பது தரமான உணவு, சிறந்த வாடிக்கையாளர் சேவை மற்றும் சுத்தமான உணவக அனுபவத்தை வழங்குவதில் கவனம் செலுத்தும் வேகமாக வளர்ந்து வரும் பல்சுவை உணவகம். சிக்கன் உணவுகளுடன் இந்தியன், சைனீஸ், தந்தூரி, பிரியாணி மற்றும் துரித உணவுகளிலும் நாங்கள் சிறப்பு."
+  },
+  "mission": {
+    "en": "Delicious food, consistent quality, hygienic preparation and fast service at affordable prices.",
+    "ta": "சுவையான உணவு, நிலையான தரம், சுகாதாரமான தயாரிப்பு மற்றும் மலிவு விலையில் விரைவான சேவை."
+  },
+  "missionMotto": {
+    "en": "Quality • Cleanliness • Speed • Customer Satisfaction",
+    "ta": "தரம் • தூய்மை • வேகம் • வாடிக்கையாளர் திருப்தி"
+  },
+  "vision": {
+    "en": "To become one of the most trusted and preferred food destinations by delivering exceptional taste, quality, and service every day.",
+    "ta": "ஒவ்வொரு நாளும் சிறந்த சுவை, தரம் மற்றும் சேவையை வழங்கி, மிகவும் நம்பகமான, விரும்பப்படும் உணவு இடங்களில் ஒன்றாக உயர்வது."
+  },
+  "values": [
+    {
+      "icon": "award",
+      "title": {
+        "en": "Quality Food",
+        "ta": "தரமான உணவு"
+      }
+    },
+    {
+      "icon": "shield",
+      "title": {
+        "en": "Cleanliness & Hygiene",
+        "ta": "தூய்மை & சுகாதாரம்"
+      }
+    },
+    {
+      "icon": "zap",
+      "title": {
+        "en": "Fast Service",
+        "ta": "விரைவான சேவை"
+      }
+    },
+    {
+      "icon": "star",
+      "title": {
+        "en": "Customer Satisfaction",
+        "ta": "வாடிக்கையாளர் திருப்தி"
+      }
+    },
+    {
+      "icon": "users",
+      "title": {
+        "en": "Teamwork & Discipline",
+        "ta": "குழுப்பணி & ஒழுக்கம்"
+      }
+    }
+  ],
+  "standards": [
+    {
+      "en": "Head caps mandatory for food handlers",
+      "ta": "உணவு கையாளுபவர்களுக்கு தலைக்கவசம் கட்டாயம்"
+    },
+    {
+      "en": "Daily hygiene checks",
+      "ta": "தினசரி சுகாதாரச் சோதனைகள்"
+    },
+    {
+      "en": "SOP-driven operations",
+      "ta": "SOP அடிப்படையிலான செயல்பாடுகள்"
+    },
+    {
+      "en": "KOT-based order management",
+      "ta": "KOT அடிப்படையிலான ஆர்டர் மேலாண்மை"
+    },
+    {
+      "en": "Inventory control system",
+      "ta": "சரக்கு கட்டுப்பாட்டு அமைப்பு"
+    },
+    {
+      "en": "Customer-focused service standards",
+      "ta": "வாடிக்கையாளர் மையச் சேவை தரங்கள்"
+    }
+  ],
+  "cuisines": [
+    {
+      "en": "Tandoori, Grill, BBQ",
+      "ta": "தந்தூரி, கிரில், பிபிக்யூ"
+    },
+    {
+      "en": "Chicken Biryani",
+      "ta": "சிக்கன் பிரியாணி"
+    },
+    {
+      "en": "Indian Gravy Dishes",
+      "ta": "இந்திய கிரேவி உணவுகள்"
+    },
+    {
+      "en": "Fried Chicken",
+      "ta": "பிரைடு சிக்கன்"
+    },
+    {
+      "en": "Burgers",
+      "ta": "பர்கர்"
+    },
+    {
+      "en": "Wraps",
+      "ta": "ராப்ஸ்"
+    },
+    {
+      "en": "Pizza",
+      "ta": "பீட்சா"
+    },
+    {
+      "en": "Fried Rice",
+      "ta": "பிரைடு ரைஸ்"
+    },
+    {
+      "en": "Noodles",
+      "ta": "நூடுல்ஸ்"
+    },
+    {
+      "en": "Mojitos & Milkshakes",
+      "ta": "மோஹிட்டோ & மில்க்ஷேக்"
+    }
+  ],
+  "team": [
+    {
+      "en": "Main Chef (Indian Section)",
+      "ta": "தலைமை சமையல்காரர் (இந்தியன் பிரிவு)"
+    },
+    {
+      "en": "Tandoori & Biryani Chef",
+      "ta": "தந்தூரி & பிரியாணி சமையல்காரர்"
+    },
+    {
+      "en": "Fast Food Chef",
+      "ta": "துரித உணவு சமையல்காரர்"
+    },
+    {
+      "en": "Chinese Chef",
+      "ta": "சைனீஸ் சமையல்காரர்"
+    },
+    {
+      "en": "Kitchen Helpers",
+      "ta": "சமையலறை உதவியாளர்கள்"
+    },
+    {
+      "en": "Service Team",
+      "ta": "சேவைக் குழு"
+    },
+    {
+      "en": "Order Coordination Team",
+      "ta": "ஆர்டர் ஒருங்கிணைப்புக் குழு"
+    },
+    {
+      "en": "Cleaning Team",
+      "ta": "தூய்மைக் குழு"
+    },
+    {
+      "en": "Cashier & Supervisor",
+      "ta": "காசாளர் & மேற்பார்வையாளர்"
+    }
+  ],
+  "address": {
+    "en": "Mannaickenpatty Pirivu Road, near ICICI Bank, Vazhapadi, Tamil Nadu 636115",
+    "ta": "மண்ணைக்கன்பட்டி பிரிவு சாலை, ஐசிஐசிஐ வங்கி அருகில், வாழப்பாடி, தமிழ்நாடு 636115"
+  },
+  "phone": "99523 35513",
+  "email": "billybellychicken@gmail.com",
+  "instagram": "billybellychicken",
+  "instagramUrl": "https://www.instagram.com/billybellychicken",
+  "mapUrl": "https://maps.app.goo.gl/7VSavb9jo5MVyPwr8?g_st=im",
+  "mapEmbed": "",
+  "_mapEmbedNote": "PLACEHOLDER: paste the Google Maps 'Embed a map' iframe src URL here (Maps > Share > Embed a map).",
+  "hours": {
+    "en": "11:00 AM – 10:00 PM, every day",
+    "ta": "காலை 11:00 – இரவு 10:00, தினமும்"
+  },
+  "ambience": {
+    "en": "Fully air-conditioned · Dine-in & Parcel",
+    "ta": "முழுவதும் குளிரூட்டப்பட்டது · உள்ளே சாப்பிட & பார்சல்"
+  },
+  "stats": [
+    {
+      "key": "customers",
+      "value": 12000,
+      "suffix": "+",
+      "label": {
+        "en": "Happy customers",
+        "ta": "மகிழ்ச்சியான வாடிக்கையாளர்கள்"
+      },
+      "_placeholder": true
+    },
+    {
+      "key": "dishes",
+      "value": 48000,
+      "suffix": "+",
+      "label": {
+        "en": "Dishes served",
+        "ta": "பரிமாறிய உணவுகள்"
+      },
+      "_placeholder": true
+    },
+    {
+      "key": "menu",
+      "value": 40,
+      "suffix": "",
+      "label": {
+        "en": "Items on the menu",
+        "ta": "மெனுவில் உணவுகள்"
+      },
+      "_placeholder": false
+    }
+  ],
+  "_placeholders": [
+    "stats (customer/dish counts are illustrative until real numbers are supplied)",
+    "mapEmbed",
+    "all photography in assets/images (replace with real photos)"
+  ]
+}

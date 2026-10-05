@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" data-title-key="err.notFoundTitle">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Page not found | Billy Belly Chicken</title>
+  <meta name="description" content="This page does not exist.">
+  <meta name="theme-color" content="#0a0909">
+  
+  <meta property="og:title" content="Page not found | Billy Belly Chicken"><meta property="og:description" content="This page does not exist."><meta property="og:type" content="website"><meta property="og:image" content="/assets/images/misc/og.svg">
+  <link rel="icon" href="/assets/logo/favicon.ico"><link rel="apple-touch-icon" href="/assets/logo/icon-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/css/fonts.css">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/pages/404.css">
+  
+</head>
+<body class="dark" data-root="/" data-page="404">
+  <!-- 404 is served at arbitrary URL depths by Netlify/Vercel/etc., so every path here is root-absolute -->
+  <main id="main" class="nf">
+    <div class="nf__bg" aria-hidden="true">404</div>
+    <div class="nf__inner container">
+      <img src="/assets/logo/logo.png" alt="Billy Belly Chicken" class="nf__logo" width="180" height="185">
+      <h1 class="display display--xl" data-i18n="err.notFoundTitle"></h1>
+      <p class="lead" data-i18n="err.notFoundText"></p>
+      <div class="cluster"><a class="btn btn--primary btn--lg" href="/index.html"><span data-i18n="err.backHome"></span></a><a class="btn btn--ghost btn--lg" href="/menu.html"><span data-i18n="nav.menu"></span></a></div>
+    </div>
+  </main>
+  <script type="module" src="/js/pages/404.js"></script>
+</body>
+</html>

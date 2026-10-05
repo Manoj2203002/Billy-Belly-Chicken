@@ -1,0 +1,31 @@
+{
+ "admin-menu": {
+  "title": "Menu",
+  "h1": "Menu",
+  "lead": "Categories and dishes. Every text has English and Tamil.",
+  "cats": "Categories",
+  "items": "Dishes",
+  "icon": "Icon",
+  "veg": "Veg",
+  "spice": "Spice level",
+  "s0": "None",
+  "s1": "Mild",
+  "s2": "Medium",
+  "s3": "Hot",
+  "avail": "Available",
+  "feat": "Featured",
+  "tagBest": "Bestseller",
+  "tagChef": "Chef's special",
+  "tagNew": "New",
+  "allergens": "Allergens",
+  "inUse": "This category still has dishes. Move or delete them first.",
+  "soldOut": "Sold out",
+  "onMenu": "On menu",
+  "catName": "Category",
+  "vegOnly": "Veg",
+  "nonVeg": "Non-veg",
+  "priceMin": "Price must be 1 or more",
+  "entityCat": "category",
+  "entityItem": "dish"
+ }
+}

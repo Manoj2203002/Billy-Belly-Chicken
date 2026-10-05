@@ -1,0 +1,79 @@
+/* ==========================================================================
+   Design tokens - Billy Belly Chicken
+   Palette is EXACTLY: black, red, white (+ tints/shades of those three).
+   Functional status colours (ok/warn) exist only for portals and veg marks.
+   ========================================================================== */
+:root{
+  /* colour: light page, black poster areas (.dark) */
+  --bg:#ffffff;
+  --surface:#f6f4f2;
+  --surface-2:#ece9e6;
+  --surface-3:#dfdbd7;
+  --red:#d71920;
+  --red-dark:#a8120e;
+  --red-deep:#4a0a08;
+  --red-glow:rgba(215,25,32,.28);
+  --red-text:#c4161c;           /* red tuned for small text on white (AA) */
+  --text:#141111;
+  --text-muted:rgba(20,17,17,.74);
+  --text-faint:rgba(20,17,17,.56);
+  --border:rgba(20,17,17,.12);
+  --border-strong:rgba(20,17,17,.3);
+  --tint:rgba(20,17,17,.05);
+  --scrim:rgba(20,17,17,.55);
+  --on-red:#ffffff;
+  /* functional (portals / veg mark only) */
+  --ok:#12805c;
+  --warn:#9a5b00;
+  --veg:#1e8e4e;
+
+  /* type */
+  --font-display:"Outfit","Inter",system-ui,sans-serif;
+  --font-body:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --font-accent:"Outfit","Inter",system-ui,sans-serif;
+  --fs-xs:clamp(.72rem,.7rem + .1vw,.8rem);
+  --fs-sm:clamp(.84rem,.82rem + .12vw,.92rem);
+  --fs-base:clamp(.96rem,.93rem + .18vw,1.06rem);
+  --fs-md:clamp(1.1rem,1.04rem + .3vw,1.3rem);
+  --fs-lg:clamp(1.35rem,1.15rem + .9vw,1.9rem);
+  --fs-xl:clamp(1.8rem,1.3rem + 2.4vw,3.1rem);
+  --fs-2xl:clamp(2.1rem,1.4rem + 3.6vw,4.4rem);
+  --fs-hero:clamp(2.5rem,1.2rem + 6.4vw,6.4rem);
+
+  /* spacing scale */
+  --sp-1:.25rem;--sp-2:.5rem;--sp-3:.75rem;--sp-4:1rem;--sp-5:1.5rem;--sp-6:2rem;--sp-7:3rem;--sp-8:4.5rem;--sp-9:7rem;
+  --gutter:clamp(1rem,4vw,3rem);
+  --section-y:clamp(4rem,9vw,9rem);
+  --maxw:1440px;
+
+  /* radius + shadow scales */
+  --r-xs:6px;--r-sm:10px;--r-md:16px;--r-lg:26px;--r-xl:38px;--r-pill:999px;
+  --shadow-1:0 1px 2px rgba(20,17,17,.06),0 8px 24px rgba(20,17,17,.08);
+  --shadow-2:0 2px 4px rgba(20,17,17,.06),0 18px 48px rgba(20,17,17,.14);
+  --glow:0 6px 20px var(--red-glow);
+
+  /* motion */
+  --ease:cubic-bezier(.22,1,.36,1);
+  --ease-spring:cubic-bezier(.34,1.56,.64,1);
+  --dur-fast:.18s;--dur:.45s;--dur-slow:.9s;
+
+  /* layout */
+  --nav-h:72px;
+  --safe-b:env(safe-area-inset-bottom,0px);
+  --safe-t:env(safe-area-inset-top,0px);
+  --safe-l:env(safe-area-inset-left,0px);
+  --safe-r:env(safe-area-inset-right,0px);
+  --z-nav:50;--z-drawer:80;--z-modal:100;--z-toast:120;--z-pre:200;--z-cursor:300;
+}
+@media (min-width:1920px){:root{--maxw:1760px}html{font-size:112.5%}}
+@media (min-width:2400px){:root{--maxw:2100px}html{font-size:128%}}
+
+/* Black areas: header, footer, hero and poster bands. Same tokens, dark values. */
+.dark{
+  --bg:#0d0c0c;--surface:#171414;--surface-2:#201c1c;--surface-3:#2b2626;
+  --red:#e1201a;--red-glow:rgba(225,32,26,.45);--red-text:#ff5a52;
+  --text:#ffffff;--text-muted:rgba(255,255,255,.74);--text-faint:rgba(255,255,255,.52);
+  --border:rgba(255,255,255,.14);--border-strong:rgba(255,255,255,.3);--tint:rgba(255,255,255,.07);--scrim:rgba(0,0,0,.6);
+  --shadow-1:0 8px 24px rgba(0,0,0,.45);--shadow-2:0 18px 48px rgba(0,0,0,.6);--glow:0 0 0 1px rgba(225,32,26,.5),0 10px 40px var(--red-glow);
+  background:var(--bg);color:var(--text);color-scheme:dark;
+}

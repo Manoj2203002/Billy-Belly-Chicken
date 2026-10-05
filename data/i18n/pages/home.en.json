@@ -1,0 +1,97 @@
+{
+ "home": {
+  "meta": {
+   "title": "Billy Belly Chicken | Fire-grilled chicken in Vazhapadi"
+  },
+  "open": {
+   "yes": "Open now",
+   "no": "Closed now · opens {t}"
+  },
+  "hero": {
+   "kicker": "Vazhapadi · Air-conditioned",
+   "l1": "Fire.",
+   "l2": "Flavour.",
+   "l3": "Chicken.",
+   "cta1": "View menu",
+   "cta2": "Today's special"
+  },
+  "special": {
+   "eyebrow": "Today only",
+   "order": "Scan a table QR to order",
+   "parcel": "Order as parcel",
+   "includes": "On the plate",
+   "save": "You save {n}"
+  },
+  "offers": {
+   "eyebrow": "Special offers",
+   "title": "Deals worth the drive",
+   "lead": "Offers apply automatically on your bill. No coupons, no codes.",
+   "until": "Until {d}",
+   "off": "off",
+   "flat": "off each",
+   "view": "See eligible dishes"
+  },
+  "featured": {
+   "eyebrow": "Crowd favourites",
+   "title": "What the belly wants",
+   "all": "See the full menu"
+  },
+  "about": {
+   "eyebrow": "Our story",
+   "title": "Hot, clean, fast",
+   "more": "Read our story",
+   "customers": "Happy customers",
+   "dishes": "Dishes served",
+   "menu": "Dishes on the menu"
+  },
+  "values": {
+   "title": "What we cook by"
+  },
+  "how": {
+   "eyebrow": "Dining here",
+   "title": "Five easy steps",
+   "s1t": "Scan",
+   "s1d": "Scan the QR code on your table with your phone camera.",
+   "s2t": "Choose",
+   "s2d": "Add dishes and notes like less spicy. Place your order.",
+   "s3t": "Confirm",
+   "s3d": "Your waiter confirms the order with you and tells the chef.",
+   "s4t": "Enjoy",
+   "s4d": "Hot food arrives at your table. Order another round any time.",
+   "s5t": "Pay",
+   "s5d": "Pay at the counter by cash, UPI or card. No online payment."
+  },
+  "gallery": {
+   "title": "Look inside",
+   "all": "Open gallery"
+  },
+  "reviews": {
+   "eyebrow": "Kind words",
+   "title": "Guests say",
+   "write": "Write a review",
+   "avg": "{c} reviews",
+   "empty": "Be the first to review us.",
+   "reply": "Reply from Billy Belly"
+  },
+  "contact": {
+   "eyebrow": "Find us",
+   "title": "Come hungry",
+   "address": "Address",
+   "hours": "Timings",
+   "phone": "Phone",
+   "email": "Email",
+   "call": "Call now",
+   "maps": "Open in Google Maps",
+   "mapNote": "Map preview will appear here once the embed link is added."
+  },
+  "cta": {
+   "title": "Table or parcel, we're ready",
+   "parcel": "Order a parcel",
+   "menu": "Browse menu",
+   "note": "Dine-in: scan the QR on your table. Waiting? Scan the parcel QR in the waiting area."
+  },
+  "popup": {
+   "dont": "Don't show again today"
+  }
+ }
+}

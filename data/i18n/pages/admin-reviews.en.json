@@ -1,0 +1,27 @@
+{
+ "admin-reviews": {
+  "title": "Reviews",
+  "h1": "Reviews",
+  "lead": "Approve what shows on the website. Reply to guests.",
+  "pending": "Pending",
+  "approved": "Approved",
+  "rejected": "Rejected",
+  "guest": "Guest",
+  "rating": "Rating",
+  "comment": "Comment",
+  "reply": "Our reply",
+  "approve": "Approve",
+  "reject": "Reject",
+  "replyAction": "Reply",
+  "replyTitle": "Reply to {name}",
+  "replyLabel": "Reply (shown under the review)",
+  "entity": "review",
+  "table": "Table",
+  "when": "Date",
+  "saved": "Review updated",
+  "food": "Food",
+  "service": "Service",
+  "ambience": "Ambience",
+  "cleanliness": "Cleanliness"
+ }
+}

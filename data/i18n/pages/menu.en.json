@@ -1,0 +1,24 @@
+{
+ "menu": {
+  "meta": {
+   "title": "Menu | Billy Belly Chicken"
+  },
+  "eyebrow": "The full menu",
+  "title": "Eat loud",
+  "lead": "Fire-kissed tandoori, dum biryani, crispy fried chicken and everything your belly asks for. Forty dishes, all made fresh in an air-conditioned dining hall.",
+  "qrTitle": "Hungry at a table?",
+  "qrText": "Scan the QR code on your table to order. Your waiter confirms with you, then tells the chef. Pay at the counter.",
+  "search": "Search dishes",
+  "filters": "Filters",
+  "all": "All",
+  "spice": "Spice level",
+  "anySpice": "Any spice",
+  "sort": "Sort",
+  "sortDefault": "Menu order",
+  "sortAsc": "Price: low to high",
+  "sortDesc": "Price: high to low",
+  "categories": "Categories",
+  "save": "Save {n}",
+  "todaySpecial": "Today's special"
+ }
+}

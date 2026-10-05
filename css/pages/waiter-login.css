@@ -1,0 +1,12 @@
+/* waiter/login.html */
+.wl-art{display:grid;gap:var(--sp-5);justify-items:center;text-align:center;padding:var(--sp-6)}
+.wl-art img{width:min(280px,60%)}
+.wl-art p{font-size:clamp(2rem,4vw,3.4rem);max-width:12ch;line-height:1.1}
+.wl-pw{position:relative}.wl-pw .input{padding-right:3.2rem}
+.wl-pw .icon-btn{position:absolute;right:.25rem;top:50%;translate:0 -50%}
+.wl-back{display:none}
+.auth__card{animation:wl-in .6s var(--ease-out,ease) both}
+@keyframes wl-in{from{opacity:0;transform:translateY(14px)}}
+@media (prefers-reduced-motion:reduce){.auth__card{animation:none}}
+.field-error{color:var(--red-text);font-size:var(--fs-sm)}
+.auth__card h1{font-size:clamp(2rem,1.4rem + 2vw,3rem);line-height:1}

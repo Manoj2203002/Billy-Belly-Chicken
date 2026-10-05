@@ -1,0 +1,28 @@
+{
+ "review": {
+  "meta": {
+   "title": "Write a review | Billy Belly Chicken"
+  },
+  "eyebrow": "Your say",
+  "title": "How was it?",
+  "lead": "Two minutes of honesty helps us cook better and helps the next hungry person choose.",
+  "overall": "Overall rating",
+  "ratingErr": "Please choose a star rating",
+  "cats": "Rate the details (optional)",
+  "food": "Food",
+  "service": "Service",
+  "ambience": "Ambience",
+  "cleanliness": "Cleanliness",
+  "comment": "Your comments",
+  "commentPh": "What did you love? What could be better?",
+  "name": "Name (optional)",
+  "tableNo": "Table no. (optional)",
+  "submit": "Submit review",
+  "note": "Reviews appear on the website after our team approves them.",
+  "thanksTitle": "Thank you",
+  "thanksText": "Your review reached us. It will show on the site once approved.",
+  "back": "Back to home",
+  "avg": "{n} average from {c} reviews",
+  "star": "{n} stars"
+ }
+}

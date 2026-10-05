@@ -1,0 +1,7 @@
+/* admin/settings.html */
+.as-grid{display:grid;gap:var(--sp-4)}
+@media (min-width:1000px){.as-grid{grid-template-columns:1fr 1fr;align-items:start}}
+.card{padding:var(--sp-5);min-width:0}.card .h3{margin-bottom:var(--sp-4)}
+.as-save{position:sticky;bottom:0;z-index:5;padding-block:var(--sp-4);display:flex;justify-content:flex-end;background:linear-gradient(transparent,var(--bg) 40%)}
+.as-log,.as-danger{margin-top:var(--sp-5)}
+.as-danger{border-color:rgba(225,32,26,.5)}.as-danger p{margin-bottom:var(--sp-4);max-width:60ch}

@@ -1,0 +1,14 @@
+{
+ "admin-specials": {
+  "title": "Specials",
+  "h1": "Today's special",
+  "lead": "The special shown on the home page and in the pop-up.",
+  "price": "Special price",
+  "orig": "Original price",
+  "dishes": "Dishes included",
+  "veg": "Veg",
+  "day": "Special for date",
+  "entity": "special",
+  "dateHint": "Only the special for today is shown to customers."
+ }
+}

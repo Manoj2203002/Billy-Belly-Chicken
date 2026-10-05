@@ -1,0 +1,12 @@
+/* menu.html */
+.menu-hero{position:relative;padding-top:calc(var(--nav-h) + var(--sp-8));overflow:hidden;padding-bottom:0;background:radial-gradient(60% 90% at 90% 0%,rgba(215,25,32,.35),transparent 70%),var(--bg)}
+.menu-hero__grid{display:grid;gap:var(--sp-6);align-items:end}
+.menu-hero__title{margin-block:var(--sp-3) var(--sp-4);font-size:clamp(2.6rem,1rem + 6vw,6.5rem)}
+.menu-hero__qr{padding:var(--sp-5);display:grid;gap:var(--sp-3);justify-items:start;border-radius:var(--r-lg)}
+.menu-hero__qr svg{color:var(--red-text)}
+.menu-hero__qr h2{font-size:var(--fs-lg)}
+.menu-hero__ticker{margin-top:var(--sp-7);padding-block:.9rem;background:var(--red);color:#fff}
+.menu-hero__ticker .marquee__track{gap:2rem;padding-right:2rem;font-family:var(--font-display);font-weight:700;font-size:1.6rem;text-transform:uppercase;letter-spacing:.05em}
+.menu-hero__ticker .dot{width:10px;height:10px;background:#fff;border-radius:50%;flex:none}
+.menu-section{padding-bottom:var(--section-y);--mb-top:60px}
+@media (min-width:900px){.menu-hero__grid{grid-template-columns:1.6fr 1fr}}

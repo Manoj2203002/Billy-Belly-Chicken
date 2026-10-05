@@ -1,0 +1,130 @@
+[
+  {
+    "id": "r01",
+    "name": "Arun",
+    "rating": 5,
+    "comment": "Best fried chicken in Vazhapadi. Crisp outside, juicy inside, and the hall is properly cool.",
+    "categories": {
+      "food": 5,
+      "service": 5,
+      "ambience": 4,
+      "cleanliness": 5
+    },
+    "status": "approved",
+    "tableNo": 1,
+    "createdAt": "{{day-3}}",
+    "reply": ""
+  },
+  {
+    "id": "r02",
+    "name": "Meena",
+    "rating": 5,
+    "comment": "Butter chicken and zinger burger were spot on. Waiter confirmed our order politely.",
+    "categories": {
+      "food": 5,
+      "service": 5,
+      "ambience": 5,
+      "cleanliness": 5
+    },
+    "status": "approved",
+    "tableNo": 4,
+    "createdAt": "{{day-5}}",
+    "reply": ""
+  },
+  {
+    "id": "r03",
+    "name": "Suresh",
+    "rating": 4,
+    "comment": "Biryani parcel was packed well and ready on time. Would like a bit more raita.",
+    "categories": {
+      "food": 4,
+      "service": 4,
+      "ambience": 0,
+      "cleanliness": 5
+    },
+    "status": "approved",
+    "tableNo": null,
+    "createdAt": "{{day-8}}",
+    "reply": ""
+  },
+  {
+    "id": "r04",
+    "name": "Lavanya",
+    "rating": 5,
+    "comment": "Double patty burger is huge! Staff is quick and the place is spotless.",
+    "categories": {
+      "food": 5,
+      "service": 5,
+      "ambience": 4,
+      "cleanliness": 5
+    },
+    "status": "approved",
+    "tableNo": null,
+    "createdAt": "{{day-12}}",
+    "reply": ""
+  },
+  {
+    "id": "r05",
+    "name": "Karthi",
+    "rating": 4,
+    "comment": "Lovely tandoori platter. Slightly busy on Sunday evening but worth the wait.",
+    "categories": {
+      "food": 4,
+      "service": 4,
+      "ambience": 4,
+      "cleanliness": 4
+    },
+    "status": "approved",
+    "tableNo": 7,
+    "createdAt": "{{day-20}}",
+    "reply": ""
+  },
+  {
+    "id": "r06",
+    "name": "Priyanka",
+    "rating": 3,
+    "comment": "Food was good but the Mango milkshake was sold out.",
+    "categories": {
+      "food": 3,
+      "service": 4,
+      "ambience": 4,
+      "cleanliness": 4
+    },
+    "status": "pending",
+    "tableNo": 5,
+    "createdAt": "{{day-2}}",
+    "reply": ""
+  },
+  {
+    "id": "r07",
+    "name": "Anonymous",
+    "rating": 1,
+    "comment": "Spam link here, buy followers now",
+    "categories": {
+      "food": 1,
+      "service": 1,
+      "ambience": 1,
+      "cleanliness": 1
+    },
+    "status": "hidden",
+    "tableNo": null,
+    "createdAt": "{{day-40}}",
+    "reply": ""
+  },
+  {
+    "id": "r08",
+    "name": "Dinesh",
+    "rating": 5,
+    "comment": "Great family place. Kids loved the popcorn chicken.",
+    "categories": {
+      "food": 5,
+      "service": 5,
+      "ambience": 5,
+      "cleanliness": 5
+    },
+    "status": "pending",
+    "tableNo": 9,
+    "createdAt": "{{day-1}}",
+    "reply": ""
+  }
+]

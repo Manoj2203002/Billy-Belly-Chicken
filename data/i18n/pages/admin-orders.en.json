@@ -1,0 +1,28 @@
+{
+ "admin-orders": {
+  "title": "Orders",
+  "h1": "Orders",
+  "lead": "Every order. Correct items, change status or cancel with a reason.",
+  "id": "Order",
+  "where": "Table / token",
+  "customer": "Customer",
+  "items": "Items",
+  "total": "Total",
+  "time": "Time",
+  "type": "Type",
+  "dine": "Dine-in",
+  "parcel": "Parcel",
+  "setStatus": "Change status",
+  "statusTitle": "Change status of {id}",
+  "newStatus": "New status",
+  "reason": "Reason for cancelling",
+  "saved": "Status updated",
+  "entity": "order",
+  "editItems": "Edit items",
+  "cancel": "Cancel order",
+  "pay": "Paid by",
+  "none": "-",
+  "today": "Today",
+  "anyDay": "Any day"
+ }
+}

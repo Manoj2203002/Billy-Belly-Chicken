@@ -1,0 +1,16 @@
+{
+ "admin-gallery": {
+  "title": "Gallery",
+  "h1": "Gallery",
+  "lead": "Photos on the gallery page. Use the arrows to reorder.",
+  "cat": "Type",
+  "food": "Food",
+  "ambience": "Ambience",
+  "team": "Team",
+  "caption": "Caption",
+  "up": "Move up",
+  "down": "Move down",
+  "entity": "photo",
+  "hint": "Photos are shrunk before saving so the browser storage does not fill up."
+ }
+}

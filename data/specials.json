@@ -1,0 +1,24 @@
+[
+  {
+    "id": "sp01",
+    "date": "{{today}}",
+    "title": {
+      "en": "Smoky Tandoori Platter",
+      "ta": "புகை தந்தூரி பிளாட்டர்"
+    },
+    "description": {
+      "en": "Tandoori chicken, chicken tikka and BBQ wings on one hot plate with mint chutney and onion rings. Today only.",
+      "ta": "தந்தூரி சிக்கன், சிக்கன் டிக்கா, பிபிக்யூ விங்ஸ் ஒரே தட்டில், புதினா சட்னி மற்றும் வெங்காய வளையங்களுடன். இன்று மட்டும்."
+    },
+    "image": "assets/images/offers/special.svg",
+    "itemIds": [
+      "m002",
+      "m003",
+      "m005"
+    ],
+    "price": 449,
+    "originalPrice": 690,
+    "isVeg": false,
+    "active": true
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "currency": "₹",
+  "taxName": "GST",
+  "taxPercent": 5,
+  "acceptingOrders": true,
+  "enforceTimings": false,
+  "timings": {
+    "open": "11:00",
+    "close": "22:00"
+  },
+  "popupEnabled": true,
+  "orderCooldownSeconds": 20,
+  "allowWaiterSoldOut": true,
+  "baseUrl": "",
+  "languages": [
+    "en",
+    "ta"
+  ],
+  "defaultLanguage": "en",
+  "whatsapp": "919952335513",
+  "theme": {
+    "red": "#e1201a",
+    "background": "#0a0909",
+    "text": "#ffffff"
+  },
+  "_baseUrlNote": "Leave empty to use the current site origin. Set to your deployed domain (e.g. https://billybellychicken.in) before printing QR codes."
+}

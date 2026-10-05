@@ -1,0 +1,32 @@
+{
+ "parcel": {
+  "meta": {
+   "title": "Order a parcel | Billy Belly Chicken"
+  },
+  "eyebrow": "Waiting area",
+  "title": "Parcel, please",
+  "lead": "Pick your dishes, tell us your name and number, and collect with your token.",
+  "how": "No payment here. A waiter confirms your order with you, tells the chef, and you pay at the counter when you collect.",
+  "name": "Your name",
+  "phone": "Mobile number",
+  "phoneHint": "10-digit mobile number",
+  "nameErr": "Please enter your name",
+  "phoneErr": "Enter a valid 10-digit mobile number",
+  "place": "Place parcel order",
+  "token": "Your token",
+  "tokenHint": "Show this token at the counter",
+  "status": {
+   "placed": "Placed",
+   "confirmed": "Confirmed",
+   "ready": "Ready",
+   "handed": "Handed over"
+  },
+  "another": "Order another",
+  "cancel": "Cancel order",
+  "cancelled": "Parcel cancelled",
+  "readyMsg": "Your parcel is ready. Please collect it at the counter.",
+  "handedMsg": "Enjoy your meal. Thank you for choosing Billy Belly.",
+  "closedTitle": "Not accepting orders now",
+  "closedText": "The kitchen is not taking orders right now. Please speak to the staff."
+ }
+}

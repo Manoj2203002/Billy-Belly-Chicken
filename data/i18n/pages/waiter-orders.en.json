@@ -1,0 +1,17 @@
+{
+ "waiter-orders": {
+  "title": "Orders | Waiter",
+  "pageTitle": "Orders",
+  "f": {
+   "active": "Active",
+   "placed": "To confirm",
+   "served": "Served",
+   "done": "Completed",
+   "cancelled": "Cancelled",
+   "all": "All"
+  },
+  "search": "Search order or table...",
+  "empty": "No orders here.",
+  "dine": "Dine-in only"
+ }
+}

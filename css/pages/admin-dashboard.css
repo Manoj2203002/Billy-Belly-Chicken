@@ -1,0 +1,5 @@
+/* admin/dashboard.html */
+.stat-grid{margin-bottom:var(--sp-5)}
+.ad-grid{display:grid;gap:var(--sp-4)}
+@media (min-width:1000px){.ad-grid{grid-template-columns:2fr 1fr}.ad-wide{grid-column:1/-1}}
+.card{padding:var(--sp-5);min-width:0}.card .h3{margin-bottom:var(--sp-4)}

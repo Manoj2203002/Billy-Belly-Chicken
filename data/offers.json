@@ -1,0 +1,65 @@
+[
+  {
+    "id": "o01",
+    "title": {
+      "en": "Family Feast: 15% off",
+      "ta": "குடும்ப விருந்து: 15% தள்ளுபடி"
+    },
+    "description": {
+      "en": "15% off every Chicken Biryani. Bring the whole table.",
+      "ta": "அனைத்து சிக்கன் பிரியாணிக்கும் 15% தள்ளுபடி."
+    },
+    "discountType": "percent",
+    "value": 15,
+    "itemIds": [],
+    "categoryIds": [
+      "c02"
+    ],
+    "validFrom": "2026-09-01",
+    "validTo": "2027-03-31",
+    "active": true,
+    "image": "assets/images/offers/o01.svg"
+  },
+  {
+    "id": "o02",
+    "title": {
+      "en": "Burger Hour: ₹30 off",
+      "ta": "பர்கர் நேரம்: ₹30 தள்ளுபடி"
+    },
+    "description": {
+      "en": "Flat ₹30 off on every burger, every day.",
+      "ta": "ஒவ்வொரு பர்கருக்கும் ₹30 தள்ளுபடி."
+    },
+    "discountType": "flat",
+    "value": 30,
+    "itemIds": [],
+    "categoryIds": [
+      "c05"
+    ],
+    "validFrom": "2026-09-01",
+    "validTo": "2027-03-31",
+    "active": true,
+    "image": "assets/images/offers/o02.svg"
+  },
+  {
+    "id": "o03",
+    "title": {
+      "en": "Cool Down: ₹20 off drinks",
+      "ta": "குளிர் சலுகை: பானங்களுக்கு ₹20 தள்ளுபடி"
+    },
+    "description": {
+      "en": "Flat ₹20 off on any mojito or milkshake.",
+      "ta": "எந்த மோஹிட்டோ அல்லது மில்க்ஷேக்கிற்கும் ₹20 தள்ளுபடி."
+    },
+    "discountType": "flat",
+    "value": 20,
+    "itemIds": [],
+    "categoryIds": [
+      "c10"
+    ],
+    "validFrom": "2026-09-01",
+    "validTo": "2027-03-31",
+    "active": true,
+    "image": "assets/images/offers/o03.svg"
+  }
+]

@@ -1,0 +1,21 @@
+{
+ "admin-offers": {
+  "title": "Offers",
+  "h1": "Offers",
+  "lead": "Discounts applied automatically to dishes and categories.",
+  "type": "Discount type",
+  "percent": "Percent (%)",
+  "flat": "Flat amount per dish",
+  "value": "Value",
+  "valid": "Valid",
+  "dishes": "Applies to dishes",
+  "cats": "Applies to categories",
+  "scopeHint": "Leave both empty to apply to the whole menu. The best single offer is used for each dish.",
+  "entity": "offer",
+  "live": "Live",
+  "expired": "Expired",
+  "off": "Switched off",
+  "status": "Status",
+  "range": "Valid-to must be after valid-from"
+ }
+}
