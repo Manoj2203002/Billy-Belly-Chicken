@@ -65,8 +65,8 @@
   --safe-r:env(safe-area-inset-right,0px);
   --z-nav:50;--z-drawer:80;--z-modal:100;--z-toast:120;--z-pre:200;--z-cursor:300;
 }
-@media (min-width:1920px){:root{--maxw:1760px}html{font-size:112.5%}}
-@media (min-width:2400px){:root{--maxw:2100px}html{font-size:128%}}
+@media (min-width:1920px){:root{--maxw:1760px}}
+@media (min-width:2400px){:root{--maxw:2100px}}
 
 /* Black areas: header, footer, hero and poster bands. Same tokens, dark values. */
 .dark{
