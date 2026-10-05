@@ -712,8 +712,9 @@
     root.classList.add("public");
     root.prepend(el("a", { class: "skip-link", href: "#main", "data-i18n": "common.skip" }, "Skip to content"));
     initScrollProgress();
-    if (preloader && !session.get("bbc:preloaded")) {
+    if (preloader && !session.get("bbc:preloaded") && !store.get("bbc:preloaded")) {
       session.set("bbc:preloaded", 1);
+      store.set("bbc:preloaded", 1);
       const pre = el("div", { class: "preloader dark", "aria-hidden": "true", html: `<img class="preloader__logo" src="${url("assets/logo/logo.png")}" alt=""><div class="preloader__bar"></div>` });
       root.prepend(pre);
       const hide = () => {
@@ -721,8 +722,8 @@
         document.documentElement.classList.add("is-loaded");
         setTimeout(() => pre.remove(), 1200);
       };
-      if (document.readyState === "complete") setTimeout(hide, 1100);
-      else window.addEventListener("load", () => setTimeout(hide, 1100), { once: true });
+      if (document.readyState === "complete") hide();
+      else window.addEventListener("load", hide, { once: true });
       setTimeout(hide, 3500);
     } else document.documentElement.classList.add("is-loaded");
     if (nav) {

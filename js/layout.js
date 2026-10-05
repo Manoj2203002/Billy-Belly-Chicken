@@ -4,7 +4,7 @@
    Usage in a page module:  await mountPublicLayout({ active: 'menu' })
    ========================================================================== */
 import { db } from './dataService.js';
-import { url, session, $, $$, el, throttleRaf } from './utils.js';
+import { url, session, store, $, $$, el, throttleRaf } from './utils.js';
 import { icon, hydrateIcons } from './icons.js';
 import { mountLangToggle, applyI18n, onLangChange, tr, t } from './i18n.js';
 import { initCommonUI, initScrollProgress, pageReady } from './ui.js';
@@ -28,13 +28,13 @@ export function mountPublicLayout({ active = '', preloader = true, nav = true, f
   root.prepend(el('a', { class: 'skip-link', href: '#main', 'data-i18n': 'common.skip' }, 'Skip to content'));
   initScrollProgress();
 
-  // preloader: once per session, branded logo reveal
-  if (preloader && !session.get('bbc:preloaded')) {
-    session.set('bbc:preloaded', 1);
+  // preloader: once per session (fallback to persistent store for file:// origins), branded logo reveal
+  if (preloader && !session.get('bbc:preloaded') && !store.get('bbc:preloaded')) {
+    session.set('bbc:preloaded', 1); store.set('bbc:preloaded', 1);
     const pre = el('div', { class: 'preloader dark', 'aria-hidden': 'true', html: `<img class="preloader__logo" src="${url('assets/logo/logo.png')}" alt=""><div class="preloader__bar"></div>` });
     root.prepend(pre);
     const hide = () => { pre.classList.add('is-done'); document.documentElement.classList.add('is-loaded'); setTimeout(() => pre.remove(), 1200); };
-    if (document.readyState === 'complete') setTimeout(hide, 1100); else window.addEventListener('load', () => setTimeout(hide, 1100), { once: true });
+    if (document.readyState === 'complete') hide(); else window.addEventListener('load', hide, { once: true });
     setTimeout(hide, 3500);
   } else document.documentElement.classList.add('is-loaded');
 
