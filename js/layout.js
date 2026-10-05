@@ -34,8 +34,7 @@ export function mountPublicLayout({ active = '', preloader = true, nav = true, f
     const pre = el('div', { class: 'preloader dark', 'aria-hidden': 'true', html: `<img class="preloader__logo" src="${url('assets/logo/logo.png')}" alt=""><div class="preloader__bar"></div>` });
     root.prepend(pre);
     const hide = () => { pre.classList.add('is-done'); document.documentElement.classList.add('is-loaded'); setTimeout(() => pre.remove(), 1200); };
-    if (document.readyState === 'complete') hide(); else window.addEventListener('load', hide, { once: true });
-    setTimeout(hide, 3500);
+    setTimeout(hide, 500);
   } else document.documentElement.classList.add('is-loaded');
 
   if (nav) {

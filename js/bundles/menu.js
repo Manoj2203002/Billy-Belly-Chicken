@@ -722,9 +722,7 @@
         document.documentElement.classList.add("is-loaded");
         setTimeout(() => pre.remove(), 1200);
       };
-      if (document.readyState === "complete") hide();
-      else window.addEventListener("load", hide, { once: true });
-      setTimeout(hide, 3500);
+      setTimeout(hide, 500);
     } else document.documentElement.classList.add("is-loaded");
     if (nav) {
       const links = NAV.map((n, i) => `<a class="nav__link ${n.id === active ? "is-active" : ""}" href="${url(n.href)}" data-i18n="${n.key}"></a>`).join("");
