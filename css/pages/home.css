@@ -3,7 +3,7 @@
 .hero{position:relative;min-height:min(100dvh,860px);display:grid;align-items:center;padding-top:calc(var(--nav-h) + var(--sp-7));padding-bottom:var(--sp-8);overflow:hidden;isolation:isolate;background:radial-gradient(55% 75% at 82% 45%,rgba(215,25,32,.38),transparent 70%),var(--bg)}
 .hero__inner{position:relative;display:grid;gap:var(--sp-5);align-items:center}
 .hero__kicker{display:flex;flex-wrap:wrap;align-items:center;gap:var(--sp-3)}
-.hero__title{display:grid;font-size:clamp(2.8rem,1rem + 7.4vw,8rem);line-height:1.1;margin-block:var(--sp-2)}
+.hero__title{display:grid;font-size:clamp(2.8rem,1rem + 6vw,6.5rem);line-height:1.1;margin-block:var(--sp-2)}
 .hero__line--red{color:var(--red)}
 .hero__row{display:grid;gap:var(--sp-5);align-items:end}
 .hero__lead{max-width:44ch}
@@ -58,8 +58,9 @@
 .about__side{display:grid;gap:var(--sp-4);align-content:start;justify-items:start}
 .about__big{font-size:clamp(1.6rem,1rem + 3vw,3rem);line-height:1.15}
 .about__body{display:grid;gap:var(--sp-5)}
-.stats{display:grid;gap:var(--sp-4);grid-template-columns:repeat(auto-fit,minmax(150px,1fr));padding-top:var(--sp-5);border-top:1px solid var(--border)}
-.stat-c b{display:block;font-family:var(--font-display);font-weight:700;font-size:clamp(2.6rem,6vw,4.4rem);line-height:1;color:var(--red-text)}
+.stats{display:flex;flex-wrap:wrap;gap:var(--sp-5) var(--sp-6);padding-top:var(--sp-5);border-top:1px solid var(--border)}
+.stat-c{flex:1 1 120px;display:flex;flex-direction:column;min-width:max-content}
+.stat-c b{display:block;font-family:var(--font-display);font-weight:700;font-size:clamp(2rem,5vw,3.4rem);line-height:1;color:var(--red-text)}
 .stat-c span{color:var(--text-muted);font-size:var(--fs-sm)}
 @media (min-width:900px){.about{grid-template-columns:.8fr 1.2fr;gap:var(--sp-8)}.about__side{position:sticky;top:calc(var(--nav-h) + 2rem);align-self:start}}
 /* ---- values ---- */
@@ -114,7 +115,7 @@
 /* ---- final CTA ---- */
 .cta{padding-block:var(--section-y);text-align:center;background:radial-gradient(60% 90% at 50% 130%,rgba(215,25,32,.55),transparent 70%),var(--bg)}
 .cta__inner{display:grid;gap:var(--sp-5);justify-items:center}
-.cta h2{max-width:16ch;font-size:clamp(2.6rem,1rem + 7vw,6.5rem);line-height:.92}
+.cta h2{max-width:16ch;font-size:clamp(2.2rem,1rem + 5vw,4.5rem);line-height:.92}
 .cta__btns{display:flex;flex-wrap:wrap;gap:var(--sp-3);justify-content:center}
 .cta__ghost{border:1.5px solid var(--border-strong)}
 .cta p{color:var(--text-muted)}
