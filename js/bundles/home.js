@@ -100,7 +100,7 @@
   var imgSrc = (p) => !p ? url("assets/images/misc/placeholder.svg") : /^(data:|https?:|blob:)/.test(p) ? p : url(p);
 
   // js/dataService.js
-  var SEED_VERSION = "2026.10.1";
+  var SEED_VERSION = "2026.10.2";
   var PFX = "bbc:db:";
   var SEED_FILES = {
     restaurant: "data/restaurant.json",
@@ -871,7 +871,7 @@
       $("#hero-tagline").textContent = tr(r.tagline);
       const open = isOpenNow(settings);
       const b = $("#open-badge");
-      b.textContent = open ? t("home.open.yes") : t("home.open.no", { t: settings.timings.open });
+      b.textContent = open ? t("home.open.yes") : t("home.open.no", { t: settings.timings?.open || "" });
       b.classList.toggle("badge--red", open);
       b.classList.toggle("badge--live", open);
       const sp = todaysSpecial();

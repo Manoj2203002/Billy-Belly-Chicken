@@ -110,7 +110,7 @@
   var imgSrc = (p) => !p ? url("assets/images/misc/placeholder.svg") : /^(data:|https?:|blob:)/.test(p) ? p : url(p);
 
   // js/dataService.js
-  var SEED_VERSION = "2026.10.1";
+  var SEED_VERSION = "2026.10.2";
   var PFX = "bbc:db:";
   var SEED_FILES = {
     restaurant: "data/restaurant.json",

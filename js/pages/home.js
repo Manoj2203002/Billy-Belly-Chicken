@@ -16,7 +16,7 @@ const todaysSpecial = () => { const list = db.list('specials', (s) => s.active !
 function render() {
   /* hero + status */
   $('#hero-tagline').textContent = tr(r.tagline);
-  const open = isOpenNow(settings); const b = $('#open-badge'); b.textContent = open ? t('home.open.yes') : t('home.open.no', { t: settings.timings.open }); b.classList.toggle('badge--red', open); b.classList.toggle('badge--live', open);
+  const open = isOpenNow(settings); const b = $('#open-badge'); b.textContent = open ? t('home.open.yes') : t('home.open.no', { t: settings.timings?.open || '' }); b.classList.toggle('badge--red', open); b.classList.toggle('badge--live', open);
   /* special */
   const sp = todaysSpecial();
   $('#special').hidden = !sp;
