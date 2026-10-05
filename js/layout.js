@@ -18,6 +18,13 @@ const NAV = [
   { id: 'contact', key: 'nav.contact', href: 'index.html#contact' },
 ];
 
+let pre = null;
+if (!session.get('bbc:preloaded') && !store.get('bbc:preloaded')) {
+  session.set('bbc:preloaded', 1); store.set('bbc:preloaded', 1);
+  pre = el('div', { class: 'preloader dark', 'aria-hidden': 'true', html: `<img class="preloader__logo" src="${url('assets/logo/logo.png')}" alt=""><div class="preloader__bar"></div>` });
+  document.body.prepend(pre);
+}
+
 export function mountPublicLayout({ active = '', preloader = true, nav = true, footer = true, floating = true } = {}) {
   const r = db.get('restaurant') || {};
   const phoneDigits = String(r.phone || '').replace(/\D/g, '');
@@ -28,14 +35,12 @@ export function mountPublicLayout({ active = '', preloader = true, nav = true, f
   root.prepend(el('a', { class: 'skip-link', href: '#main', 'data-i18n': 'common.skip' }, 'Skip to content'));
   initScrollProgress();
 
-  // preloader: once per session (fallback to persistent store for file:// origins), branded logo reveal
-  if (preloader && !session.get('bbc:preloaded') && !store.get('bbc:preloaded')) {
-    session.set('bbc:preloaded', 1); store.set('bbc:preloaded', 1);
-    const pre = el('div', { class: 'preloader dark', 'aria-hidden': 'true', html: `<img class="preloader__logo" src="${url('assets/logo/logo.png')}" alt=""><div class="preloader__bar"></div>` });
-    root.prepend(pre);
+  if (pre) {
     const hide = () => { pre.classList.add('is-done'); document.documentElement.classList.add('is-loaded'); setTimeout(() => pre.remove(), 1200); };
-    setTimeout(hide, 500);
-  } else document.documentElement.classList.add('is-loaded');
+    if (preloader) setTimeout(hide, 200); else hide();
+  } else {
+    document.documentElement.classList.add('is-loaded');
+  }
 
   if (nav) {
     const links = NAV.map((n, i) => `<a class="nav__link ${n.id === active ? 'is-active' : ''}" href="${url(n.href)}" data-i18n="${n.key}"></a>`).join('');

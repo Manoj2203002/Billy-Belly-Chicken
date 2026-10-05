@@ -3,8 +3,8 @@
   var ROOT = typeof document !== "undefined" && document.body && document.body.dataset.root || "";
   var url = (p) => ROOT + String(p).replace(/^\//, "");
   async function loadJSON(path, opts) {
-    const pre = typeof window !== "undefined" && window.__BBC_FILES;
-    if (pre && pre[path] !== void 0) return structuredClone(pre[path]);
+    const pre2 = typeof window !== "undefined" && window.__BBC_FILES;
+    if (pre2 && pre2[path] !== void 0) return structuredClone(pre2[path]);
     const r = await fetch(ROOT + path, opts);
     if (!r.ok) throw new Error(r.status);
     return r.json();
@@ -213,18 +213,18 @@
       return clone(readRaw(col).find(pred));
     },
     nextId(col) {
-      const pre = ID_PREFIX[col] || "x";
+      const pre2 = ID_PREFIX[col] || "x";
       if (col === "orders") {
         const c = store.get("bbc:counters", {});
         c.orders = (c.orders || 1010) + 1;
         store.set("bbc:counters", c);
         return `O-${c.orders}`;
       }
-      if (["tableSessions", "alerts", "audit"].includes(col)) return uid(pre);
+      if (["tableSessions", "alerts", "audit"].includes(col)) return uid(pre2);
       const rows = readRaw(col);
       const max = rows.reduce((m, x) => Math.max(m, parseInt(String(x.id).replace(/\D/g, ""), 10) || 0), 0);
       const width = rows.reduce((w, x) => Math.max(w, String(x.id).replace(/\D/g, "").length), 2);
-      return `${pre}${pad(max + 1, width)}`;
+      return `${pre2}${pad(max + 1, width)}`;
     },
     create(col, item) {
       const arr = readRaw(col).slice();
@@ -705,6 +705,13 @@
     { id: "about", key: "nav.about", href: "about.html" },
     { id: "contact", key: "nav.contact", href: "index.html#contact" }
   ];
+  var pre = null;
+  if (!session.get("bbc:preloaded") && !store.get("bbc:preloaded")) {
+    session.set("bbc:preloaded", 1);
+    store.set("bbc:preloaded", 1);
+    pre = el("div", { class: "preloader dark", "aria-hidden": "true", html: `<img class="preloader__logo" src="${url("assets/logo/logo.png")}" alt=""><div class="preloader__bar"></div>` });
+    document.body.prepend(pre);
+  }
   function mountPublicLayout({ active = "", preloader = true, nav = true, footer = true, floating = true } = {}) {
     const r = db.get("restaurant") || {};
     const phoneDigits = String(r.phone || "").replace(/\D/g, "");
@@ -712,18 +719,17 @@
     root.classList.add("public");
     root.prepend(el("a", { class: "skip-link", href: "#main", "data-i18n": "common.skip" }, "Skip to content"));
     initScrollProgress();
-    if (preloader && !session.get("bbc:preloaded") && !store.get("bbc:preloaded")) {
-      session.set("bbc:preloaded", 1);
-      store.set("bbc:preloaded", 1);
-      const pre = el("div", { class: "preloader dark", "aria-hidden": "true", html: `<img class="preloader__logo" src="${url("assets/logo/logo.png")}" alt=""><div class="preloader__bar"></div>` });
-      root.prepend(pre);
+    if (pre) {
       const hide = () => {
         pre.classList.add("is-done");
         document.documentElement.classList.add("is-loaded");
         setTimeout(() => pre.remove(), 1200);
       };
-      setTimeout(hide, 500);
-    } else document.documentElement.classList.add("is-loaded");
+      if (preloader) setTimeout(hide, 200);
+      else hide();
+    } else {
+      document.documentElement.classList.add("is-loaded");
+    }
     if (nav) {
       const links = NAV.map((n, i) => `<a class="nav__link ${n.id === active ? "is-active" : ""}" href="${url(n.href)}" data-i18n="${n.key}"></a>`).join("");
       const sheetLinks = NAV.map((n, i) => `<a class="sheet-link ${n.id === active ? "is-active" : ""}" style="--i:${i}" href="${url(n.href)}"><span data-i18n="${n.key}"></span></a>`).join("");
