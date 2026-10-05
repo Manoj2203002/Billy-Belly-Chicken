@@ -2727,7 +2727,7 @@
   // js/qr.js
   function baseUrl() {
     const s = db.get("settings") || {};
-    let b = (s.baseUrl || new URL(ROOT, location.href).href).trim().replace(/\/+$/, "");
+    let b = (s.baseUrl || new URL("./" + ROOT, location.href).href).trim().replace(/\/+$/, "");
     return b;
   }
   var urls = {
