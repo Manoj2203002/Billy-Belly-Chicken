@@ -33,6 +33,10 @@
       "title": {
         "en": "Quality Food",
         "ta": "தரமான உணவு"
+      },
+      "desc": {
+        "en": "Fresh ingredients, honest spices and recipes cooked the same way every single time.",
+        "ta": "Fresh ingredients, honest spices and recipes cooked the same way every single time."
       }
     },
     {
@@ -40,6 +44,10 @@
       "title": {
         "en": "Cleanliness & Hygiene",
         "ta": "தூய்மை & சுகாதாரம்"
+      },
+      "desc": {
+        "en": "A spotless kitchen and dining hall, checked at every shift, from the pass to the plates.",
+        "ta": "A spotless kitchen and dining hall, checked at every shift, from the pass to the plates."
       }
     },
     {
@@ -47,6 +55,10 @@
       "title": {
         "en": "Fast Service",
         "ta": "விரைவான சேவை"
+      },
+      "desc": {
+        "en": "Orders reach your waiter in seconds, so hot food reaches your table quickly.",
+        "ta": "Orders reach your waiter in seconds, so hot food reaches your table quickly."
       }
     },
     {
@@ -54,6 +66,10 @@
       "title": {
         "en": "Customer Satisfaction",
         "ta": "வாடிக்கையாளர் திருப்தி"
+      },
+      "desc": {
+        "en": "Every review is read. What guests tell us shapes the menu and the service.",
+        "ta": "Every review is read. What guests tell us shapes the menu and the service."
       }
     },
     {
@@ -61,6 +77,10 @@
       "title": {
         "en": "Teamwork & Discipline",
         "ta": "குழுப்பணி & ஒழுக்கம்"
+      },
+      "desc": {
+        "en": "Kitchen and floor working as one team, so every table is looked after.",
+        "ta": "Kitchen and floor working as one team, so every table is looked after."
       }
     }
   ],

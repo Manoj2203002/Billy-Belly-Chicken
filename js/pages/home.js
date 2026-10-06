@@ -9,6 +9,19 @@ import { activeOffers, isOpenNow, avgRating } from '../orderService.js';
 await init();
 await initI18n(['home']);
 mountPublicLayout({ active: 'home' });
+
+/* flip card: guest view <-> owner view */
+(() => {
+  const card = $('#flip'); const btn = $('#flip-btn'); if (!card || !btn) return;
+  const front = $('#flip-front'); const back = $('#flip-back'); const label = $('#flip-label'); const dots = card.querySelectorAll('.flip__dots i');
+  const set = (isBack) => {
+    card.classList.toggle('is-back', isBack); btn.setAttribute('aria-pressed', isBack);
+    label.textContent = isBack ? 'Show front: guest view' : 'Show back: owner view';
+    front.setAttribute('aria-hidden', isBack); back.setAttribute('aria-hidden', !isBack);
+    front.inert = isBack; back.inert = !isBack; dots.forEach((d, i) => d.classList.toggle('is-on', isBack ? i === 1 : i === 0));
+  };
+  set(false); btn.addEventListener('click', () => set(!card.classList.contains('is-back')));
+})();
 const r = db.get('restaurant'); const settings = db.get('settings'); setCurrency(settings.currency);
 
 const todaysSpecial = () => { const list = db.list('specials', (s) => s.active !== false); return list.find((s) => s.date === todayStr()) || list.sort((a, b) => (b.date || '').localeCompare(a.date || ''))[0] || null; };
@@ -37,7 +50,7 @@ function render() {
   $('#about-text').textContent = tr(r.about); $('#about-mission').textContent = tr(r.vision);
   $('#stats').innerHTML = (r.stats || []).map((s) => `<div class="stat-c"><b data-count="${s.value}" data-suffix="${s.suffix || ''}">0</b><span>${esc(tr(s.label))}</span></div>`).join('');
   /* values */
-  $('#values-list').innerHTML = (r.values || []).map((v) => `<li data-reveal="left">${esc(tr(v.title))}${icon('arrowright')}</li>`).join('');
+  $('#values-list').innerHTML = (r.values || []).map((v, i) => `<article class="vcard"><span class="vcard__n" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span><span class="vcard__ico">${icon(v.icon || 'star')}</span><h3>${esc(tr(v.title))}</h3>${v.desc ? `<p>${esc(tr(v.desc))}</p>` : ''}</article>`).join('');
   /* gallery teaser */
   $('#gal-grid').innerHTML = db.list('gallery').sort((a, c) => a.order - c.order).filter((g) => g.category === 'food' || g.category === 'ambience').slice(0, 4).map((g) => `<a href="gallery.html" data-reveal="up"><img src="${imgSrc(g.image)}" alt="${esc(tr(g.caption))}" loading="lazy" width="800" height="600"><span>${esc(tr(g.caption))}</span></a>`).join('');
   /* reviews: approved only */

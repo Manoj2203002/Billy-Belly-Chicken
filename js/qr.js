@@ -5,7 +5,11 @@ import { db } from './dataService.js';
 /** Build page URLs from the admin-configurable base URL (Settings > Base URL). */
 export function baseUrl() {
   const s = db.get('settings') || {};
-  let b = (s.baseUrl || location.origin).trim().replace(/\/+$/, '');
+  let defaultBaseUrl = location.origin;
+  if (location.pathname.startsWith('/Billy-Belly-Chicken')) {
+    defaultBaseUrl += '/Billy-Belly-Chicken';
+  }
+  let b = (s.baseUrl || defaultBaseUrl).trim().replace(/\/+$/, '');
   return b;
 }
 export const urls = {
