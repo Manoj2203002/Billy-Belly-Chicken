@@ -10,31 +10,34 @@
   <meta property="og:title" content="Gallery | Billy Belly Chicken"><meta property="og:description" content="Photos of our food, dining hall and kitchen at Billy Belly Chicken, Vazhapadi."><meta property="og:type" content="website"><meta property="og:image" content="assets/images/misc/og.svg">
   <link rel="icon" href="assets/logo/favicon.ico"><link rel="apple-touch-icon" href="assets/logo/icon-192.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/fonts.css?v=2">
-  <link rel="stylesheet" href="css/variables.css?v=2">
-  <link rel="stylesheet" href="css/base.css?v=2">
-  <link rel="stylesheet" href="css/components.css?v=2">
-  <link rel="stylesheet" href="css/layout.css?v=2">
-  <link rel="stylesheet" href="css/pages/gallery.css?v=2">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages/gallery.css">
   
+  <link rel="preload" href="assets/fonts/outfit-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script defer src="js/bundles/data.js"></script><script defer src="js/bundles/gallery.js"></script>
 </head>
 <body data-root="" data-page="gallery">
+<div class="nav-ph" id="nav-ph" aria-hidden="true"><img src="assets/logo/logo-mark-160.png" alt="" width="40" height="40"></div>
   <main id="main" class="gallery">
     <header class="banner dark"><div class="container gallery__head">
-      <span class="eyebrow" data-i18n="gallery.eyebrow"></span>
-      <h1 class="display display--hero" data-split data-i18n="gallery.title"></h1>
-      <p class="lead" data-i18n="gallery.lead"></p>
+      <span class="eyebrow" data-i18n="gallery.eyebrow">Gallery</span>
+      <h1 class="display display--hero" data-split data-i18n="gallery.title">Eyes first</h1>
+      <p class="lead" data-i18n="gallery.lead">Plates, flames and the room we serve them in. Real photographs from our kitchen and hall will replace these placeholders.</p>
       <div class="chip-row" id="filters" role="group" aria-label="Filter"></div>
     </div></header>
     <section class="container"><div class="gallery__grid" id="grid" aria-live="polite"></div></section>
   </main>
   <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
-    <button type="button" class="lightbox__close icon-btn" id="lb-close" data-i18n-aria="common.close"><i data-icon="close"></i></button>
+    <button type="button" class="lightbox__close icon-btn" id="lb-close" data-i18n-aria="common.close" aria-label="Close"><i data-icon="close"></i></button>
     <button type="button" class="lightbox__nav lightbox__nav--prev icon-btn" id="lb-prev" aria-label="Previous"><i data-icon="chevleft"></i></button>
     <figure class="lightbox__fig"><img id="lb-img" alt=""><figcaption id="lb-cap"></figcaption></figure>
     <button type="button" class="lightbox__nav lightbox__nav--next icon-btn" id="lb-next" aria-label="Next"><i data-icon="chevright"></i></button>
   </div>
-  <script>window.addEventListener("error",function(e){if(document.getElementById("bbc-err"))return;var d=document.createElement("div");d.id="bbc-err";d.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#b00020;color:#fff;font:14px/1.4 sans-serif;padding:10px 14px";d.textContent="Something failed to load: "+(e.message||(e.target&&(e.target.src||e.target.href))||"unknown")+" - open the site through a web address (see README) or tell the developer this message.";document.body.appendChild(d)},true)</script><script>(function(){var p="",f=location.protocol==="file:";function a(s,m){var e=document.createElement("script");e.src=p+s+"?v=2";if(m)e.type="module";e.async=false;document.body.appendChild(e)}if(f){a("js/bundles/data.js");a("js/bundles/gallery.js")}else a("js/pages/gallery.js",true)})()</script>
-  <noscript><p style="padding:2rem;font-family:sans-serif">Please turn on JavaScript to use this site.</p></noscript>
+  <script>window.addEventListener("error",function(e){if(document.getElementById("bbc-err"))return;var d=document.createElement("div");d.id="bbc-err";d.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#b00020;color:#fff;font:14px/1.4 sans-serif;padding:10px 14px";d.textContent="Something failed to load: "+(e.message||(e.target&&(e.target.src||e.target.href))||"unknown")+" - open the site through a web address (see README) or tell the developer this message.";document.body.appendChild(d)},true)</script>  <noscript><p style="padding:2rem;font-family:sans-serif">Please turn on JavaScript to use this site.</p></noscript>
 </body>
 </html>

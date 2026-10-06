@@ -16,11 +16,13 @@
   <link rel="stylesheet" href="../css/portal.css">
   <link rel="stylesheet" href="../css/pages/waiter-orders.css">
   
+  <link rel="preload" href="../assets/fonts/outfit-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script defer src="../js/bundles/data.js"></script><script defer src="../js/bundles/waiter-orders.js"></script>
 </head>
 <body data-root="../" data-page="orders">
 
-<main id="app" class="page"><div class="wo-bar"><div class="tabs" id="f" role="tablist"></div><input class="input" id="q" type="search" data-i18n-placeholder="waiter-orders.search"></div><section class="wo-grid" id="list"></section></main>
-  <script>window.addEventListener("error",function(e){if(document.getElementById("bbc-err"))return;var d=document.createElement("div");d.id="bbc-err";d.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#b00020;color:#fff;font:14px/1.4 sans-serif;padding:10px 14px";d.textContent="Something failed to load: "+(e.message||(e.target&&(e.target.src||e.target.href))||"unknown")+" - open the site through a web address (see README) or tell the developer this message.";document.body.appendChild(d)},true)</script><script>(function(){var p="../",f=location.protocol==="file:";function a(s,m){var e=document.createElement("script");e.src=p+s+"?v=2";if(m)e.type="module";e.async=false;document.body.appendChild(e)}if(f){a("js/bundles/data.js");a("js/bundles/waiter-orders.js")}else a("js/pages/waiter-orders.js",true)})()</script>
-  <noscript><p style="padding:2rem;font-family:sans-serif">Please turn on JavaScript to use this site.</p></noscript>
+<main id="app" class="page"><div class="wo-bar"><div class="tabs" id="f" role="tablist"></div><input class="input" id="q" type="search" data-i18n-placeholder="waiter-orders.search" placeholder="Search order or table..."></div><section class="wo-grid" id="list"></section></main>
+  <script>window.addEventListener("error",function(e){if(document.getElementById("bbc-err"))return;var d=document.createElement("div");d.id="bbc-err";d.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#b00020;color:#fff;font:14px/1.4 sans-serif;padding:10px 14px";d.textContent="Something failed to load: "+(e.message||(e.target&&(e.target.src||e.target.href))||"unknown")+" - open the site through a web address (see README) or tell the developer this message.";document.body.appendChild(d)},true)</script>  <noscript><p style="padding:2rem;font-family:sans-serif">Please turn on JavaScript to use this site.</p></noscript>
 </body>
 </html>

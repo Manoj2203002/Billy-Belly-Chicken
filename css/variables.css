@@ -31,20 +31,20 @@
   --font-display:"Outfit","Inter",system-ui,sans-serif;
   --font-body:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   --font-accent:"Outfit","Inter",system-ui,sans-serif;
-  --fs-xs:clamp(.72rem,.7rem + .1vw,.8rem);
-  --fs-sm:clamp(.84rem,.82rem + .12vw,.9rem);
-  --fs-base:clamp(.96rem,.93rem + .18vw,1.04rem);
-  --fs-md:clamp(1.1rem,1.04rem + .25vw,1.2rem);
-  --fs-lg:clamp(1.35rem,1.15rem + .6vw,1.7rem);
-  --fs-xl:clamp(1.7rem,1.3rem + 1.8vw,2.6rem);
-  --fs-2xl:clamp(2rem,1.4rem + 2.5vw,3.6rem);
-  --fs-hero:clamp(2.5rem,1.2rem + 4.5vw,5.2rem);
+  --fs-xs:clamp(.7rem,.69rem + .05vw,.76rem);
+  --fs-sm:clamp(.8rem,.78rem + .08vw,.88rem);
+  --fs-base:clamp(.9rem,.88rem + .1vw,.98rem);
+  --fs-md:clamp(1rem,.95rem + .22vw,1.15rem);
+  --fs-lg:clamp(1.2rem,1.05rem + .7vw,1.6rem);
+  --fs-xl:clamp(1.6rem,1.2rem + 1.7vw,2.4rem);
+  --fs-2xl:clamp(1.9rem,1.3rem + 2.5vw,3.1rem);
+  --fs-hero:clamp(2.4rem,1.2rem + 4.4vw,4.8rem);
 
   /* spacing scale */
   --sp-1:.25rem;--sp-2:.5rem;--sp-3:.75rem;--sp-4:1rem;--sp-5:1.5rem;--sp-6:2rem;--sp-7:3rem;--sp-8:4.5rem;--sp-9:7rem;
-  --gutter:clamp(1rem,4vw,3rem);
-  --section-y:clamp(4rem,9vw,9rem);
-  --maxw:1200px;
+  --gutter:clamp(1rem,3vw,2.25rem);
+  --section-y:clamp(2.75rem,5vw,5rem);
+  --maxw:1240px;
 
   /* radius + shadow scales */
   --r-xs:6px;--r-sm:10px;--r-md:16px;--r-lg:26px;--r-xl:38px;--r-pill:999px;
@@ -58,15 +58,15 @@
   --dur-fast:.18s;--dur:.45s;--dur-slow:.9s;
 
   /* layout */
-  --nav-h:72px;
+  --nav-h:64px;
   --safe-b:env(safe-area-inset-bottom,0px);
   --safe-t:env(safe-area-inset-top,0px);
   --safe-l:env(safe-area-inset-left,0px);
   --safe-r:env(safe-area-inset-right,0px);
   --z-nav:50;--z-drawer:80;--z-modal:100;--z-toast:120;--z-pre:200;--z-cursor:300;
 }
-@media (min-width:1920px){:root{--maxw:1760px}}
-@media (min-width:2400px){:root{--maxw:2100px}}
+@media (min-width:1920px){:root{--maxw:1500px}html{font-size:112.5%}}
+@media (min-width:2400px){:root{--maxw:1800px}html{font-size:125%}}
 
 /* Black areas: header, footer, hero and poster bands. Same tokens, dark values. */
 .dark{

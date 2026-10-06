@@ -3,7 +3,7 @@
 .review__wrap{display:grid;gap:var(--sp-6);align-items:start;padding-bottom:var(--section-y)}
 .review__intro{display:grid;gap:var(--sp-4)}
 .review__avg{padding:var(--sp-4) var(--sp-5);display:flex;gap:var(--sp-4);align-items:center;border-radius:var(--r-lg)}
-.review__avg b{font-family:var(--font-display);font-size:3rem;line-height:1}
+.review__avg b{font-family:var(--font-display);font-size:2.2rem;line-height:1}
 .review__form{padding:var(--sp-5);display:grid;gap:var(--sp-5);border-radius:var(--r-lg)}
 .review__cats{border:0;padding:0;margin:0}
 .review__cats>div{display:grid;gap:var(--sp-3);margin-top:var(--sp-2)}

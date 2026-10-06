@@ -10,25 +10,29 @@
   <meta property="og:title" content="Order at your table | Billy Belly Chicken"><meta property="og:description" content="Order from your table at Billy Belly Chicken. Your waiter confirms with you, then tells the chef. Pay at the counter."><meta property="og:type" content="website"><meta property="og:image" content="assets/images/misc/og.svg">
   <link rel="icon" href="assets/logo/favicon.ico"><link rel="apple-touch-icon" href="assets/logo/icon-192.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/fonts.css?v=2">
-  <link rel="stylesheet" href="css/variables.css?v=2">
-  <link rel="stylesheet" href="css/base.css?v=2">
-  <link rel="stylesheet" href="css/components.css?v=2">
-  <link rel="stylesheet" href="css/layout.css?v=2">
-  <link rel="stylesheet" href="css/menu-browser.css?v=2">
-  <link rel="stylesheet" href="css/pages/order.css?v=2">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/menu-browser.css">
+  <link rel="stylesheet" href="css/pages/order.css">
   
+  <link rel="preload" href="assets/fonts/outfit-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script defer src="js/bundles/data.js"></script><script defer src="js/bundles/order.js"></script>
 </head>
 <body data-root="" data-page="order">
+<div class="nav-ph" id="nav-ph" aria-hidden="true"><img src="assets/logo/logo-mark-160.png" alt="" width="40" height="40"></div>
   <main id="main" class="order">
     <section class="banner dark"><div class="order-head container">
       <div class="order-head__row">
         <div>
-          <span class="eyebrow" data-i18n="order.eyebrow"></span>
-          <h1 class="display display--xl order-head__title"><span data-i18n="order.table"></span> <span class="order-head__no" id="table-no">-</span></h1>
+          <span class="eyebrow" data-i18n="order.eyebrow">Table ordering</span>
+          <h1 class="display display--xl order-head__title"><span data-i18n="order.table">Table</span> <span class="order-head__no" id="table-no">-</span></h1>
           <p class="text-muted" id="table-area"></p>
         </div>
-        <div class="order-head__note card card--glass"><i data-icon="shield"></i><p data-i18n="order.howItWorks"></p></div>
+        <div class="order-head__note card card--glass"><i data-icon="shield"></i><p data-i18n="order.howItWorks">Add dishes, place the order. Your waiter will confirm it with you and tell the chef. Pay at the counter. No online payment.</p></div>
       </div>
     </div></section>
 
@@ -41,17 +45,16 @@
   <div class="cartbar" id="cartbar" hidden>
     <button type="button" class="cartbar__btn btn btn--primary btn--lg" id="open-cart" data-magnetic>
       <span class="cartbar__ico"><i data-icon="cart"></i><b class="cart-badge" id="cart-count">0</b></span>
-      <span class="cartbar__txt" data-i18n="order.viewCart"></span>
+      <span class="cartbar__txt" data-i18n="order.viewCart">View cart</span>
       <span class="cartbar__total" id="cart-total"></span>
     </button>
   </div>
   <nav class="bottomnav dark" aria-label="Order navigation">
-    <button type="button" class="bottomnav__btn is-active" data-view="menu"><i data-icon="utensils"></i><span data-i18n="order.navMenu"></span></button>
-    <button type="button" class="bottomnav__btn" data-view="orders"><i data-icon="receipt"></i><span data-i18n="order.navOrders"></span><b class="bottomnav__dot" id="orders-dot" hidden></b></button>
-    <button type="button" class="bottomnav__btn" id="btn-call"><i data-icon="hand"></i><span data-i18n="order.navCall"></span></button>
-    <button type="button" class="bottomnav__btn" id="btn-bill"><i data-icon="bill"></i><span data-i18n="order.navBill"></span></button>
+    <button type="button" class="bottomnav__btn is-active" data-view="menu"><i data-icon="utensils"></i><span data-i18n="order.navMenu">Menu</span></button>
+    <button type="button" class="bottomnav__btn" data-view="orders"><i data-icon="receipt"></i><span data-i18n="order.navOrders">My orders</span><b class="bottomnav__dot" id="orders-dot" hidden></b></button>
+    <button type="button" class="bottomnav__btn" id="btn-call"><i data-icon="hand"></i><span data-i18n="order.navCall">Call waiter</span></button>
+    <button type="button" class="bottomnav__btn" id="btn-bill"><i data-icon="bill"></i><span data-i18n="order.navBill">Bill</span></button>
   </nav>
-  <script>window.addEventListener("error",function(e){if(document.getElementById("bbc-err"))return;var d=document.createElement("div");d.id="bbc-err";d.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#b00020;color:#fff;font:14px/1.4 sans-serif;padding:10px 14px";d.textContent="Something failed to load: "+(e.message||(e.target&&(e.target.src||e.target.href))||"unknown")+" - open the site through a web address (see README) or tell the developer this message.";document.body.appendChild(d)},true)</script><script>(function(){var p="",f=location.protocol==="file:";function a(s,m){var e=document.createElement("script");e.src=p+s+"?v=2";if(m)e.type="module";e.async=false;document.body.appendChild(e)}if(f){a("js/bundles/data.js");a("js/bundles/order.js")}else a("js/pages/order.js",true)})()</script>
-  <noscript><p style="padding:2rem;font-family:sans-serif">Please turn on JavaScript to use this site.</p></noscript>
+  <script>window.addEventListener("error",function(e){if(document.getElementById("bbc-err"))return;var d=document.createElement("div");d.id="bbc-err";d.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#b00020;color:#fff;font:14px/1.4 sans-serif;padding:10px 14px";d.textContent="Something failed to load: "+(e.message||(e.target&&(e.target.src||e.target.href))||"unknown")+" - open the site through a web address (see README) or tell the developer this message.";document.body.appendChild(d)},true)</script>  <noscript><p style="padding:2rem;font-family:sans-serif">Please turn on JavaScript to use this site.</p></noscript>
 </body>
 </html>

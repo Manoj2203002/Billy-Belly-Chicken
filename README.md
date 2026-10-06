@@ -59,6 +59,9 @@ Admin > Tables & QR shows every QR code, downloads PNGs and prints a sheet.
 6. Admin > Settings: turn the master switch off. Ordering shows a closed message at once.
 7. Admin > Settings > **Reset demo data** puts everything back.
 
+
+> **After you edit anything in `js/`, `data/` or any `.html` text, run `npm install` once and then `npm run bundle`.** Every page loads one ready-made script (`js/bundles/<page>.js` plus `data.js`) with a plain `<script defer>` tag, so the first screen shows at once. The same step also writes the English text into the HTML so the page is never blank while it loads. GitHub Pages, Netlify and Vercel need no build step: just upload the folder with the `js/bundles` folder included.
+
 ## Folder map
 
 ```

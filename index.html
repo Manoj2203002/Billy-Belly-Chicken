@@ -10,30 +10,34 @@
   <meta property="og:title" content="Billy Belly Chicken | Fire-grilled chicken in Vazhapadi"><meta property="og:description" content="Air-conditioned multi-cuisine chicken restaurant in Vazhapadi: tandoori, biryani, fried chicken, burgers, wraps, pizza and more. Dine in or order a parcel."><meta property="og:type" content="website"><meta property="og:image" content="assets/images/misc/og.svg">
   <link rel="icon" href="assets/logo/favicon.ico"><link rel="apple-touch-icon" href="assets/logo/icon-192.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/fonts.css?v=2">
-  <link rel="stylesheet" href="css/variables.css?v=2">
-  <link rel="stylesheet" href="css/base.css?v=2">
-  <link rel="stylesheet" href="css/components.css?v=2">
-  <link rel="stylesheet" href="css/layout.css?v=2">
-  <link rel="stylesheet" href="css/pages/home.css?v=2">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages/home.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Billy Belly Chicken","servesCuisine":["Chicken","Indian","Chinese","Tandoori","Biryani","Fast food"],"telephone":"+91 99523 35513","email":"billybellychicken@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Mannaickenpatty Pirivu Road, near ICICI Bank","addressLocality":"Vazhapadi","addressRegion":"Tamil Nadu","postalCode":"636115","addressCountry":"IN"},"openingHours":"Mo-Su 11:00-22:00","sameAs":["https://www.instagram.com/billybellychicken"],"hasMenu":"menu.html"}</script>
+  <link rel="preload" href="assets/fonts/outfit-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script defer src="js/bundles/data.js"></script><script defer src="js/bundles/home.js"></script>
 </head>
 <body data-root="" data-page="index">
+<div class="nav-ph" id="nav-ph" aria-hidden="true"><img src="assets/logo/logo-mark-160.png" alt="" width="40" height="40"></div>
   <main id="main">
     <!-- 1. HERO -->
     <header class="hero dark" id="top">
       <div class="container hero__inner">
-        <p class="hero__kicker"><span class="badge badge--red badge--live" id="open-badge"></span><span class="eyebrow" data-i18n="home.hero.kicker"></span></p>
+        <p class="hero__kicker"><span class="badge badge--red badge--live" id="open-badge"></span><span class="eyebrow" data-i18n="home.hero.kicker">Vazhapadi · Air-conditioned</span></p>
         <h1 class="display display--hero hero__title" aria-label="Fire. Flavour. Chicken.">
-          <span class="hero__line" data-split data-i18n="home.hero.l1"></span>
-          <span class="hero__line hero__line--outline" data-split data-i18n="home.hero.l2"></span>
-          <span class="hero__line hero__line--red" data-split data-i18n="home.hero.l3"></span>
+          <span class="hero__line" data-split data-i18n="home.hero.l1">Fire.</span>
+          <span class="hero__line hero__line--outline" data-split data-i18n="home.hero.l2">Flavour.</span>
+          <span class="hero__line hero__line--red" data-split data-i18n="home.hero.l3">Chicken.</span>
         </h1>
         <div class="hero__row">
           <p class="lead hero__lead" id="hero-tagline"></p>
           <div class="hero__cta">
-            <a class="btn btn--primary btn--lg" href="menu.html" data-magnetic><i data-icon="utensils"></i><span data-i18n="home.hero.cta1"></span></a>
-            <a class="btn btn--ghost btn--lg" href="#special" data-magnetic><i data-icon="sparkle"></i><span data-i18n="home.hero.cta2"></span></a>
+            <a class="btn btn--primary btn--lg" href="menu.html" data-magnetic><i data-icon="utensils"></i><span data-i18n="home.hero.cta1">View menu</span></a>
+            <a class="btn btn--ghost btn--lg" href="#special" data-magnetic><i data-icon="sparkle"></i><span data-i18n="home.hero.cta2">Today's special</span></a>
           </div>
         </div>
         <img class="hero__logo" src="assets/logo/logo.png" alt="Billy Belly Chicken logo" width="340" height="350">
@@ -49,8 +53,8 @@
     <!-- 4. OFFERS (horizontal strip) -->
     <section class="section offers" id="offers" aria-labelledby="offers-h">
       <div class="container offers__head">
-        <div><span class="eyebrow" data-i18n="home.offers.eyebrow"></span><h2 class="display display--xl" id="offers-h" data-split data-i18n="home.offers.title"></h2></div>
-        <p class="lead" data-i18n="home.offers.lead"></p>
+        <div><span class="eyebrow" data-i18n="home.offers.eyebrow">Special offers</span><h2 class="display display--xl" id="offers-h" data-split data-i18n="home.offers.title">Deals worth the drive</h2></div>
+        <p class="lead" data-i18n="home.offers.lead">Offers apply automatically on your bill. No coupons, no codes.</p>
       </div>
       <div class="offers__strip" id="offers-strip" data-stagger="up" tabindex="0" aria-label="Offers"></div>
     </section>
@@ -58,14 +62,14 @@
 
     <!-- 5. FEATURED (bento) -->
     <section class="section featured container" aria-labelledby="feat-h">
-      <div class="featured__head"><span class="eyebrow" data-i18n="home.featured.eyebrow"></span><h2 class="display display--xl" id="feat-h" data-split data-i18n="home.featured.title"></h2></div>
+      <div class="featured__head"><span class="eyebrow" data-i18n="home.featured.eyebrow">Crowd favourites</span><h2 class="display display--xl" id="feat-h" data-split data-i18n="home.featured.title">What the belly wants</h2></div>
       <div class="bento" id="bento" data-stagger="scale"></div>
-      <div class="featured__more"><a class="btn btn--primary btn--lg" href="menu.html" data-magnetic><span data-i18n="home.featured.all"></span><i data-icon="arrowright"></i></a></div>
+      <div class="featured__more"><a class="btn btn--primary btn--lg" href="menu.html" data-magnetic><span data-i18n="home.featured.all">See the full menu</span><i data-icon="arrowright"></i></a></div>
     </section>
 
     <!-- 6. ABOUT (sticky side title) -->
     <section class="section about container" aria-labelledby="about-h">
-      <div class="about__side"><span class="eyebrow" data-i18n="home.about.eyebrow"></span><h2 class="display display--xl" id="about-h" data-split data-i18n="home.about.title"></h2><a class="btn btn--ghost" href="about.html"><span data-i18n="home.about.more"></span><i data-icon="arrowright"></i></a></div>
+      <div class="about__side"><span class="eyebrow" data-i18n="home.about.eyebrow">Our story</span><h2 class="display display--xl" id="about-h" data-split data-i18n="home.about.title">Hot, clean, fast</h2><a class="btn btn--ghost" href="about.html"><span data-i18n="home.about.more">Read our story</span><i data-icon="arrowright"></i></a></div>
       <div class="about__body">
         <p class="about__big serif" id="about-text" data-reveal></p>
         <p class="lead" id="about-mission" data-reveal></p>
@@ -75,52 +79,51 @@
 
     <!-- 7. VALUES (numbered rows) -->
     <section class="values" aria-labelledby="values-h">
-      <div class="container"><h2 class="display display--xl" id="values-h" data-i18n="home.values.title"></h2><ol class="values__list" id="values-list"></ol></div>
+      <div class="container"><h2 class="display display--xl" id="values-h" data-i18n="home.values.title">What we cook by</h2><ol class="values__list" id="values-list"></ol></div>
     </section>
 
     <!-- 8. HOW ORDERING WORKS -->
     <section class="section how container" aria-labelledby="how-h">
-      <div class="how__head"><span class="eyebrow" data-i18n="home.how.eyebrow"></span><h2 class="display display--xl" id="how-h" data-i18n="home.how.title"></h2></div>
+      <div class="how__head"><span class="eyebrow" data-i18n="home.how.eyebrow">Dining here</span><h2 class="display display--xl" id="how-h" data-i18n="home.how.title">Five easy steps</h2></div>
       <ol class="how__steps" data-stagger="up">
-        <li><i data-icon="qr"></i><b data-i18n="home.how.s1t"></b><p data-i18n="home.how.s1d"></p></li>
-        <li><i data-icon="utensils"></i><b data-i18n="home.how.s2t"></b><p data-i18n="home.how.s2d"></p></li>
-        <li><i data-icon="hand"></i><b data-i18n="home.how.s3t"></b><p data-i18n="home.how.s3d"></p></li>
-        <li><i data-icon="flame"></i><b data-i18n="home.how.s4t"></b><p data-i18n="home.how.s4d"></p></li>
-        <li><i data-icon="money"></i><b data-i18n="home.how.s5t"></b><p data-i18n="home.how.s5d"></p></li>
+        <li><i data-icon="qr"></i><b data-i18n="home.how.s1t">Scan</b><p data-i18n="home.how.s1d">Scan the QR code on your table with your phone camera.</p></li>
+        <li><i data-icon="utensils"></i><b data-i18n="home.how.s2t">Choose</b><p data-i18n="home.how.s2d">Add dishes and notes like less spicy. Place your order.</p></li>
+        <li><i data-icon="hand"></i><b data-i18n="home.how.s3t">Confirm</b><p data-i18n="home.how.s3d">Your waiter confirms the order with you and tells the chef.</p></li>
+        <li><i data-icon="flame"></i><b data-i18n="home.how.s4t">Enjoy</b><p data-i18n="home.how.s4d">Hot food arrives at your table. Order another round any time.</p></li>
+        <li><i data-icon="money"></i><b data-i18n="home.how.s5t">Pay</b><p data-i18n="home.how.s5d">Pay at the counter by cash, UPI or card. No online payment.</p></li>
       </ol>
     </section>
 
     <!-- 9. GALLERY TEASER -->
     <section class="section gal container" aria-labelledby="gal-h">
-      <div class="gal__head"><h2 class="display display--xl" id="gal-h" data-split data-i18n="home.gallery.title"></h2><a class="btn btn--ghost" href="gallery.html"><span data-i18n="home.gallery.all"></span><i data-icon="arrowright"></i></a></div>
+      <div class="gal__head"><h2 class="display display--xl" id="gal-h" data-split data-i18n="home.gallery.title">Look inside</h2><a class="btn btn--ghost" href="gallery.html"><span data-i18n="home.gallery.all">Open gallery</span><i data-icon="arrowright"></i></a></div>
       <div class="gal__grid" id="gal-grid"></div>
     </section>
 
     <!-- 10. REVIEWS -->
     <section class="section reviews" aria-labelledby="rev-h">
       <div class="container">
-        <div class="reviews__head"><div><span class="eyebrow" data-i18n="home.reviews.eyebrow"></span><h2 class="display display--xl" id="rev-h" data-split data-i18n="home.reviews.title"></h2></div><div class="reviews__avg" id="rev-avg"></div></div>
+        <div class="reviews__head"><div><span class="eyebrow" data-i18n="home.reviews.eyebrow">Kind words</span><h2 class="display display--xl" id="rev-h" data-split data-i18n="home.reviews.title">Guests say</h2></div><div class="reviews__avg" id="rev-avg"></div></div>
         <div class="reviews__list" id="rev-list" data-stagger="up"></div>
-        <a class="btn btn--primary" href="review.html" data-magnetic><i data-icon="star"></i><span data-i18n="home.reviews.write"></span></a>
+        <a class="btn btn--primary" href="review.html" data-magnetic><i data-icon="star"></i><span data-i18n="home.reviews.write">Write a review</span></a>
       </div>
     </section>
 
     <!-- 11. CONTACT -->
     <section class="section contact container" id="contact" aria-labelledby="contact-h">
       <div class="contact__info">
-        <span class="eyebrow" data-i18n="home.contact.eyebrow"></span><h2 class="display display--xl" id="contact-h" data-split data-i18n="home.contact.title"></h2>
+        <span class="eyebrow" data-i18n="home.contact.eyebrow">Find us</span><h2 class="display display--xl" id="contact-h" data-split data-i18n="home.contact.title">Come hungry</h2>
         <ul class="contact__list" id="contact-list"></ul>
-        <div class="cluster"><a class="btn btn--primary" id="c-call" href="#"><i data-icon="phone"></i><span data-i18n="home.contact.call"></span></a><a class="btn btn--ghost" id="c-wa" href="#" target="_blank" rel="noopener"><i data-icon="whatsapp"></i><span>WhatsApp</span></a><a class="btn btn--ghost" id="c-ig" href="#" target="_blank" rel="noopener"><i data-icon="instagram"></i><span>Instagram</span></a></div>
+        <div class="cluster"><a class="btn btn--primary" id="c-call" href="#"><i data-icon="phone"></i><span data-i18n="home.contact.call">Call now</span></a><a class="btn btn--ghost" id="c-wa" href="#" target="_blank" rel="noopener"><i data-icon="whatsapp"></i><span>WhatsApp</span></a><a class="btn btn--ghost" id="c-ig" href="#" target="_blank" rel="noopener"><i data-icon="instagram"></i><span>Instagram</span></a></div>
       </div>
       <div class="contact__map card" id="map"></div>
     </section>
 
     <!-- 12. FINAL CTA BAND -->
     <section class="cta dark" aria-labelledby="cta-h">
-      <div class="container cta__inner"><h2 class="display display--hero" id="cta-h" data-split data-i18n="home.cta.title"></h2><div class="cta__btns"><a class="btn btn--white btn--lg" href="parcel.html" data-magnetic><i data-icon="bag"></i><span data-i18n="home.cta.parcel"></span></a><a class="btn btn--lg cta__ghost" href="menu.html"><span data-i18n="home.cta.menu"></span><i data-icon="arrowright"></i></a></div><p data-i18n="home.cta.note"></p></div>
+      <div class="container cta__inner"><h2 class="display display--hero" id="cta-h" data-split data-i18n="home.cta.title">Table or parcel, we're ready</h2><div class="cta__btns"><a class="btn btn--white btn--lg" href="parcel.html" data-magnetic><i data-icon="bag"></i><span data-i18n="home.cta.parcel">Order a parcel</span></a><a class="btn btn--lg cta__ghost" href="menu.html"><span data-i18n="home.cta.menu">Browse menu</span><i data-icon="arrowright"></i></a></div><p data-i18n="home.cta.note">Dine-in: scan the QR on your table. Waiting? Scan the parcel QR in the waiting area.</p></div>
     </section>
   </main>
-  <script>window.addEventListener("error",function(e){if(document.getElementById("bbc-err"))return;var d=document.createElement("div");d.id="bbc-err";d.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#b00020;color:#fff;font:14px/1.4 sans-serif;padding:10px 14px";d.textContent="Something failed to load: "+(e.message||(e.target&&(e.target.src||e.target.href))||"unknown")+" - open the site through a web address (see README) or tell the developer this message.";document.body.appendChild(d)},true)</script><script>(function(){var p="",f=location.protocol==="file:";function a(s,m){var e=document.createElement("script");e.src=p+s+"?v=2";if(m)e.type="module";e.async=false;document.body.appendChild(e)}if(f){a("js/bundles/data.js");a("js/bundles/home.js")}else a("js/pages/home.js",true)})()</script>
-  <noscript><p style="padding:2rem;font-family:sans-serif">Please turn on JavaScript to use this site.</p></noscript>
+  <script>window.addEventListener("error",function(e){if(document.getElementById("bbc-err"))return;var d=document.createElement("div");d.id="bbc-err";d.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#b00020;color:#fff;font:14px/1.4 sans-serif;padding:10px 14px";d.textContent="Something failed to load: "+(e.message||(e.target&&(e.target.src||e.target.href))||"unknown")+" - open the site through a web address (see README) or tell the developer this message.";document.body.appendChild(d)},true)</script>  <noscript><p style="padding:2rem;font-family:sans-serif">Please turn on JavaScript to use this site.</p></noscript>
 </body>
 </html>

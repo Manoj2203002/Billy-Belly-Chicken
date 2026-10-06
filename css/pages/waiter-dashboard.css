@@ -6,7 +6,7 @@
 .wd-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:var(--sp-4)}
 .tcard{position:relative;display:grid;gap:var(--sp-2);text-align:left;padding:var(--sp-4);min-height:150px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface);transition:transform .25s,border-color .25s,box-shadow .25s;overflow:hidden}
 .tcard:hover{transform:translateY(-3px);border-color:var(--border-strong)}
-.tcard__no{font-family:var(--font-display);font-weight:700;font-size:3.4rem;line-height:1.1}
+.tcard__no{font-family:var(--font-display);font-weight:700;font-size:2.4rem;line-height:1.1}
 .tcard__no small{font-size:.9rem;font-weight:600;color:var(--text-faint);margin-left:.3rem;letter-spacing:.08em;text-transform:uppercase}
 .tcard__meta{display:flex;gap:.8rem;flex-wrap:wrap;font-size:var(--fs-xs);color:var(--text-muted)}
 .tcard--free{opacity:.62}

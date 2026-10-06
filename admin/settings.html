@@ -16,15 +16,17 @@
   <link rel="stylesheet" href="../css/portal.css">
   <link rel="stylesheet" href="../css/pages/admin-settings.css">
   
+  <link rel="preload" href="../assets/fonts/outfit-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script defer src="../js/bundles/data.js"></script><script defer src="../js/bundles/admin-settings.js"></script>
 </head>
 <body data-root="../" data-page="settings">
-<main id="app" class="page"><div class="page-head"><div><h1 data-i18n="admin-settings.h1"></h1><p data-i18n="admin-settings.lead"></p></div></div>
-<div class="as-grid"><section class="card"><h2 class="h3" data-i18n="admin-settings.order"></h2><div id="f-order"></div></section>
-<section class="card"><h2 class="h3" data-i18n="admin-settings.info"></h2><div id="f-info"></div></section></div>
-<div class="as-save"><button class="btn btn--primary btn--lg" id="save" type="button" data-i18n="admin-settings.save"></button></div>
-<section class="card as-log"><h2 class="h3" data-i18n="admin-settings.log"></h2><div class="table-wrap" id="log"></div></section>
-<section class="card as-danger"><h2 class="h3" data-i18n="admin-settings.danger"></h2><p class="text-muted" data-i18n="admin-settings.dangerText"></p><button class="btn btn--danger" id="reset" type="button" data-icon="refresh"><span data-i18n="admin-settings.reset"></span></button></section></main>
-  <script>window.addEventListener("error",function(e){if(document.getElementById("bbc-err"))return;var d=document.createElement("div");d.id="bbc-err";d.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#b00020;color:#fff;font:14px/1.4 sans-serif;padding:10px 14px";d.textContent="Something failed to load: "+(e.message||(e.target&&(e.target.src||e.target.href))||"unknown")+" - open the site through a web address (see README) or tell the developer this message.";document.body.appendChild(d)},true)</script><script>(function(){var p="../",f=location.protocol==="file:";function a(s,m){var e=document.createElement("script");e.src=p+s+"?v=2";if(m)e.type="module";e.async=false;document.body.appendChild(e)}if(f){a("js/bundles/data.js");a("js/bundles/admin-settings.js")}else a("js/pages/admin-settings.js",true)})()</script>
-  <noscript><p style="padding:2rem;font-family:sans-serif">Please turn on JavaScript to use this site.</p></noscript>
+<main id="app" class="page"><div class="page-head"><div><h1 data-i18n="admin-settings.h1">Settings</h1><p data-i18n="admin-settings.lead">Ordering switch, tax, timings, restaurant details and the change log.</p></div></div>
+<div class="as-grid"><section class="card"><h2 class="h3" data-i18n="admin-settings.order">Ordering</h2><div id="f-order"></div></section>
+<section class="card"><h2 class="h3" data-i18n="admin-settings.info">Restaurant details</h2><div id="f-info"></div></section></div>
+<div class="as-save"><button class="btn btn--primary btn--lg" id="save" type="button" data-i18n="admin-settings.save">Save settings</button></div>
+<section class="card as-log"><h2 class="h3" data-i18n="admin-settings.log">Change log</h2><div class="table-wrap" id="log"></div></section>
+<section class="card as-danger"><h2 class="h3" data-i18n="admin-settings.danger">Demo data</h2><p class="text-muted" data-i18n="admin-settings.dangerText">Reset everything back to the sample data. Orders, edits and reviews made in this browser are lost.</p><button class="btn btn--danger" id="reset" type="button" data-icon="refresh"><span data-i18n="admin-settings.reset">Reset demo data</span></button></section></main>
+  <script>window.addEventListener("error",function(e){if(document.getElementById("bbc-err"))return;var d=document.createElement("div");d.id="bbc-err";d.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#b00020;color:#fff;font:14px/1.4 sans-serif;padding:10px 14px";d.textContent="Something failed to load: "+(e.message||(e.target&&(e.target.src||e.target.href))||"unknown")+" - open the site through a web address (see README) or tell the developer this message.";document.body.appendChild(d)},true)</script>  <noscript><p style="padding:2rem;font-family:sans-serif">Please turn on JavaScript to use this site.</p></noscript>
 </body>
 </html>

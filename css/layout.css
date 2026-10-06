@@ -28,8 +28,9 @@
 .lang-toggle{display:inline-flex;align-items:center;border:1.5px solid var(--border-strong);border-radius:var(--r-pill);padding:3px;background:transparent}
 .lang-toggle button{min-height:34px;min-width:44px;padding:0 .8rem;border-radius:var(--r-pill);font-size:var(--fs-xs);font-weight:700;letter-spacing:.06em;color:var(--text-muted);transition:all .3s var(--ease)}
 .lang-toggle button.is-active{background:var(--red);color:#fff}
-.nav__burger{width:46px;height:46px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;border:1.5px solid var(--border-strong)}
-.nav__burger i{display:block;width:18px;height:2px;background:var(--text);border-radius:2px;transition:transform .4s var(--ease),opacity .2s;position:relative}
+.nav__burger{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;border:1.5px solid var(--border-strong)}
+.nav__burger i{display:block;width:18px;height:2px;background:#fff;border-radius:2px;transition:transform .4s var(--ease),opacity .2s;position:relative}
+.nav__burger i + i{margin-top:5px}
 .nav__burger[aria-expanded="true"] i:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .nav__burger[aria-expanded="true"] i:nth-child(2){opacity:0}
 .nav__burger[aria-expanded="true"] i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
@@ -70,7 +71,7 @@
 
 /* page banner: black poster strip under the header */
 .banner{padding-top:calc(var(--nav-h) + var(--sp-7));padding-bottom:var(--sp-7);background:radial-gradient(55% 120% at 92% 0%,rgba(215,25,32,.32),transparent 70%),var(--bg);color:var(--text)}
-.banner h1.display{font-size:clamp(2rem,1rem + 4vw,4.5rem);margin-block:var(--sp-3)}
+.banner h1.display{font-size:clamp(2.6rem,1rem + 6vw,6rem);margin-block:var(--sp-3)}
 .banner h1.order-head__title{font-size:clamp(2.4rem,1rem + 4vw,4.2rem)}
 .banner .lead{max-width:56ch}
 /* phones: keep the screen clear; call/WhatsApp stay in the menu sheet and footer */
@@ -82,3 +83,6 @@
 .pghead__cta{display:flex;flex-wrap:wrap;gap:var(--sp-3);margin-top:var(--sp-2)}
 .pghead .eyebrow{justify-self:start}
 .home-intro .hero__kicker{display:flex;flex-wrap:wrap;align-items:center;gap:var(--sp-3);margin:0}
+/* shown for the first moments, until the real navigation is built by the page script */
+.nav-ph{position:fixed;inset:0 0 auto 0;height:var(--nav-h);background:#0a0909;z-index:49;display:flex;align-items:center;padding-inline:var(--gutter)}
+.nav-ph img{height:40px;width:auto}

@@ -2,11 +2,10 @@
 import qrcode from './vendor/qrcode.esm.js';
 import { db } from './dataService.js';
 
-import { ROOT } from './utils.js';
 /** Build page URLs from the admin-configurable base URL (Settings > Base URL). */
 export function baseUrl() {
   const s = db.get('settings') || {};
-  let b = (s.baseUrl || new URL('./' + ROOT, location.href).href).trim().replace(/\/+$/, '');
+  let b = (s.baseUrl || location.origin).trim().replace(/\/+$/, '');
   return b;
 }
 export const urls = {
