@@ -3,17 +3,17 @@
    ========================================================================== */
 
 /* ---------- Buttons ---------- */
-.btn{--bh:48px;position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:var(--bh);min-width:44px;padding:0 1.5rem;border-radius:var(--r-pill);font-weight:700;font-size:var(--fs-sm);letter-spacing:.04em;text-transform:uppercase;white-space:nowrap;overflow:hidden;isolation:isolate;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .25s,color .25s,border-color .25s;-webkit-tap-highlight-color:transparent;user-select:none}
+.btn{--bh:48px;position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:var(--bh);min-width:44px;padding:0 1.5rem;border-radius:var(--r-pill);font-weight:700;font-size:var(--fs-sm);letter-spacing:.04em;text-transform:uppercase;white-space:nowrap;overflow:hidden;isolation:isolate;transition:background .2s,color .2s,border-color .2s;-webkit-tap-highlight-color:transparent;user-select:none}
 .btn svg{width:1.15em;height:1.15em;flex:none}
-.btn--primary{background:var(--red);color:var(--on-red);box-shadow:0 8px 28px -8px var(--red-glow)}
-.btn--primary:hover{background:#e8262d;box-shadow:var(--glow);transform:translateY(-2px)}
-.btn--primary:active{transform:translateY(0) scale(.98)}
+.btn--primary{background:var(--red);color:var(--on-red)}
+.btn--primary:hover{background:var(--red-dark)}
+.btn--primary:active{background:var(--red-dark)}
 .btn--ghost{border:1.5px solid var(--border-strong);color:var(--text);background:transparent}
-.btn--ghost:hover{border-color:var(--text);background:var(--tint);transform:translateY(-2px)}
+.btn--ghost:hover{border-color:var(--text);background:var(--tint)}
 .btn--dark{background:var(--surface-3);color:var(--text)}
 .btn--dark:hover{background:var(--surface-2)}
 .btn--white{background:#fff;color:#0a0909}
-.btn--white:hover{background:#ffe9e8;transform:translateY(-2px)}
+.btn--white:hover{background:#ffe9e8}
 .btn--danger{background:transparent;border:1.5px solid var(--red);color:var(--red-text)}
 .btn--danger:hover{background:var(--red);color:#fff}
 .btn--sm{--bh:40px;padding:0 1rem;font-size:var(--fs-xs)}
@@ -235,3 +235,4 @@
 .hide-sm{display:none}.show-sm{display:revert}
 @media (min-width:720px){.hide-sm{display:revert}.show-sm{display:none}}
 @media print{body::after,.cursor-dot,.cursor-ring,.no-print{display:none !important}}
+.badge:empty{display:none}

@@ -6,7 +6,9 @@
   "scripts": {
     "start": "npx --yes serve . -l 3000",
     "dev": "python3 -m http.server 3000",
-    "bundle": "node tools/build-bundles.mjs"
+    "bundle": "node tools/build-bundles.mjs",
+    "prerender": "node tools/prerender.mjs",
+    "build": "node tools/build-bundles.mjs && node tools/prerender.mjs"
   },
   "devDependencies": {
     "esbuild": "^0.28.2"

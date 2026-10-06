@@ -69,7 +69,7 @@ export function createMenuBrowser({ container, mode = 'browse', cart = null, onA
     const action = !ordering ? '' : sold ? `<span class="badge">${t('food.soldOut')}</span>` : qty
       ? `<div class="stepper" data-stepper><button type="button" data-dec aria-label="-">${icon('minus')}</button><span class="stepper__val">${qty}</span><button type="button" data-inc aria-label="+">${icon('plus')}</button></div>`
       : `<button type="button" class="btn btn--primary btn--sm" data-add>${icon('plus')}<span>${t('food.add')}</span></button>`;
-    return `<article class="mcard ${sold ? 'is-sold' : ''}" data-key="${m.id}" data-id="${m.id}" ${sold ? '' : 'data-tilt'}>
+    return `<article class="mcard ${sold ? 'is-sold' : ''}" data-key="${m.id}" data-id="${m.id}" >
       <div class="media mcard__media"><img src="${imgSrc(m.image)}" alt="${esc(tr(m.name))}" loading="lazy" width="800" height="600">
         <div class="mcard__tags">${tags}</div>${o ? `<span class="mcard__off badge badge--red">${t('menu.save', { n: money(o.off) })}</span>` : ''}${sold ? `<div class="mcard__sold"><span>${t('food.soldOut')}</span></div>` : ''}</div>
       <div class="mcard__body"><div class="mcard__top">${vegMark(m.isVeg)}<h3 class="mcard__name">${esc(tr(m.name))}</h3></div>
@@ -78,7 +78,7 @@ export function createMenuBrowser({ container, mode = 'browse', cart = null, onA
   }
   function paint(animate) {
     const list = visible();
-    const run = () => { grid.innerHTML = list.map(cardHTML).join(''); emptyEl.hidden = list.length > 0; grid.hidden = !list.length; if (!list.length) emptyEl.innerHTML = emptyState({ icon: 'search', title: t('common.noResults'), text: t('common.noResultsHint') }); initTilt(grid); };
+    const run = () => { grid.innerHTML = list.map(cardHTML).join(''); emptyEl.hidden = list.length > 0; grid.hidden = !list.length; if (!list.length) emptyEl.innerHTML = emptyState({ icon: 'search', title: t('common.noResults'), text: t('common.noResultsHint') }); };
     animate && grid.children.length ? flip(grid, run) : run();
   }
   function drawSpecial() {
@@ -113,6 +113,6 @@ export function createMenuBrowser({ container, mode = 'browse', cart = null, onA
   function render() { drawTabs(); drawSpecial(); paint(false); applyText(); initReveal(container); }
   const applyText = () => { container.querySelectorAll('[data-i18n]').forEach((n) => { n.textContent = t(n.dataset.i18n); }); container.querySelectorAll('[data-i18n-placeholder]').forEach((n) => n.setAttribute('placeholder', t(n.dataset.i18nPlaceholder))); };
   const off = onLangChange(render); const offDb = db.onChange((c) => { if (['menu', 'offers', 'specials', 'categories'].includes(c)) { drawTabs(); drawSpecial(); paint(false); } });
-  setTimeout(render, 450); // brief skeleton for perceived polish
+  render();
   return { render, refresh: refreshQty, destroy() { off(); offDb(); } };
 }

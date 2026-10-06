@@ -42,7 +42,7 @@ export function mountPortal({ role, active, titleKey }) {
   const shell = el('div', { class: 'portal-shell' });
   const groups = nav.map((g) => `${g.group ? `<div class="sidebar__group" data-i18n="${g.group}"></div>` : ''}${g.items.map((i) => `<a class="sidebar__link ${i.id === active ? 'is-active' : ''}" href="${i.href}" ${i.id === active ? 'aria-current="page"' : ''}>${icon(i.icon)}<span data-i18n="${i.key}"></span><span class="count" data-count-for="${i.id}"></span></a>`).join('')}`).join('');
   const side = el('aside', { class: 'sidebar dark', id: 'sidebar', html: `
-    <div class="sidebar__brand"><img src="${url('assets/logo/logo-mark-160.png')}" alt=""><b>Billy Belly<br>Chicken<small data-i18n="${role === 'admin' ? 'admin.portal' : 'waiter.portal'}"></small></b></div>
+    <div class="sidebar__brand"><img src="${url('assets/logo/logo-mark-120.webp')}" alt=""><b>Billy Belly<br>Chicken<small data-i18n="${role === 'admin' ? 'admin.portal' : 'waiter.portal'}"></small></b></div>
     <nav class="sidebar__nav" aria-label="Portal">${groups}</nav>
     <div class="sidebar__foot"><div class="user-chip"><img src="${imgSrc(user.photo)}" alt=""><div><b>${user.name}</b><small>${role === 'admin' ? 'Admin' : user.empId || 'Waiter'}</small></div></div>
       <span data-lang-mount></span>

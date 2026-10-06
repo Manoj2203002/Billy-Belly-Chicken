@@ -56,3 +56,29 @@ for (const file of htmlFiles) {
   if (s !== before) writeFileSync(file, s);
 }
 console.log('baked', baked, 'texts into', htmlFiles.length, 'html files', missing.size ? '| missing keys: ' + [...missing].slice(0, 8).join(', ') : '');
+
+// 4. one stylesheet per page: the page's own <link> list is remembered in data-src, merged + minified into css/bundles/<name>.css
+//    (fewer requests = faster first paint). Source files in css/ stay the place you edit.
+import { transform } from 'esbuild';
+mkdirSync(join(root, 'css/bundles'), { recursive: true });
+let cssPages = 0;
+for (const file of htmlFiles) {
+  let s = readFileSync(file, 'utf8'); const before = s;
+  const rel = file.slice(root.length + 1); const depth = rel.split('/').length - 1; const up = '../'.repeat(depth);
+  const name = rel.replace(/\.html$/, '').replace(/\//g, '-');
+  // already bundled?  then take the list from data-src, otherwise from the plain links
+  let list = null; const m = s.match(/<link rel="stylesheet" href="[^"]*css\/bundles\/[^"]*"[^>]*data-src="([^"]+)"[^>]*>/);
+  if (m) list = m[1].split(',');
+  else { const links = [...s.matchAll(/<link rel="stylesheet" href="((?:\.\.\/)*css\/([^"]+)\.css)">\s*/g)]; if (links.length) list = links.map((x) => x[2]); }
+  if (!list) continue;
+  let css = '';
+  for (const n of list) css += readFileSync(join(root, 'css', n + '.css'), 'utf8').replace(/url\("\.\.\/assets\//g, 'url("../../assets/') + '\n';
+  const min = (await transform(css, { loader: 'css', minify: true })).code;
+  writeFileSync(join(root, 'css/bundles', name + '.css'), min);
+  const tag = `<link rel="stylesheet" href="${up}css/bundles/${name}.css" data-src="${list.join(',')}">`;
+  if (m) s = s.replace(/<link rel="stylesheet" href="[^"]*css\/bundles\/[^"]*"[^>]*data-src="[^"]+"[^>]*>/, tag);
+  else { let first = true; s = s.replace(/<link rel="stylesheet" href="(?:\.\.\/)*css\/[^"]+\.css">\s*/g, () => { if (first) { first = false; return tag + '\n  '; } return ''; }); }
+  if (s !== before) writeFileSync(file, s);
+  cssPages++;
+}
+console.log('css bundles for', cssPages, 'pages');

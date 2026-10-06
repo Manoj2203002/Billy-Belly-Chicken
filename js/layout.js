@@ -23,7 +23,9 @@ export function mountPublicLayout({ active = '', preloader = false, nav = true, 
   const phoneDigits = String(r.phone || '').replace(/\D/g, '');
   const root = document.body;
   root.classList.add('public');
-  const ph = document.getElementById('nav-ph'); if (ph) requestAnimationFrame(() => requestAnimationFrame(() => ph.remove()));
+  const ph = document.getElementById('nav-ph'); if (ph) ph.remove();
+  // static copies of the chrome are baked into the HTML for an instant first paint; swap them for the live, wired-up versions in the same frame
+  document.querySelectorAll('[data-pre]').forEach((n) => n.remove());
 
   // skip link + scroll progress
   root.prepend(el('a', { class: 'skip-link', href: '#main', 'data-i18n': 'common.skip' }, 'Skip to content'));
@@ -32,7 +34,7 @@ export function mountPublicLayout({ active = '', preloader = false, nav = true, 
   // preloader: once per session, branded logo reveal
   if (preloader && !session.get('bbc:preloaded')) {
     session.set('bbc:preloaded', 1);
-    const pre = el('div', { class: 'preloader dark', 'aria-hidden': 'true', html: `<img class="preloader__logo" src="${url('assets/logo/logo.png')}" alt=""><div class="preloader__bar"></div>` });
+    const pre = el('div', { class: 'preloader dark', 'aria-hidden': 'true', html: `<img class="preloader__logo" src="${url('assets/logo/logo-hero.webp')}" alt=""><div class="preloader__bar"></div>` });
     root.prepend(pre);
     const hide = () => { pre.classList.add('is-done'); document.documentElement.classList.add('is-loaded'); setTimeout(() => pre.remove(), 1200); };
     if (document.readyState === 'complete') setTimeout(hide, 1100); else window.addEventListener('load', () => setTimeout(hide, 1100), { once: true });
@@ -45,7 +47,7 @@ export function mountPublicLayout({ active = '', preloader = false, nav = true, 
     const header = el('header', { class: 'nav dark', html: `
       <div class="nav__inner">
         <a class="nav__brand" href="${url('index.html')}" aria-label="Billy Belly Chicken">
-          <img src="${url('assets/logo/logo-mark-160.png')}" alt="" width="60" height="50"><span>Billy Belly<em>Chicken</em></span>
+          <img src="${url('assets/logo/logo-mark-120.webp')}" alt="" width="60" height="50"><span>Billy Belly<em>Chicken</em></span>
         </a>
         <nav class="nav__links" aria-label="Primary">${links}</nav>
         <div class="nav__actions">
@@ -72,7 +74,7 @@ export function mountPublicLayout({ active = '', preloader = false, nav = true, 
       <div class="container">
         <div class="footer__big" aria-hidden="true">Billy Belly Chicken</div>
         <div class="footer__grid">
-          <div class="footer__brand"><img src="${url('assets/logo/logo-420.png')}" alt="Billy Belly Chicken logo" loading="lazy">
+          <div class="footer__brand"><img src="${url('assets/logo/logo-320.webp')}" alt="Billy Belly Chicken logo" loading="lazy">
             <p class="text-muted" data-js="tagline"></p>
             <div class="footer__social">
               <a href="${r.instagramUrl || '#'}" target="_blank" rel="noopener" aria-label="Instagram">${icon('instagram')}</a>

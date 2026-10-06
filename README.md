@@ -122,3 +122,10 @@ See `docs/ARCHITECTURE.md` for the page contract and API notes.
    ```
    (Prefer no command line? Install GitHub Desktop, choose File > Add local repository, then Publish.)
 3. Live site: repository Settings > Pages > Source: `main` branch, `/ (root)`. The link appears in about a minute.
+
+## Build steps (after editing)
+- `npm run bundle` rebuilds the JS bundles and bakes the English text into the HTML.
+- `npm run prerender` bakes the navbar and footer into each public page for an instant first paint (needs `npm i -D playwright-core` and a Chromium; set `CHROME_PATH` if needed).
+- `npm run bundle` also merges each page's stylesheets into `css/bundles/<page>.css` (keep editing the files in `css/`; the HTML remembers which ones belong to each page in its `data-src` attribute).
+- `npm run prerender` also bakes the menu, home, gallery and about sections, so those pages show real content before any script runs.
+- `npm run build` does both. The shipped files are already built; you only need this after changing `js/`, `data/` or page text.

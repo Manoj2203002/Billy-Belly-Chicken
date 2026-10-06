@@ -35,3 +35,54 @@
 .mspecial__foot .price{font-size:2.4rem}
 .mspecial__foot s{color:var(--text-faint)}
 @media (min-width:760px){.mspecial{grid-template-columns:1fr 1.1fr;align-items:center}}
+
+/* ====================== modern menu look (overrides) ====================== */
+/* filter bar: frosted, floating, no hard lines */
+.mb__bar{background:rgba(255,255,255,.9);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--border);padding-block:.75rem .6rem}
+.mb__tools{gap:.6rem}
+.mb__search .input{background:var(--surface);border:1.5px solid transparent;border-radius:var(--r-pill);min-height:46px}
+.mb__search .input:focus{background:#fff;border-color:var(--red)}
+.mb__bar .chip{min-height:38px;padding:0 .95rem;border:0;background:var(--surface);color:var(--text);font-weight:600}
+.mb__bar .chip:hover{background:var(--surface-2)}
+.mb__bar .chip.is-active,.mb__bar .chip[aria-pressed="true"]{background:var(--text);color:#fff}
+.mb__bar .select{border:0;background-color:var(--surface);border-radius:var(--r-pill);min-height:42px;font-weight:600}
+/* category tabs -> pills */
+.mb__tabs{border-bottom:0;gap:.4rem;margin-top:.6rem;padding-bottom:2px}
+.mb__tabs .tabs__indicator{display:none}
+.mb__tabs .tabs__tab{min-height:38px;padding:0 1.05rem;border-radius:var(--r-pill);background:transparent;border:1.5px solid var(--border);color:var(--text);font-size:var(--fs-sm);letter-spacing:0;text-transform:none;font-weight:600;transition:background .2s,color .2s,border-color .2s}
+.mb__tabs .tabs__tab:hover{border-color:var(--text)}
+.mb__tabs .tabs__tab.is-active,.mb__tabs .tabs__tab[aria-selected="true"]{background:var(--red);border-color:var(--red);color:#fff}
+/* dish cards */
+.mb__grid{gap:1.1rem;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));padding-block:1.4rem}
+.mcard{background:#fff;border:1px solid var(--border);border-radius:22px;box-shadow:0 1px 2px rgba(20,17,17,.04);padding:8px;transition:box-shadow .25s,border-color .25s;will-change:auto;transform:none!important}
+.mcard:hover{border-color:rgba(20,17,17,.22);box-shadow:0 10px 30px -12px rgba(20,17,17,.25)}
+.mcard__media{--ar:5/4;border-radius:16px}
+.mcard:hover .mcard__media img{transform:none}
+.mcard__tags{left:.5rem;top:.5rem}
+.mcard__tags .badge{background:rgba(255,255,255,.92);color:var(--text);backdrop-filter:blur(6px);font-size:.64rem;padding:.15rem .55rem}
+.mcard__tags .badge--red{background:var(--red);color:#fff}
+.mcard__off{right:.5rem;bottom:.5rem;animation:none}
+.mcard__body{padding:.85rem .65rem .6rem;gap:.35rem}
+.mcard__name{font-size:1.02rem;letter-spacing:-.005em}
+.mcard__desc{font-size:.84rem;line-height:1.45}
+.mcard__foot{padding-top:.5rem;align-items:center}
+.mcard__price .price{font-size:1.3rem;font-weight:700}
+.mcard__price .spice{display:none}
+.mcard__foot .btn--sm{--bh:38px;padding:0 1rem}
+.mcard__sold span{font-size:1.1rem;border-width:2px}
+/* today's special: slim, modern banner */
+.mspecial{margin-top:1.2rem;padding:12px;border-radius:24px;gap:1rem;background:linear-gradient(120deg,#141111 0%,#2a0d0c 100%)}
+.mspecial img{aspect-ratio:4/3;border-radius:16px;max-height:260px}
+.mspecial__foot .price{font-size:2rem}
+@media (min-width:760px){.mspecial{grid-template-columns:minmax(0,.8fr) 1.2fr;padding:14px 28px 14px 14px;gap:2rem}.mspecial img{max-height:230px;width:100%}}
+@media (max-width:700px){.mb__tools{grid-template-columns:1fr}.mb__chips{order:0}.mb__grid{grid-template-columns:1fr 1fr;gap:.7rem}.mcard{padding:6px;border-radius:18px}.mcard__media{border-radius:13px}.mcard__body{padding:.6rem .4rem .4rem}.mcard__desc{display:none}.mcard__name{font-size:.94rem}.mcard__foot{flex-wrap:wrap;gap:.5rem}.mcard__foot .btn--sm{width:100%}.mcard__price .price{font-size:1.15rem}}
+.mspecial__txt .badge{justify-self:start}
+@media (max-width:700px){
+  .mb__bar{display:contents}
+  .mb__tools{padding-top:.9rem}
+  .mb__tabs{position:sticky;top:var(--mb-top,var(--nav-h));z-index:20;background:rgba(255,255,255,.94);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);margin:.6rem calc(var(--gutter) * -1) 0;padding:.55rem var(--gutter);border-bottom:1px solid var(--border)}
+  .mspecial{padding:10px;border-radius:20px}
+  .mspecial img{aspect-ratio:16/10;max-height:190px}
+  .mspecial__txt{padding:.4rem .5rem .6rem}
+  .mspecial__foot .price{font-size:1.7rem}
+}

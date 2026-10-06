@@ -103,6 +103,7 @@ export function createDrawer({ title = '', side = 'right', footer = true, onOpen
 /* ----------------------------------------------------------------- tactile micro-interactions */
 /** Ripple on any .btn / .ripple-host (delegated, call once) */
 export function initRipple() {
+  return; // buttons are intentionally static (no ripple)
   document.addEventListener('pointerdown', (e) => {
     const b = e.target.closest('.btn, .ripple-host'); if (!b || b.disabled) return;
     const r = b.getBoundingClientRect(); const s = Math.max(r.width, r.height);
@@ -113,6 +114,7 @@ export function initRipple() {
 }
 /** Magnetic pull on elements with [data-magnetic] (desktop only) */
 export function initMagnetic(root = document) {
+  return; // buttons are intentionally static (no magnetic pull)
   if (!isFinePointer() || reducedMotion()) return;
   $$('[data-magnetic]', root).forEach((n) => {
     if (n.dataset.magInit) return; n.dataset.magInit = '1';
@@ -148,14 +150,19 @@ export function initReveal(root = document) {
   $$('[data-stagger]', root).forEach((p) => Array.from(p.children).forEach((c, i) => { if (!c.style.getPropertyValue('--i')) c.style.setProperty('--i', i); if (!c.hasAttribute('data-reveal')) c.setAttribute('data-reveal', p.dataset.stagger || 'up'); }));
   const all = $$('[data-reveal]:not(.is-in), [data-split]:not(.split-in)', root);
   if (!('IntersectionObserver' in window) || reducedMotion()) { all.forEach((n) => n.classList.add('is-in', 'split-in')); return; }
-  io ||= new IntersectionObserver((entries) => entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add('is-in', 'split-in'); io.unobserve(en.target); } }), { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
-  all.forEach((n) => io.observe(n));
+  const vh = innerHeight * 0.96;
+  const later = [];
+  // anything already on screen is simply shown (no hidden-then-animate flash); only below-the-fold items animate in
+  all.forEach((n) => { if (n.getBoundingClientRect().top < vh) n.classList.add('is-in', 'split-in'); else { n.classList.add('rv'); later.push(n); } });
+  io ||= new IntersectionObserver((entries) => entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add('is-in', 'split-in'); io.unobserve(en.target); } }), { threshold: 0.08, rootMargin: '0px 0px -4% 0px' });
+  later.forEach((n) => io.observe(n));
   void targets;
 }
 /** Wrap words of [data-split] elements so they slide up one by one */
 export function splitWords(root = document) {
   $$('[data-split]', root).forEach((n) => {
     if (n.dataset.splitDone) return; n.dataset.splitDone = '1';
+    if (reducedMotion() || n.getBoundingClientRect().top < innerHeight * 0.96) return; // above the fold: leave as plain text
     const text = n.textContent; n.setAttribute('aria-label', text); n.textContent = '';
     text.split(/(\s+)/).forEach((w, i) => { if (/^\s+$/.test(w)) return n.append(' '); const o = el('span', { class: 'w', 'aria-hidden': 'true' }, el('span', { class: 'w__i', style: `--wi:${i / 2}` }, w)); n.append(o); });
   });

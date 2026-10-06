@@ -27,7 +27,7 @@ bootAdmin('tables', () => {
     db.update('settings', { baseUrl: v.replace(/\/+$/, '') }); db.audit('settings:baseUrl', v || '(site address)'); toast(t('admin-tables.baseSaved'), { type: 'ok' }); drawQR();
   });
   function card(label, sub, link, file) {
-    const n = el('article', { class: 'qr-card' }); n.innerHTML = `<div class="qr-card__brand"><img src="${url('assets/logo/logo-mark-160.png')}" alt=""><b>Billy Belly Chicken</b></div><h3 class="qr-card__t">${esc(label)}</h3><div class="qr-card__qr">${qrSVG(link, { size: 200 })}</div><p class="qr-card__s">${esc(sub)}</p><code class="qr-card__u">${esc(link)}</code>
+    const n = el('article', { class: 'qr-card' }); n.innerHTML = `<div class="qr-card__brand"><img src="${url('assets/logo/logo-mark-120.webp')}" alt=""><b>Billy Belly Chicken</b></div><h3 class="qr-card__t">${esc(label)}</h3><div class="qr-card__qr">${qrSVG(link, { size: 200 })}</div><p class="qr-card__s">${esc(sub)}</p><code class="qr-card__u">${esc(link)}</code>
       <div class="qr-card__a"><button class="btn btn--ghost btn--sm" data-png type="button">${icon('download')}<span>${t('admin-tables.png')}</span></button><button class="btn btn--ghost btn--sm" data-copy type="button">${icon('copy')}<span>${t('admin-tables.copy')}</span></button></div>`;
     n.querySelector('[data-png]').onclick = async () => download(file, await qrPNG(link), 'image/png');
     n.querySelector('[data-copy]').onclick = async () => { try { await navigator.clipboard.writeText(link); } catch { /* ignore */ } toast(t('admin-tables.copied')); };
