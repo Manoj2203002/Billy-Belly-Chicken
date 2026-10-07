@@ -1,17 +1,18 @@
 /* qr.js - client-side QR generation (vendored MIT lib "qrcode-generator") + helpers for the print sheet. */
 import qrcode from './vendor/qrcode.esm.js';
 import { db } from './dataService.js';
+import { ROOT } from './utils.js';
 
 /** Build page URLs from the admin-configurable base URL (Settings > Base URL). */
 export function baseUrl() {
   const s = db.get('settings') || {};
-  let defaultBaseUrl = location.origin;
-  if (location.pathname.startsWith('/Billy-Belly-Chicken')) {
-    defaultBaseUrl += '/Billy-Belly-Chicken';
-  }
-  let b = (s.baseUrl || defaultBaseUrl).trim().replace(/\/+$/, '');
-  return b;
+  // default = the folder this site is served from (works on GitHub Pages project sites, e.g. https://user.github.io/Billy-Belly-Chicken)
+  const here = new URL(ROOT || './', location.href);
+  const auto = location.protocol === 'file:' ? here.href : here.origin + here.pathname;
+  return (s.baseUrl || auto).trim().replace(/\/+$/, '');
 }
+/** true when phones can open the address (public https, not localhost / file) */
+export const isPublicUrl = (u) => /^https:\/\/(?!localhost|127\.|192\.168\.|10\.)[^/]+\.[^/]+/i.test(u);
 export const urls = {
   table: (no) => `${baseUrl()}/order.html?table=${no}`,
   parcel: () => `${baseUrl()}/parcel.html`,

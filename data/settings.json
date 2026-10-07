@@ -11,7 +11,7 @@
   "popupEnabled": true,
   "orderCooldownSeconds": 20,
   "allowWaiterSoldOut": true,
-  "baseUrl": "",
+  "baseUrl": "https://manoj2203002.github.io/Billy-Belly-Chicken",
   "languages": [
     "en",
     "ta"
@@ -23,5 +23,5 @@
     "background": "#0a0909",
     "text": "#ffffff"
   },
-  "_baseUrlNote": "Leave empty to use the current site origin. Set to your deployed domain (e.g. https://billybellychicken.in) before printing QR codes."
+  "_baseUrlNote": "Address the QR codes open. Default is the GitHub Pages address. Change it in Admin > Tables & QR if you move to your own domain."
 }

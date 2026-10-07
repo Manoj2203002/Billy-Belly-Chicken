@@ -18,11 +18,11 @@ const svg = (w, h) => `<svg viewBox="0 0 ${w} ${h}" width="100%" role="img" pres
 /** barChart(node, [{label, value}], {height, format, title}) */
 export function barChart(node, data, { height = 260, format = (v) => v, title = 'Bar chart' } = {}) {
   ensureCSS(); const W = 560; const H = height; const m = { t: 16, r: 10, b: 30, l: 42 };
-  const max = Math.max(1, ...data.map((d) => d.value)) * 1.12; const bw = (W - m.l - m.r) / Math.max(1, data.length);
+  const raw = Math.max(1, ...data.map((d) => d.value)); const small = raw <= 6 && data.every((d) => Number.isInteger(d.value)); const steps = small ? raw : 4; const max = small ? raw : raw * 1.12; const bw = (W - m.l - m.r) / Math.max(1, data.length);
   const y = (v) => m.t + (H - m.t - m.b) * (1 - v / max);
-  let g = ''; for (let i = 0; i <= 4; i++) { const v = (max / 4) * i; g += `<line x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}"/>`; }
-  let ax = ''; for (let i = 0; i <= 4; i++) { const v = (max / 4) * i; ax += `<text x="${m.l - 8}" y="${y(v) + 4}" text-anchor="end">${esc(format(Math.round(v)))}</text>`; }
-  const bars = data.map((d, i) => { const x = m.l + i * bw + bw * 0.18; const w = bw * 0.64; const hh = Math.max(2, H - m.b - y(d.value));
+  let g = ''; for (let i = 0; i <= steps; i++) { const v = (max / steps) * i; g += `<line x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}"/>`; }
+  let ax = ''; for (let i = 0; i <= steps; i++) { const v = (max / steps) * i; ax += `<text x="${m.l - 8}" y="${y(v) + 4}" text-anchor="end">${esc(format(Math.round(v)))}</text>`; }
+  const bars = data.map((d, i) => { const w = Math.min(bw * 0.64, 56); const x = m.l + i * bw + (bw - w) / 2; const hh = Math.max(2, H - m.b - y(d.value));
     return `<g><rect class="ch-bar" style="animation-delay:${i * 60}ms" x="${x}" y="${y(d.value)}" width="${w}" height="${hh}" rx="5" fill="${RED}"><title>${esc(d.label)}: ${esc(format(d.value))}</title></rect><text x="${x + w / 2}" y="${H - 10}" text-anchor="middle">${esc(String(d.label).slice(0, 9))}</text></g>`; }).join('');
   node.innerHTML = `${svg(W, H).replace('role="img"', `role="img" aria-label="${esc(title)}"`)}<g class="ch-grid">${g}</g><g class="ch-axis">${ax}${bars}</g></svg>`;
 }

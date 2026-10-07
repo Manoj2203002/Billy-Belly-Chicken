@@ -5,11 +5,14 @@
   },
   "eyebrow": "Gallery",
   "title": "Eyes first",
-  "lead": "Plates, flames and the room we serve them in. Real photographs from our kitchen and hall will replace these placeholders.",
+  "lead": "Plates, flames and the room we serve them in.",
   "all": "All",
   "food": "Food",
   "ambience": "Ambience",
   "kitchen": "Kitchen",
-  "events": "Events"
+  "events": "Events",
+  "photos": "{n} photos",
+  "sPhotos": "Photos",
+  "sCats": "Categories"
  }
 }

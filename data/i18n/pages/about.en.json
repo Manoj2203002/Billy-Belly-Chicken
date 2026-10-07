@@ -6,11 +6,20 @@
   "eyebrow": "About us",
   "title": "Cooked with care",
   "missionLabel": "Our mission",
-  "cuisines": "What we cook",
+  "cuisines": "Cuisine categories",
   "visionLabel": "Our vision",
-  "standards": "Our standards",
-  "team": "The team",
+  "standards": "Restaurant standards",
+  "team": "Our team structure",
   "visit": "Visit us",
-  "findUs": "Find us"
+  "findUs": "Find us",
+  "menuLabel": "Menu",
+  "kitchenLabel": "Kitchen and hall",
+  "peopleLabel": "People",
+  "values": "Our core values",
+  "valuesLabel": "What drives us",
+  "contactTitle": "Come hungry",
+  "call": "Call now",
+  "phone": "Phone",
+  "email": "Email"
  }
 }

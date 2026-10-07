@@ -12,6 +12,13 @@
   },
   "search": "Search order or table...",
   "empty": "No orders here.",
-  "dine": "Dine-in only"
+  "dine": "Dine-in only",
+  "sub": "{a} active · {c} need confirmation",
+  "col": {
+   "placed": "Placed",
+   "confirmed": "Confirmed",
+   "ready": "Ready",
+   "served": "Served"
+  }
  }
 }

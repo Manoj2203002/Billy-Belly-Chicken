@@ -13,7 +13,7 @@
   "qr": "QR codes",
   "qrLead": "Customers scan these. Print them and place on the tables.",
   "base": "Website address used in QR codes",
-  "baseHint": "Leave empty to use this site's own address. Set your live domain before printing.",
+  "baseHint": "Use the public address of your website, without a page name at the end.",
   "saveBase": "Save address",
   "baseSaved": "Address saved. QR codes updated.",
   "print": "Print all QR codes",
@@ -26,6 +26,23 @@
   "scanParcel": "Scan to order a parcel",
   "scanReview": "Scan to review us",
   "inUse": "This table has an open bill. Close it first.",
-  "invalidUrl": "Enter a full address like https://example.com"
+  "invalidUrl": "Enter a full address like https://example.com",
+  "example": "Example link",
+  "groupTables": "Table QR codes",
+  "groupOther": "Parcel and review QR codes",
+  "sTables": "Tables",
+  "sActive": "Active",
+  "sQr": "QR codes",
+  "sSeats": "Seats",
+  "tabTables": "Tables",
+  "tabQr": "QR codes",
+  "pubTitle": "Where do the QR codes open?",
+  "pubLead": "Every QR code opens this address on the guest's phone.",
+  "live": "Live address. Phones can open it.",
+  "warnLocal": "This is a local or file address. Phones cannot open it. Use your public website address.",
+  "test": "Test link",
+  "useSite": "Use this site's address",
+  "hint2": "Example: https://yourname.github.io/Billy-Belly-Chicken",
+  "open": "Open"
  }
 }

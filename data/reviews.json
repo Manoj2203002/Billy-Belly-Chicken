@@ -13,7 +13,13 @@
     "status": "approved",
     "tableNo": 1,
     "createdAt": "{{day-3}}",
-    "reply": ""
+    "reply": "Thank you Arun! Our chefs will be glad to hear this. See you again soon.",
+    "title": "Worth every minute of the wait",
+    "tags": [
+      "food",
+      "ac"
+    ],
+    "helpful": 12
   },
   {
     "id": "r02",
@@ -29,7 +35,13 @@
     "status": "approved",
     "tableNo": 4,
     "createdAt": "{{day-5}}",
-    "reply": ""
+    "reply": "",
+    "title": "Polite service, spot-on food",
+    "tags": [
+      "food",
+      "staff"
+    ],
+    "helpful": 8
   },
   {
     "id": "r03",
@@ -45,7 +57,13 @@
     "status": "approved",
     "tableNo": null,
     "createdAt": "{{day-8}}",
-    "reply": ""
+    "reply": "Thanks Suresh. We will add extra raita to every biryani parcel.",
+    "title": "Parcel packed well and on time",
+    "tags": [
+      "service",
+      "value"
+    ],
+    "helpful": 5
   },
   {
     "id": "r04",
@@ -61,7 +79,13 @@
     "status": "approved",
     "tableNo": null,
     "createdAt": "{{day-12}}",
-    "reply": ""
+    "reply": "",
+    "title": "Huge burger, spotless hall",
+    "tags": [
+      "clean",
+      "service"
+    ],
+    "helpful": 9
   },
   {
     "id": "r05",
@@ -77,7 +101,12 @@
     "status": "approved",
     "tableNo": 7,
     "createdAt": "{{day-20}}",
-    "reply": ""
+    "reply": "",
+    "title": "Lovely tandoori platter",
+    "tags": [
+      "food"
+    ],
+    "helpful": 3
   },
   {
     "id": "r06",

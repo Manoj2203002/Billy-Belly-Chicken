@@ -18,5 +18,7 @@
  "waiter.payAtCounter": "Please pay at the counter",
  "waiter.closeHint": "Customer pays {total} at the counter. Record how they paid, then close the table.",
  "waiter.closeTable": "Close table",
- "waiter.tableClosed": "Table closed"
+ "waiter.tableClosed": "Table closed",
+ "waiter.parcel": "Parcel",
+ "waiter.guests": "{n} guests"
 }

@@ -11,6 +11,13 @@
    "all": "All"
   },
   "search": "Search token, name or phone...",
-  "empty": "No parcels here."
+  "empty": "No parcels here.",
+  "sub": "{a} active · {c} need confirmation",
+  "col": {
+   "placed": "Placed",
+   "confirmed": "Confirmed",
+   "ready": "Ready",
+   "served": "Served"
+  }
  }
 }

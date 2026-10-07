@@ -7,7 +7,7 @@
    ========================================================================== */
 import { ROOT, store, session, uid, pad, todayStr, loadJSON } from './utils.js';
 
-const SEED_VERSION = '2026.10.2';            // bump to force a re-seed for everyone
+const SEED_VERSION = '2026.10.5';            // bump to force a re-seed for everyone
 const PFX = 'bbc:db:';
 const SEED_FILES = {
   restaurant: 'data/restaurant.json', categories: 'data/categories.json', menu: 'data/menu.json',

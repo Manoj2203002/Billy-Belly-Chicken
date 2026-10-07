@@ -10,18 +10,6 @@ await init();
 await initI18n(['home']);
 mountPublicLayout({ active: 'home' });
 
-/* flip card: guest view <-> owner view */
-(() => {
-  const card = $('#flip'); const btn = $('#flip-btn'); if (!card || !btn) return;
-  const front = $('#flip-front'); const back = $('#flip-back'); const label = $('#flip-label'); const dots = card.querySelectorAll('.flip__dots i');
-  const set = (isBack) => {
-    card.classList.toggle('is-back', isBack); btn.setAttribute('aria-pressed', isBack);
-    label.textContent = isBack ? 'Show front: guest view' : 'Show back: owner view';
-    front.setAttribute('aria-hidden', isBack); back.setAttribute('aria-hidden', !isBack);
-    front.inert = isBack; back.inert = !isBack; dots.forEach((d, i) => d.classList.toggle('is-on', isBack ? i === 1 : i === 0));
-  };
-  set(false); btn.addEventListener('click', () => set(!card.classList.contains('is-back')));
-})();
 const r = db.get('restaurant'); const settings = db.get('settings'); setCurrency(settings.currency);
 
 const todaysSpecial = () => { const list = db.list('specials', (s) => s.active !== false); return list.find((s) => s.date === todayStr()) || list.sort((a, b) => (b.date || '').localeCompare(a.date || ''))[0] || null; };
@@ -56,7 +44,7 @@ function render() {
   /* reviews: approved only */
   const rv = db.list('reviews', (x) => x.status === 'approved').sort((a, c) => c.rating - a.rating || c.createdAt.localeCompare(a.createdAt));
   $('#rev-avg').innerHTML = rv.length ? `<b>${avgRating()}</b><div>${starsHTML(avgRating())}<div class="text-muted">${t('home.reviews.avg', { c: rv.length })}</div></div>` : '';
-  $('#rev-list').innerHTML = rv.length ? rv.slice(0, 6).map((x) => `<article class="rev" data-reveal="up">${starsHTML(x.rating)}<q>${esc(x.comment)}</q><footer><b>${esc(x.name)}</b></footer>${x.reply ? `<div class="rev__reply"><b>${t('home.reviews.reply')}:</b> ${esc(x.reply)}</div>` : ''}</article>`).join('') : `<p class="text-muted">${t('home.reviews.empty')}</p>`;
+  $('#rev-list').innerHTML = rv.length ? rv.slice(0, 6).map((x) => `<article class="rev" data-reveal="up"><header><span class="rev__av" aria-hidden="true">${esc((x.name || 'G').trim().charAt(0).toUpperCase())}</span><div><b>${esc(x.name)}</b><small>${t('home.reviews.verified')}</small></div>${starsHTML(x.rating)}</header><q>${esc(x.comment)}</q>${x.reply ? `<div class="rev__reply"><b>${t('home.reviews.reply')}:</b> ${esc(x.reply)}</div>` : ''}</article>`).join('') : `<p class="text-muted">${t('home.reviews.empty')}</p>`;
   /* contact */
   const tel = String(r.phone).replace(/\D/g, '');
   $('#contact-list').innerHTML = `<li>${icon('pin')}<div><small>${t('home.contact.address')}</small>${esc(tr(r.address))}</div></li><li>${icon('clock')}<div><small>${t('home.contact.hours')}</small>${esc(tr(r.hours))}</div></li><li>${icon('phone')}<div><small>${t('home.contact.phone')}</small><a class="link" href="tel:+91${tel}">${esc(r.phone)}</a></div></li><li>${icon('mail')}<div><small>${t('home.contact.email')}</small><a class="link" href="mailto:${esc(r.email)}">${esc(r.email)}</a></div></li>`;

@@ -100,7 +100,7 @@ docs/ARCHITECTURE.md                              page contract and API cheat-sh
 - [ ] Tamil and auto-translate (removed for now).
 - [ ] Image upload to storage/CDN (the prototype stores small resized images in the browser).
 - [ ] Replace the placeholder SVG images in `assets/images` with real photos (WebP, with width/height set) and add the real Google Maps embed address in Admin > Settings.
-- [ ] Set the real domain: QR base address, `robots.txt`, `sitemap.xml`, Open Graph image, JSON-LD in `index.html`.
+- [ ] Set the real domain (QR codes already follow the folder the site is served from, e.g. https://manoj2203002.github.io/Billy-Belly-Chicken/order.html?table=1): QR base address, `robots.txt`, `sitemap.xml`, Open Graph image, JSON-LD in `index.html`.
 - [ ] Rate limiting and bot protection on order, parcel and review endpoints.
 - [ ] Backups, error logging, uptime monitoring, HTTPS and security headers (starter headers are in `netlify.toml`, `vercel.json`, `_headers`).
 - [ ] Privacy notice for parcel phone numbers; decide how long order data is kept.
@@ -129,3 +129,9 @@ See `docs/ARCHITECTURE.md` for the page contract and API notes.
 - `npm run bundle` also merges each page's stylesheets into `css/bundles/<page>.css` (keep editing the files in `css/`; the HTML remembers which ones belong to each page in its `data-src` attribute).
 - `npm run prerender` also bakes the menu, home, gallery and about sections, so those pages show real content before any script runs.
 - `npm run build` does both. The shipped files are already built; you only need this after changing `js/`, `data/` or page text.
+
+## QR codes and the GitHub Pages address
+
+QR codes open the address saved in **Admin > Tables & QR > Where do the QR codes open?** (default `https://manoj2203002.github.io/Billy-Belly-Chicken`).
+A QR printed while the site is opened from a folder (`file:///C:/...`) can never work on a phone, which is why the address is saved and shown with a green "Live address" badge.
+Upload the contents of the `bbc` folder to the repository root so `index.html` sits at `https://<user>.github.io/Billy-Belly-Chicken/index.html`.

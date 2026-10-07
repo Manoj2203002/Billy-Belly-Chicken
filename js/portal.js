@@ -46,12 +46,18 @@ export function mountPortal({ role, active, titleKey }) {
     <nav class="sidebar__nav" aria-label="Portal">${groups}</nav>
     <div class="sidebar__foot"><div class="user-chip"><img src="${imgSrc(user.photo)}" alt=""><div><b>${user.name}</b><small>${role === 'admin' ? 'Admin' : user.empId || 'Waiter'}</small></div></div>
       <span data-lang-mount></span>
-      <a class="btn btn--ghost btn--sm btn--block" href="${url('index.html')}" target="_blank" rel="noopener">${icon('globe')}<span data-i18n="portal.viewSite"></span></a>
-      <button class="btn btn--dark btn--sm btn--block" type="button" data-logout>${icon('logout')}<span data-i18n="portal.logout"></span></button></div>` });
+      <div class="sidebar__acts"><a class="btn btn--ghost btn--sm" href="${url('index.html')}" target="_blank" rel="noopener">${icon('globe')}<span data-i18n="portal.viewSite"></span></a>
+      <button class="btn btn--dark btn--sm" type="button" data-logout>${icon('logout')}<span data-i18n="portal.logout"></span></button></div></div>` });
   const back = el('div', { class: 'sidebar-backdrop' });
   const main = el('div', { class: 'portal-main' });
-  const top = el('header', { class: 'topbar', html: `<button class="icon-btn menu-btn" type="button" aria-controls="sidebar" aria-expanded="false" data-i18n-aria="nav.menuToggle">${icon('menu')}</button><div class="topbar__title" data-i18n="${titleKey || ''}"></div><div class="topbar__spacer"></div><div data-topbar-slot class="cluster"></div>` });
+  const top = el('header', { class: 'topbar', html: `<button class="icon-btn menu-btn" type="button" aria-controls="sidebar" aria-expanded="false" data-i18n-aria="nav.menuToggle">${icon('menu')}</button><div class="topbar__title" data-i18n="${titleKey || ''}"></div><div class="topbar__spacer"></div><div data-topbar-slot class="cluster"></div><span class="topbar__date" data-date></span><span class="topbar__live" data-clock></span>${role === 'waiter' ? `<span class="topbar__me" title="${user.name}">${String(user.name).split(' ').map((w) => w[0]).slice(0, 2).join('').toUpperCase()}</span>` : ''}` });
   app.replaceWith(shell); main.append(top, app); shell.append(side, back, main);
+  const dt = () => { const n = $('[data-date]', top); if (n) n.textContent = new Date().toLocaleDateString('en-IN', { weekday: 'short', day: 'numeric', month: 'short' }); }; dt();
+  const clock = () => { const n = $('[data-clock]', top); if (n) n.textContent = new Date().toLocaleTimeString('en-IN', { hour: 'numeric', minute: '2-digit' }); }; clock(); setInterval(clock, 20000);
+  if (role === 'waiter') {   // bottom tab bar: the four screens a waiter uses all shift, always one thumb away
+    const tabs = el('nav', { class: 'tabbar', 'aria-label': 'Main', html: nav[0].items.map((i) => `<a class="tabbar__link ${i.id === active ? 'is-active' : ''}" href="${i.href}" ${i.id === active ? 'aria-current="page"' : ''}>${icon(i.icon)}<span data-i18n="${i.key}"></span><span class="count" data-count-for="${i.id}"></span></a>`).join('') });
+    document.body.append(tabs);
+  }
   const set = (open) => { side.classList.toggle('is-open', open); back.classList.toggle('is-open', open); $('.menu-btn', top).setAttribute('aria-expanded', open); };
   $('.menu-btn', top).addEventListener('click', () => set(!side.classList.contains('is-open')));
   back.addEventListener('click', () => set(false)); $$('.sidebar__link', side).forEach((a) => a.addEventListener('click', () => set(false)));
@@ -63,5 +69,5 @@ export function mountPortal({ role, active, titleKey }) {
   return user;
 }
 /** Update the small count pill next to a sidebar link */
-export function setNavCount(id, n) { const c = $(`[data-count-for="${id}"]`); if (c) { c.innerHTML = n ? `<span class="badge badge--red">${n}</span>` : ''; } }
+export function setNavCount(id, n) { $$(`[data-count-for="${id}"]`).forEach((c) => { c.innerHTML = n ? `<span class="badge badge--red">${n}</span>` : ''; }); }
 export const topbarSlot = () => $('[data-topbar-slot]');

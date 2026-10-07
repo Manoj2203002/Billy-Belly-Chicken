@@ -13,19 +13,25 @@ hydrateIcons();
 let cat = 'all'; let shown = [];
 const CATS = ['all', 'food', 'ambience', 'kitchen', 'events'];
 function chips() {
-  $('#filters').innerHTML = CATS.map((c) => `<button type="button" class="chip ${c === cat ? 'is-active' : ''}" data-c="${c}" aria-pressed="${c === cat}">${t('gallery.' + c)}</button>`).join('');
+  const all = db.list('gallery');
+  $('#filters').innerHTML = CATS.map((c) => `<button type="button" class="chip ${c === cat ? 'is-active' : ''}" data-c="${c}" aria-pressed="${c === cat}">${t('gallery.' + c)}<em>${c === 'all' ? all.length : all.filter((g) => g.category === c).length}</em></button>`).join('');
 }
 function list() { return db.list('gallery').sort((a, b) => a.order - b.order).filter((g) => cat === 'all' || g.category === cat); }
 function grid(animate) {
   const run = () => {
     shown = list();
-    $('#grid').innerHTML = shown.map((g, i) => `<button type="button" class="gitem" data-key="${g.id}" data-i="${i}" aria-label="${esc(tr(g.caption))}"><img src="${imgSrc(g.image)}" alt="${esc(tr(g.caption))}" loading="lazy" width="800" height="600"><span class="badge gitem__cat">${t('gallery.' + g.category)}</span><span class="gitem__cap">${esc(tr(g.caption))}</span></button>`).join('');
+    $('#grid').innerHTML = shown.map((g, i) => `<button type="button" class="gitem" data-key="${g.id}" data-i="${i}" aria-label="${esc(tr(g.caption))}"><span class="gitem__media"><img src="${imgSrc(g.image)}" alt="${esc(tr(g.caption))}" loading="lazy" width="800" height="600"><span class="gitem__cat">${t('gallery.' + g.category)}</span></span><span class="gitem__body"><span class="gitem__cap">${esc(tr(g.caption))}</span><span class="gitem__zoom" aria-hidden="true">+</span></span></button>`).join('');
+    $('#count').textContent = t('gallery.photos', { n: shown.length });
   };
   animate ? flip($('#grid'), run) : run();
 }
-chips(); grid(false);
+function stats() {
+  const all = db.list('gallery'); const cats = new Set(all.map((g) => g.category)).size;
+  $('#gal-stats').innerHTML = [[all.length, t('gallery.sPhotos')], [cats, t('gallery.sCats')]].map(([n, l]) => `<li><b>${n}</b><span>${l}</span></li>`).join('');
+}
+stats(); chips(); grid(false);
 $('#filters').addEventListener('click', (e) => { const b = e.target.closest('[data-c]'); if (!b) return; cat = b.dataset.c; chips(); grid(true); });
-onLangChange(() => { chips(); grid(false); });
+onLangChange(() => { stats(); chips(); grid(false); });
 
 /* ---------- lightbox: shared-element open/close, keyboard, swipe ---------- */
 const lb = $('#lightbox'); const img = $('#lb-img'); let idx = 0; let origin = null;

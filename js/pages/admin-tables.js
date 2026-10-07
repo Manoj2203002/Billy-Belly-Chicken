@@ -5,7 +5,7 @@ import { $, el, esc, download, imgSrc, url } from '../utils.js';
 import { icon } from '../icons.js';
 import { toast } from '../ui.js';
 import { createCrud } from '../components/crud.js';
-import { qrSVG, qrPNG, urls, baseUrl } from '../qr.js';
+import { qrSVG, qrPNG, urls, baseUrl, isPublicUrl } from '../qr.js';
 import { bootAdmin } from '../components/adminPage.js';
 
 bootAdmin('tables', () => {
@@ -21,21 +21,38 @@ bootAdmin('tables', () => {
     canDelete: (x) => os_open(x.number) ? t('admin-tables.inUse') : true, afterChange: drawQR });
   function os_open(no) { return db.list('tableSessions', (s) => String(s.tableNo) === String(no) && !s.closedAt).length > 0; }
 
-  const grid = $('#qr-grid'); const base = $('#base'); base.value = db.get('settings').baseUrl || '';
+  const groups = $('#qr-groups'); const base = $('#base'); base.value = db.get('settings').baseUrl || baseUrl();
+  /* tabs */
+  const tabs = document.querySelectorAll('[data-tab]');
+  function showTab(k) { tabs.forEach((b) => { const on = b.dataset.tab === k; b.classList.toggle('is-on', on); b.setAttribute('aria-selected', on); }); document.querySelectorAll('[data-panel]').forEach((p) => { p.hidden = p.dataset.panel !== k; }); try { history.replaceState(null, '', k === 'qr' ? '#qr' : location.pathname + location.search); } catch { /* file:// */ } }
+  tabs.forEach((b) => b.addEventListener('click', () => showTab(b.dataset.tab)));
+  showTab(location.hash === '#qr' ? 'qr' : 'tables');
+  function pub() {
+    const ok = isPublicUrl(baseUrl()); const st = $('#pub-state');
+    st.className = 'qr-pub__state ' + (ok ? 'is-ok' : 'is-warn'); st.textContent = ok ? t('admin-tables.live') : t('admin-tables.warnLocal');
+    $('#pub-ico').innerHTML = icon(ok ? 'checkcircle' : 'xcircle'); $('#pub-ico').className = 'qr-pub__ico ' + (ok ? 'is-ok' : 'is-warn');
+    $('#qr-test').href = urls.table(1);
+  }
   $('#base-save').addEventListener('click', () => {
     const v = base.value.trim(); if (v && !/^https?:\/\/[^\s/]+\.?[^\s]*$/i.test(v)) return toast(t('admin-tables.invalidUrl'), { type: 'warn' });
     db.update('settings', { baseUrl: v.replace(/\/+$/, '') }); db.audit('settings:baseUrl', v || '(site address)'); toast(t('admin-tables.baseSaved'), { type: 'ok' }); drawQR();
   });
-  function card(label, sub, link, file) {
-    const n = el('article', { class: 'qr-card' }); n.innerHTML = `<div class="qr-card__brand"><img src="${url('assets/logo/logo-mark-120.webp')}" alt=""><b>Billy Belly Chicken</b></div><h3 class="qr-card__t">${esc(label)}</h3><div class="qr-card__qr">${qrSVG(link, { size: 200 })}</div><p class="qr-card__s">${esc(sub)}</p><code class="qr-card__u">${esc(link)}</code>
-      <div class="qr-card__a"><button class="btn btn--ghost btn--sm" data-png type="button">${icon('download')}<span>${t('admin-tables.png')}</span></button><button class="btn btn--ghost btn--sm" data-copy type="button">${icon('copy')}<span>${t('admin-tables.copy')}</span></button></div>`;
+  $('#base-site').addEventListener('click', () => { db.update('settings', { baseUrl: '' }); base.value = baseUrl(); toast(t('admin-tables.baseSaved'), { type: 'ok' }); drawQR(); });
+  function card(label, sub, link, file, tone = '') {
+    const n = el('article', { class: 'qr-card' + (tone ? ' qr-card--' + tone : '') });
+    n.innerHTML = `<header class="qr-card__top"><img src="${url('assets/logo/logo-mark-120.webp')}" alt=""><span>Billy Belly Chicken</span></header><h3 class="qr-card__t">${esc(label)}</h3><div class="qr-card__qr">${qrSVG(link, { size: 220 })}</div><p class="qr-card__s">${esc(sub)}</p><div class="qr-card__a"><button class="qr-ib qr-ib--main" data-png type="button" title="${t('admin-tables.png')}" aria-label="${t('admin-tables.png')}">${icon('download')}<span>PNG</span></button><button class="qr-ib" data-copy type="button" title="${t('admin-tables.copy')}" aria-label="${t('admin-tables.copy')}">${icon('copy')}</button><a class="qr-ib" href="${esc(link)}" target="_blank" rel="noopener" title="${t('admin-tables.open')}" aria-label="${t('admin-tables.open')}">${icon('eye')}</a></div>`;
     n.querySelector('[data-png]').onclick = async () => download(file, await qrPNG(link), 'image/png');
     n.querySelector('[data-copy]').onclick = async () => { try { await navigator.clipboard.writeText(link); } catch { /* ignore */ } toast(t('admin-tables.copied')); };
     return n;
   }
+  const group = (title, cards) => { const g = el('div', { class: 'qr-group' }); g.innerHTML = `<h3 class="qr-group__h">${esc(title)}<em>${cards.length}</em></h3><div class="qr-grid"></div>`; g.querySelector('.qr-grid').append(...cards); return g; };
   function drawQR() {
-    grid.replaceChildren(...db.list('tables', (x) => x.active !== false).sort((a, b) => a.number - b.number).map((x) => card(`${t('common.table')} ${x.number}`, t('admin-tables.scan'), urls.table(x.number), `table-${x.number}.png`)),
-      card(t('admin-tables.parcelQr'), t('admin-tables.scanParcel'), urls.parcel(), 'parcel.png'), card(t('admin-tables.reviewQr'), t('admin-tables.scanReview'), urls.review(), 'review.png'));
+    const all = db.list('tables'); const act = all.filter((x) => x.active !== false).sort((a, b) => a.number - b.number);
+    $('#qr-stats').innerHTML = [[all.length, t('admin-tables.sTables')], [act.length, t('admin-tables.sActive')], [act.length + 2, t('admin-tables.sQr')]].map(([n, l]) => `<li><b>${n}</b><span>${esc(l)}</span></li>`).join('');
+    $('#qr-example').textContent = urls.table(1); pub();
+    groups.replaceChildren(
+      group(t('admin-tables.groupTables'), act.map((x) => card(`${t('common.table')} ${x.number}`, t('admin-tables.scan'), urls.table(x.number), `table-${x.number}.png`))),
+      group(t('admin-tables.groupOther'), [card(t('admin-tables.parcelQr'), t('admin-tables.scanParcel'), urls.parcel(), 'parcel.png', 'dark'), card(t('admin-tables.reviewQr'), t('admin-tables.scanReview'), urls.review(), 'review.png', 'dark')]));
   }
   $('#print').addEventListener('click', () => { document.body.classList.add('printing-qr'); window.print(); setTimeout(() => document.body.classList.remove('printing-qr'), 600); });
   onLangChange(drawQR); drawQR();
